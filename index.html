@@ -9,356 +9,737 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet"  href="css/swiper-bundle.min.css"/>
+
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-header navbar-expand-lg fixed-top" id="navbarHeader">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
-                <i class="bi bi-text-left"></i>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-header navbar-expand-xl fixed-top" id="navbarHeader">
+    <div class="container-xl">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
+            <i class="bi bi-text-left"></i>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="img/ARIA-logo_new.png" class="img-fluid" alt="">
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Navigation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item ">
+                        <a href="index.html" class="nav-link active">
+                          <i class="bi bi-house-door-fill"></i>
+                          <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="bi bi-file-earmark-person-fill"></i>
+                          <span>About us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="bi bi-cash-stack"></i>
+                          <span>Investors</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="bi bi-people-fill"></i>
+                          <span>Members</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="bi bi-lightbulb-fill"></i>
+                          <span>Initiatives</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="bi bi-megaphone-fill"></i>
+                          <span>News/Events</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                          <i class="bi bi-telephone-fill"></i>
+                          <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-right">
+          <div class="nav-link-account">
+            <button class="btn btn-primary btn-search rounded-circle">
+              <i class="bi bi-search fs-5"></i>
             </button>
-            <a class="navbar-brand" href="#">
-                <img src="img/ARIA-logo_new.png" class="img-fluid" alt="">
-            </a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Navigation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-lg-3">
-                        <li class="nav-item ">
-                            <a href="index.html" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Investors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Members</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Initiatives</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">News/Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <main class="mainwrapper">
-        <div class="mainbodywrapper">
-
-            <section class="py-5 text-center container">
-              <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                  <h1 class="fw-light">Album example</h1>
-                  <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-                  <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <div class="album py-5 bg-body-tertiary">
-              <div class="container">
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-body-secondary">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-        </div>
-        <footer class="footer">
-          <div class="container">
-            <div class="row g-3">
-              <div class="col-12">
-                <div class="footer-top-inner">
-                  <div class="row">
-                    <div class="col-lg-4 col-12">
-                      <div class="footer-about-widget">
-                        <div class="footer-logo">
-                          <a class="logo" href="index.html"><img src="img/ARIA-logo_new.png" class="img-fluid"></a>
-                        </div>
-                        <p class="footer-about-widget_desc">The Association of Registered Investment Advisers (ARIA) was born out of the need to support the development of the investment adviser community post the introduction of the investment advisor regulations of SEBI in 2013.</p>
-                        <ul class="social-list">
-                          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                          <li><a href="#"><i class="bi bi-twitter-x"></i></i></a></li>
-                          <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                      <div class="widget-nav_menu">
-                        <h3 class="widget-title">About</h3>
-                        <ul class="widget-nav_menu-links">
-                          <li class="menu-item">
-                            <a href="#" class="menu-link">Intent</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="#" class="menu-link">ARIA Board</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="#" class="menu-link">Committees</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="#" class="menu-link">Chapters</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="#" class="menu-link">Our Partners</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="#" class="menu-link">Testimonials</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="#" class="menu-link">Careers</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="#" class="menu-link">Stakeholders</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                      <div class="widget-nav_menu">
-                        <h3 class="widget-title">News/Events</h3>
-                        <ul class="widget-nav_menu-links">
-                          <li class="menu-item">
-                            <a href="" class="menu-link">ARIA Summit</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="" class="menu-link">Summit Recordings</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="" class="menu-link">ARIA News</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="" class="menu-link">Events Upcoming & Posts</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="" class="menu-link">News & Interest</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="" class="menu-link">Newsletter</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="" class="menu-link">SEBI Communications</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="" class="menu-link">Workshops</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                      <div class="widget-nav_menu">
-                        <h3 class="widget-title">News/Events</h3>
-                        <ul class="widget-nav_menu-links quicklinks">
-                          <li class="menu-item">
-                            <a href="services-1.html" class="menu-link">Brand Identity & Guidelines</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="services-2.html" class="menu-link">Tuned to Technology</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="services-3.html" class="menu-link">Digital Footprint</a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="services-4.html" class="menu-link">Advertising is Limitless</a>
-                          </li>
-                        </ul>
-                      </div>
-
-                    </div>
-                    
-                  </div>  
-                </div>
-              </div>
-            </div>
+            <a href="dashboard.html" class="btn btn-primary">Login</a>
+            <!-- <a href="javascript:void(0)" class="account-user-avatar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+              <img src="img/blank-profile-picture.png" class="img-fluid" alt="">
+            </a> -->
           </div>
-          <div class="copyright">
+        </div>
+    </div>
+</nav>
+
+
+<main class="mainwrapper">
+
+    <section class="hero-section">
+      <div id="carouselHero" class="carousel hero-carousel slide" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
             <div class="container">
               <div class="row">
-                <div class="col-12">
-                  <div class="copyright__inner">
-                      <p class="copyright-text">Copyright @202 All rights reserved</p>
-                      <ul class="foot-links">
-                        <li><a href="#">Legal Disclaimer</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Cancellation Policy</a></li>
-                        <li>Credits : GeoCircle</li>
-                      </ul>
+                <div class="col-12 col-lg-10">
+                    <h1 class="caption-title">Empowering Investment Advisers, Elevating Standards</h1>
+                    <button class="btn btn-fadedprimary">Become a Member</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <img src="img/banner1.jpg" class="carousel-image img-fluid" loading="lazy" alt="...">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-10">
+                    <h1 class="caption-title">Empowering Investment Advisers, Elevating Standards</h1>
+                    <button class="btn btn-fadedprimary">Any Queries</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <img src="img/banner2.jpg" class="carousel-image img-fluid" loading="lazy" alt="...">
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-10">
+                    <h1 class="caption-title">Empowering Investment Advisers, Elevating Standards</h1>
+                    <button class="btn btn-fadedprimary">Contact us</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <img src="img/banner3.jpg" class="carousel-image img-fluid" loading="lazy" alt="...">
+          </div>
+        </div>
+        <div class="container position-relative">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+            <i class="bi bi-chevron-left icon"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+            <i class="bi bi-chevron-right icon"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card about-card">
+                <h3 class="section-title">Who We Are</h3>
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium tempora, fugit voluptatem ipsam commodi beatae voluptates, dignissimos voluptas laboriosam, earum, fuga explicabo accusamus nisi perferendis laborum suscipit quibusdam id. ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime id laudantium suscipit, accusantium, amet maiores eos nulla at aspernatur corporis, repudiandae cupiditate mollitia! ipsa quisquam alias voluptatum!
+                <a href="#" class="btn text-primary fw-bold p-0">Read more</a>
+                </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-end my-4">
+          <div class="col-12 col-lg-6">
+            <h6 class="about-ltext lighttext">Join us for</br> our upcoming event,</h6>
+            <h6 class="about-ltext">where industry leaders and</br> experts gather to shape the future</br> of investment advising.</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper" id="AboutSwiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="card about-card">
+                    <img src="img/dummy1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body px-0">
+                      <h6 class="about-text fw-bold">Member Criterion</h6>
                     </div>
                   </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card about-card">
+                    <img src="img/dummy2.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body px-0">
+                      <h6 class="about-text fw-bold">Membership Categories</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card about-card">
+                    <img src="img/dummy1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body px-0">
+                      <h6 class="about-text fw-bold">The future of wealth</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card about-card">
+                    <img src="img/dummy2.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body px-0">
+                      <h6 class="about-text fw-bold">Lorem Slide one</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card about-card">
+                    <img src="img/dummy1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body px-0">
+                      <h6 class="about-text fw-bold">Lorem Ipsum slide two</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev text-secondary"></div>
+              <div class="swiper-button-next"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-count">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <div class="count-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M9.02 21H2.5A2.503 2.503 0 0 1 0 18.5v-16C0 1.121 1.122 0 2.5 0h12C15.878 0 17 1.121 17 2.5v6.06a.5.5 0 0 1-1 0V2.5c0-.827-.673-1.5-1.5-1.5h-12C1.673 1 1 1.673 1 2.5v16c0 .827.673 1.5 1.5 1.5h6.52a.5.5 0 0 1 0 1z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M13.5 9h-10a.5.5 0 0 1 0-1h10a.5.5 0 0 1 0 1zM9.5 13h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM8.5 5h-5a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1zM17.5 24c-3.584 0-6.5-2.916-6.5-6.5s2.916-6.5 6.5-6.5 6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5zm0-12c-3.033 0-5.5 2.468-5.5 5.5s2.467 5.5 5.5 5.5 5.5-2.468 5.5-5.5-2.467-5.5-5.5-5.5z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M17.5 21a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 1 0v6a.5.5 0 0 1-.5.5z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M20.5 18h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+            <h2 class="count-num">1.5K+</h2>
+            <h6 class="count-title">Members Enrolled</h6>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="count-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M9.02 21H2.5A2.503 2.503 0 0 1 0 18.5v-16C0 1.121 1.122 0 2.5 0h12C15.878 0 17 1.121 17 2.5v6.06a.5.5 0 0 1-1 0V2.5c0-.827-.673-1.5-1.5-1.5h-12C1.673 1 1 1.673 1 2.5v16c0 .827.673 1.5 1.5 1.5h6.52a.5.5 0 0 1 0 1z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M13.5 9h-10a.5.5 0 0 1 0-1h10a.5.5 0 0 1 0 1zM9.5 13h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM8.5 5h-5a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1zM17.5 24c-3.584 0-6.5-2.916-6.5-6.5s2.916-6.5 6.5-6.5 6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5zm0-12c-3.033 0-5.5 2.468-5.5 5.5s2.467 5.5 5.5 5.5 5.5-2.468 5.5-5.5-2.467-5.5-5.5-5.5z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M17.5 21a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 1 0v6a.5.5 0 0 1-.5.5z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M20.5 18h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+            <h2 class="count-num">50+</h2>
+            <h6 class="count-title">Advisors</h6>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="count-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M9.02 21H2.5A2.503 2.503 0 0 1 0 18.5v-16C0 1.121 1.122 0 2.5 0h12C15.878 0 17 1.121 17 2.5v6.06a.5.5 0 0 1-1 0V2.5c0-.827-.673-1.5-1.5-1.5h-12C1.673 1 1 1.673 1 2.5v16c0 .827.673 1.5 1.5 1.5h6.52a.5.5 0 0 1 0 1z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M13.5 9h-10a.5.5 0 0 1 0-1h10a.5.5 0 0 1 0 1zM9.5 13h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM8.5 5h-5a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1zM17.5 24c-3.584 0-6.5-2.916-6.5-6.5s2.916-6.5 6.5-6.5 6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5zm0-12c-3.033 0-5.5 2.468-5.5 5.5s2.467 5.5 5.5 5.5 5.5-2.468 5.5-5.5-2.467-5.5-5.5-5.5z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M17.5 21a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 1 0v6a.5.5 0 0 1-.5.5z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M20.5 18h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+            <h2 class="count-num">1.3K+</h2>
+            <h6 class="count-title">Happy Members</h6>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="count-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M9.02 21H2.5A2.503 2.503 0 0 1 0 18.5v-16C0 1.121 1.122 0 2.5 0h12C15.878 0 17 1.121 17 2.5v6.06a.5.5 0 0 1-1 0V2.5c0-.827-.673-1.5-1.5-1.5h-12C1.673 1 1 1.673 1 2.5v16c0 .827.673 1.5 1.5 1.5h6.52a.5.5 0 0 1 0 1z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M13.5 9h-10a.5.5 0 0 1 0-1h10a.5.5 0 0 1 0 1zM9.5 13h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1zM8.5 5h-5a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1zM17.5 24c-3.584 0-6.5-2.916-6.5-6.5s2.916-6.5 6.5-6.5 6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5zm0-12c-3.033 0-5.5 2.468-5.5 5.5s2.467 5.5 5.5 5.5 5.5-2.468 5.5-5.5-2.467-5.5-5.5-5.5z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M17.5 21a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 1 0v6a.5.5 0 0 1-.5.5z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path><path d="M20.5 18h-6a.5.5 0 0 1 0-1h6a.5.5 0 0 1 0 1z" fill="#b9d9d1" opacity="1" data-original="#000000" class=""></path></g></svg>
+            </div>
+            <h2 class="count-num">20+</h2>
+            <h6 class="count-title">Events Organized</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-news" style="--sectionimage: url(../img/image1.jpg)">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-12 col-lg-5">
+            <div class="card news-card">
+              <div class="card-header">
+                <h3 class="section-title">ARIA in the News</h3>
+              </div>
+              <div class="card-body">
+                <div class="swiper" id="NewsSwiper">
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="card newsitem">
+                        <div class="card-body">
+                          <div class="newsitem-meta">
+                            <p class="newsitem-timestamp">May 9, 2024</p>
+                            <p class="newsitem-author">Harsh Roongta</p>
+                          </div>
+                          <h6 class="newsitem-title">Retirement: Embrance Holistic Planning</h6>
+                          <p class="newsitem-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum officia enim nemo unde provident accusantium facere, maiores veritatis doloremque dolore odit sint consectetur quaerat, autem illo, alias corrupti laboriosam.</p>
+                          
+                          <button class="btn btn-fadedprimary">Read More</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card newsitem">
+                        <div class="card-body">
+                          <div class="card newsitem">
+                            <div class="card-body">
+                              <div class="newsitem-meta">
+                                <p class="newsitem-timestamp">May 9, 2024</p>
+                                <p class="newsitem-author">John Doe</p>
+                              </div>
+                              <h6 class="newsitem-title">After Life Planning to Die</h6>
+                              <p class="newsitem-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum officia enim nemo unde provident accusantium facere, maiores veritatis doloremque dolore odit sint consectetur quaerat, autem illo, alias corrupti laboriosam.</p>
+                              
+                              <button class="btn btn-fadedprimary">Read More</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card newsitem">
+                        <div class="card-body">
+                          <div class="card newsitem">
+                            <div class="card-body">
+                              <div class="newsitem-meta">
+                                <p class="newsitem-timestamp">May 9, 2024</p>
+                                <p class="newsitem-author">Harsh Roongta</p>
+                              </div>
+                              <h6 class="newsitem-title">Retirement: Embrance Holistic Planning</h6>
+                              <p class="newsitem-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum officia enim nemo unde provident accusantium facere, maiores veritatis doloremque dolore odit sint consectetur quaerat, autem illo, alias corrupti laboriosam.</p>
+                              
+                              <button class="btn btn-fadedprimary">Read More</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev text-secondary"></div>
+                  <div class="swiper-button-next"></div>
+
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading">
+              <h3 class="section-title">Our Partners</h3>
+              <h6 class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, consequatur, eos. Nesciunt quam veniam, sapiente dolore voluptates deleniti delectus nostrum quaerat fuga minus nulla excepturi quis commodi ipsum explicabo neque!</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">  
+          <div class="col-12">
+            <h6 class="partnerplan-title">Platinum Partners</h6>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">  
+          <div class="col-12">
+            <h6 class="partnerplan-title">Gold Partners</h6>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="row">  
+          <div class="col-12">
+            <h6 class="partnerplan-title">Silver Partners</h6>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="partnerlogo">
+              <img class="partnerlogo-image" src="img/sbi.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-heading">
+              <h3 class="section-title">Clients Says</h3>
+              <h6 class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, consequatur, eos. Nesciunt quam veniam, sapiente dolore voluptates deleniti delectus nostrum quaerat fuga minus nulla excepturi quis commodi ipsum explicabo neque!</h6>
+            </div>
+          </div>
+          <div class="col-12  col-lg-10">
+            
+            <div class="swiper" id="TestimonialSwiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="card testimonial-card">
+                    <div class="card-body">
+                      <div class="testi-item">
+                        <div class="testi-quote">
+                          <i class="bi bi-quote"></i>
+                        </div>
+                        <div class="testi-content">
+                          <h6 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Alias quia ab tempore ut soluta neque totam esse. Reprehenderit qui modi, adipisci repudiandae velit cumque molestiae nobis laudantium! Et, inventore, omnis?</h6>
+                          <div class="testi-profile">
+                            <div class="testi-pic">
+                              <img src="img/blank-profile-picture.png" alt="">
+                            </div>  
+                            <div class="test-profile-content">
+                              <div class="testi-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                              </div>
+                              <h6 class="testi-user">Uday Ghoot</h6>
+                              <h6 class="testi-designation">Partners in Google </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card testimonial-card">
+                    <div class="card-body">
+                      <div class="testi-item">
+                        <div class="testi-quote">
+                          <i class="bi bi-quote"></i>
+                        </div>
+                        <div class="testi-content">
+                          <h6 class="testi-text">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque, odio tempore asperiores quam sit, voluptatibus rerum nostrum blanditiis tempora architecto iste natus. Ea distinctio, magni atque a molestias eaque? ipsum dolor sit amet, consectetur adipisicing, elit. Alias quia ab tempore ut soluta neque totam esse. Reprehenderit qui modi, adipisci repudiandae velit cumque molestiae nobis laudantium! Et, inventore, omnis?</h6>
+                          <div class="testi-profile">
+                            <div class="testi-pic">
+                              <img src="img/blank-profile-picture.png" alt="">
+                            </div>  
+                            <div class="test-profile-content">
+                              <div class="testi-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                              </div>
+                              <h6 class="testi-user">Uday Ghoot</h6>
+                              <h6 class="testi-designation">Partners in Google </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card testimonial-card">
+                    <div class="card-body">
+                      <div class="testi-item">
+                        <div class="testi-quote">
+                          <i class="bi bi-quote"></i>
+                        </div>
+                        <div class="testi-content">
+                          <h6 class="testi-text">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Nemo culpa voluptas ducimus incidunt corrupti odit minima doloribus eius non itaque, quae et amet pariatur, labore dolor. </h6>
+                          <div class="testi-profile">
+                            <div class="testi-pic">
+                              <img src="img/blank-profile-picture.png" alt="">
+                            </div>  
+                            <div class="test-profile-content">
+                              <div class="testi-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                              </div>
+                              <h6 class="testi-user">Uday Ghoot</h6>
+                              <h6 class="testi-designation">Partners in Google </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev text-secondary"></div>
+              <div class="swiper-button-next"></div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="footer-top-inner">
+            <div class="row">
+              <div class="col-lg-4 col-12">
+                <div class="footer-about-widget">
+                  <div class="footer-logo">
+                    <a class="logo" href="index.html"><img src="img/ARIA-logo_new.png" class="img-fluid"></a>
+                  </div>
+                  <p class="footer-about-widget_desc">The Association of Registered Investment Advisers (ARIA) was born out of the need to support the development of the investment adviser community post the introduction of the investment advisor regulations of SEBI in 2013.</p>
+                  <ul class="social-list">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i></i></a></li>
+                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-6">
+                <div class="widget-nav_menu">
+                  <h3 class="widget-title">About</h3>
+                  <ul class="widget-nav_menu-links">
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Intent</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">ARIA Board</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Committees</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Chapters</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Our Partners</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Testimonials</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Careers</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Stakeholders</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-6">
+                <div class="widget-nav_menu">
+                  <h3 class="widget-title">News/Events</h3>
+                  <ul class="widget-nav_menu-links">
+                    <li class="menu-item">
+                      <a href="" class="menu-link">ARIA Summit</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Summit Recordings</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">ARIA News</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Events Upcoming & Posts</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">News & Interest</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Newsletter</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">SEBI Communications</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Workshops</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="footer-about-widget">
+                  <p class="footer-about-widget_desc mt-0 mb-3 text-secondary">Subscribe to our Newsletter to Receive news, updates, free stuff and new releases by email</p>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control form-control-lg" placeholder="enter email address">
+                      <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>  
           </div>
-        </footer>
-    </main>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright__inner">
+                <p class="copyright-text">Copyright @202 All rights reserved</p>
+                <ul class="foot-links">
+                  <li><a href="#">Legal Disclaimer</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Cancellation Policy</a></li>
+                  <li>Credits : GeoCircle</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>  
+    </div>
+  </footer>
+</main>
 
-    <!-- Jquery -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+<!-- LOGGED IN MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Jquery -->
+<script src="js/jquery-3.7.1.min.js"></script>
 
-    <!-- Slider JS -->
-    <script src="js/owl.carousel.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+<script>
+const aboutswiper = new Swiper('#AboutSwiper', {
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});
+
+const newsswiper = new Swiper('#NewsSwiper', {
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+const testimonialswiper = new Swiper('#TestimonialSwiper', {
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+
+
+</script>
 
 
 </body>
