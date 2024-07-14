@@ -21,13 +21,11 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-header navbar-expand-xl fixed-top" id="navbarHeader">
     <div class="container-xl">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
-            <i class="bi bi-text-left"></i>
-        </button>
+       
         <a class="navbar-brand" href="#">
             <img src="img/ARIA-logo_new.png" class="img-fluid" alt="">
         </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title">Navigation</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -85,9 +83,23 @@
               <i class="bi bi-search fs-5"></i>
             </button>
 
-            <div class="dropdown">
+            <!-- <div class="dropdown">
               <button class="btn btn-primary btn-search rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-bell fs-5"></i>
+                <i class="bi bi-search fs-5"></i>
+              </button>
+              <div class="dropdown-menu dropdown-searchbar">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control form-control-lg" placeholder="search here">
+                    <button class="btn btn-primary"><i class="bi bi-search fs-5"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="dropdown">
+              <button class="btn btn-link text-dark btn-search rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-bell fs-4"></i>
               </button>
               <ul class="dropdown-menu dropdown-menu-end shadow-sm">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -96,10 +108,13 @@
               </ul>
             </div>
             <!-- <button class="btn btn-primary">Login</button> -->
-            <a href="javascript:void(0)" class="account-user-avatar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
-              <img src="img/blank-profile-picture.png" class="img-fluid" alt="">
+            <a href="javascript:void(0)" class="account-user-avatar rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+              <img src="img/amit.jpg" class="img-fluid" alt="">
             </a>
           </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
+            <i class="bi bi-text-left"></i>
+          </button>
         </div>
     </div>
 </nav>
@@ -426,7 +441,7 @@
   <div class="offcanvas-header">
     <div class="user-profilearea">
       <div class="user-profilepic">
-        <img src="img/blank-profile-picture.png" class="img-fluid" alt="">
+        <img src="img/amit.jpg" class="img-fluid" alt="">
       </div>
       <h5 class="user-fullname">Amit Kukreja</h5>
       <h6 class="user-designation">Past & Current Treasurer</h6>
@@ -522,8 +537,12 @@ const aboutswiper = new Swiper('#EventsSwiper', {
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 30,
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 20,
     },
   },
 });  

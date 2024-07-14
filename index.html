@@ -21,13 +21,10 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-header navbar-expand-xl fixed-top" id="navbarHeader">
     <div class="container-xl">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
-            <i class="bi bi-text-left"></i>
-        </button>
         <a class="navbar-brand" href="#">
             <img src="img/ARIA-logo_new.png" class="img-fluid" alt="">
         </a>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title">Navigation</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -82,13 +79,16 @@
         <div class="navbar-right">
           <div class="nav-link-account">
             <button class="btn btn-primary btn-search rounded-circle">
-              <i class="bi bi-search fs-5"></i>
+              <i class="bi bi-search fs-6"></i>
             </button>
-            <a href="dashboard.html" class="btn btn-primary rounded-pill">Login</a>
+            <a href="dashboard.html" class="btn btn-outline-primary rounded-pill px-4">Sign In</a>
             <!-- <a href="javascript:void(0)" class="account-user-avatar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
               <img src="img/blank-profile-picture.png" class="img-fluid" alt="">
             </a> -->
           </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
+              <i class="bi bi-text-left"></i>
+          </button>
         </div>
     </div>
 </nav>
@@ -692,7 +692,11 @@ const aboutswiper = new Swiper('#AboutSwiper', {
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 30,
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 20,
     },
   },
 });
