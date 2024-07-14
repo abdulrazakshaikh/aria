@@ -39,6 +39,7 @@
 	--letterspacing-medium : 0.10rem;
 	--letterspacing-large : 0.15rem;
 	--bodytext-size : 1rem;
+	--bodytextmedium-size : 1.275rem;
 	--bodytextlarge-size : 1.5rem;
 
 
@@ -139,12 +140,12 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
     /* padding-top: var(--navbarheader-height); */
 }
 .mainheadwrapper .section-heading{padding: 3.5rem 0;}
-.section{padding: var(--navbarheader-height) 1rem;}
+.section{padding: 6rem 1rem;}
 .page-heading, .section-heading{display: flex;	justify-content: space-between;	flex-direction: column;	margin-bottom: 2rem;}
-.section-title{font-family: var(--secondaryfont); font-weight: 600; color: var(--sectiontitle-color); font-size: 2.375rem; line-height: normal;}
+.section-title{font-family: var(--secondaryfont); font-weight: 500; color: var(--sectiontitle-color); font-size: 2.375rem; line-height: normal;}
 .section-subtitle{line-height: normal;font-weight: 400;color: var(--textlight-color); font-size: 1rem;margin: 0;}
 
-.page-title{font-family: var(--secondaryfont); font-weight: 600; color: var(--pagetitle-color); font-size: 2.75rem; line-height: normal;
+.page-title{font-family: var(--secondaryfont); font-weight: 300; color: var(--pagetitle-color); font-size: 2.75rem; line-height: normal;
 	letter-spacing: var(--letterspacing-medium);
 }
 .page-heading .breadcrumb{--bs-breadcrumb-divider-color: var(--onprimary);--bs-breadcrumb-item-active-color : rgba(255,255,255,0.8);}
@@ -153,10 +154,14 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 .page-heading .breadcrumb .breadcrumb-item a:hover{text-decoration: underline}
 .breadcrumb-item+.breadcrumb-item::before{font-family: bootstrap-icons;}
 @media (max-width: 767.98px){
-	.section{padding: 2rem 1rem;}
+	.section{padding: 2rem 0.5rem;}
+	.section-title{font-size: 2rem}
+	.section-subtitle{font-size: 0.85rem}
 }
 @media (max-width: 576.98px){
 	.section-heading{flex-direction: column; align-items: center; gap: 1rem; text-align: center;}
+	.section-title{font-size: 1.75rem}
+	.section-subtitle{font-size: 0.75rem}
 }
 /*============================== COMMON START ===============================*/
 .btn{
@@ -292,8 +297,8 @@ hr {border-top-color: var(--border-color) !important; opacity: 1 !important;}
     box-shadow: var(--boxshadow);
 }
 .card{
-	--bs-card-border-radius: 0px;
-	--bs-card-inner-border-radius: 0px;
+	--bs-card-border-radius: 0.75rem;
+	--bs-card-inner-border-radius: 0.75rem;
 	--bs-card-cap-bg : transparent;
 }
 .card.ariacard{
@@ -315,7 +320,7 @@ hr {border-top-color: var(--border-color) !important; opacity: 1 !important;}
     font-weight: bold;
     color: var(--sectiontitle-color);
     letter-spacing: var(--letterspacing-medium);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: normal;
 }
 .card.ariacard .card-header .card-title .text-primary{
@@ -323,6 +328,17 @@ hr {border-top-color: var(--border-color) !important; opacity: 1 !important;}
 }
 .card.ariacard .card-header .card-action{}
 .card.ariacard .card-body{}
+
+.itemtitle{
+	font-size: var(--bodytextmedium-size);
+	letter-spacing: var(--letterspacing-small);
+}
+.itemdesc{
+	font-size: var(--bodytext-size);
+	letter-spacing: var(--letterspacing-small);
+	font-weight: 400;
+	line-height: 1.4;
+}
 /*=============================== COMMON END ================================*/
 
 /*------------------------------SCROLLBAR START------------------------------*/
@@ -427,7 +443,9 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 
 /*--------------------------- NAVBAR HEADER START ---------------------------*/
 .navbar-header{
-	min-height: var(--navbarheader-height); width: 100%;
+	--iconbutton-height: 48px;
+	--iconbutton-width: 48px;
+	height: var(--navbarheader-height); width: 100%;
 /*	border-bottom: 1px solid var(--border-color);*/
 	position: relative;
 	padding: 0px;
@@ -445,7 +463,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .navbar-header.fixed-header{position: fixed; top: 0; padding: 0; min-height: calc(var(--navbarheader-height) - 10px);
 	background: var(--navbar-bgcolor);box-shadow: var(--boxshadow);}
 .navbar-header .navbar-toggler{background-color: rgba(var(--primary-rgb), 0.1);
-	width: 48px; height: 48px; outline: 0; padding: 0; border: 2px solid rgba(var(--primary-rgb), 0.3); border-radius: 0.375rem;
+	width: var(--iconbutton-width); height: var(--iconbutton-height); outline: 0; padding: 0; border: 2px solid rgba(var(--primary-rgb), 0.3); border-radius: 0.375rem;
 	font-size: 1.75rem; color: var(--primary); box-shadow: none;
 }
 .navbar-header .navbar-brand{
@@ -475,7 +493,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .navbar-header .navbar-brand img{width: 100%; height: 100%; object-fit: contain; z-index: 9;transition: all 0.2s linear;}
 .navbar-header .navbar-right{display: flex; gap: 0.5rem}
 .navbar-header .navbar-right .btn{height: 48px; display: flex; align-items: center; justify-content: center;}
-.navbar-header .navbar-right .btn-search{width: 48px; height: 48px;}
+.navbar-header .navbar-right .btn-search{width: var(--iconbutton-width); height: var(--iconbutton-height);}
 .navbar-header .navbar-right .nav-link-account{
 	padding: 0 0 0 var(--nav-spacing); min-width: 32px; position: relative; 
 	display: flex; align-items: center; padding-left: 1rem; gap: 1rem;
@@ -483,7 +501,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 
 .navbar-header .navbar-right .nav-link-account:after{display: none;}
 .nav-link-account .account-user-inner {padding: 0 0.5rem; display: flex; flex-direction: column; row-gap: 0.15rem; width: 140px}
-.nav-link-account .account-user-avatar {width: 48px; height: 48px; overflow: hidden; border-radius: 0.35rem}
+.nav-link-account .account-user-avatar {width: var(--iconbutton-width); height: var(--iconbutton-height); overflow: hidden; border-radius: 0.35rem}
 .nav-link-account .account-user-avatar img{width:  100%; height:  100%; object-fit:  cover}
 .nav-link-account .account-title{
 	font-size: 0.95rem; font-weight: 600; color: var(--text-color); letter-spacing: var(--letterspacing-medium);
@@ -511,11 +529,16 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 
 @media (min-width: 1200px){}
 @media (max-width: 1199.98px){
+	.navbar-header{
+		--iconbutton-height: 42px;
+		--iconbutton-width: 42px;
+		height: calc(var(--navbarheader-height) - 15px);
+	}
 	.navbar-header.fixed-header {
-		border-radius: 0.375rem; min-height: calc(var(--navbarheader-height) - 25px);
+		border-radius: 0 ; min-height: calc(var(--navbarheader-height) - 25px);
 	}
 	.navbar-header .navbar-brand{
-		height: calc(var(--navbarheader-height) - 25px); width: 100px;
+		height: calc(var(--navbarheader-height) - 25px); width: 125px;
 	}
 	.navbar-header.fixed-header .navbar-brand{
 		height: calc(var(--navbarheader-height) - 40px); width: 125px;
@@ -543,10 +566,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	.navbar-header .navbar-right .nav-link-account{border-left: 1px solid var(--border-color);}
 }
 @media (max-width: 990.98px){
-	
-/*	.navbar-header .navbar-brand{width: 120px;}*/
-	
-
+	/*	.navbar-header .navbar-brand{width: 120px;}*/
 }
 @media (max-width: 767.98px){}
 @media (max-width: 576.98px){
@@ -755,11 +775,24 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	font-size: 1rem;
 	color: #ffaa07;
 }
-
-@media (max-width: 567.98px){
-	.about-card{
-		padding: 2rem 0;
+@media (max-width: 990.98px){
+	.hero-carousel .carousel-caption{
+		left: 0;
+		right: 0;
 	}
+}
+
+@media (max-width: 767.98px){
+	.section-about{top: 0px}
+	.testimonial-card .testi-item{flex-direction: column;}
+	.hero-carousel .carousel-caption .caption-title{font-size: 2.25rem}
+	.carousel.hero-carousel .carousel-inner .carousel-item{height: 90vh}
+	.hero-carousel .carousel-caption .btn{padding: 0.5rem 0.85rem; font-size: .75rem}
+
+}
+@media (max-width: 567.98px){
+	.about-card{padding: 2rem 0;}
+	.hero-carousel .carousel-caption .caption-title{font-size: 1.75rem}
 }
 /*------------------------------ HOMEPAGE END -------------------------------*/
 
@@ -930,3 +963,30 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	.list-group-forum .list-group-item .forum-action{width: 100%;}
 }
 /*------------------------------ DASHBOARD END ------------------------------*/
+
+/*------------------------------- ABOUT START -------------------------------*/
+.about-image{
+	height: 350px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 0.75rem;
+	box-shadow: var(--boxshadow);
+}
+.about-image img{
+	width: 100%; height: 100%; object-fit: cover;
+}
+.memberbene-icon{
+	width: 48px;
+	height: 48px;
+	border-radius: 0.375rem;
+	overflow: hidden;
+	border: 1px solid var(--primarylight);
+	color: var(--primarylight);
+	background-color: rgba(var(--primary-rgb), 0.1);
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.memberbene-icon i{}
+/*------------------------------- ABOUT END -------------------------------*/
