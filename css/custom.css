@@ -157,6 +157,7 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 	.section{padding: 2rem 0.5rem;}
 	.section-title{font-size: 2rem}
 	.section-subtitle{font-size: 0.85rem}
+	.section{padding: 2rem 1rem;}
 }
 @media (max-width: 576.98px){
 	.section-heading{flex-direction: column; align-items: center; gap: 1rem; text-align: center;}
@@ -166,7 +167,7 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 /*============================== COMMON START ===============================*/
 .btn{
 	--bs-btn-focus-box-shadow : none;
-	font-size: .85rem; font-weight: 500; white-space: nowrap; padding: 0.5rem 0.85rem;
+	font-size: 1rem; font-weight: 500; white-space: nowrap; padding: 0.5rem 0.85rem;
 	letter-spacing: var(--letterspacing-small); outline: none;
 	position: relative;
 	overflow: hidden;
@@ -324,7 +325,7 @@ hr {border-top-color: var(--border-color) !important; opacity: 1 !important;}
     line-height: normal;
 }
 .card.ariacard .card-header .card-title .text-primary{
-	color: var(--primarylight) !important;
+	color: var(--primary) !important;
 }
 .card.ariacard .card-header .card-action{}
 .card.ariacard .card-body{}
@@ -636,7 +637,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	--swiper-navigation-top-offset: auto;
 	--swiper-navigation-color : var(--primarylight);
 }
-.swiper-wrapper{padding-bottom: 5rem;}
+/* .swiper-wrapper{padding-bottom: 5rem;} */
 .swiper-button-prev, .swiper-button-next{bottom: 10px;}
 .swiper-button-prev{left: auto; right: 80px;}
 .swiper-button-prev:after,.swiper-button-next:after{font-family: bootstrap-icons;}
@@ -706,7 +707,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .newsitem .newsitem-title{color: var(--primary);font-size: 1.75rem;font-weight: 300;}
 .newsitem .newsitem-subtitle{color: var(--text-color);font-size: var(--bodytext-size);font-weight: 400;}
 .partnerlogo{width: 100%;height: 120px;}
-.partnerlogo .partnerlogo-image{width: 100%; height: 100%;	object-fit: contain;}
+.partnerlogo .partnerlogo-image{width: 70%; height: 100%;	object-fit: contain;}
 .partnerplan-title{color: var(--primary); font-weight: 600; font-size: 1.15rem; letter-spacing: var(--letterspacing-medium);}
 .section-testimonials{background-color: #F0F9F8;}
 .section-testimonials{background-color: #F0F9F8;}
@@ -779,10 +780,10 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	color: #ffaa07;
 }
 @media (max-width: 990.98px){
-	.hero-carousel .carousel-caption{
-		left: 0;
-		right: 0;
-	}
+	.hero-carousel .carousel-caption{left: 0; right: 0;}
+	.count-icon{width: 64px; height: 64px}
+	.count-num{font-size: 2rem}
+	.count-title{font-size: 1rem}
 }
 
 @media (max-width: 767.98px){
@@ -804,7 +805,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 @media (min-width: 1200px) {
 	.sidebar{
 		--bs-offcanvas-width: 350px;
-		position: fixed;
+		/* position: fixed; */
 	    left: 0;
 	    width: calc(100% - 75%);
 	    top: 100px;
@@ -825,7 +826,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 @media (min-width: 1400px) {
 	.sidebar{
 		--bs-offcanvas-width: 350px;
-		position: fixed;
+		/* position: fixed; */
 	    left: 0;
 	    width: calc(100% - 83.33333333%);
 	    top: 100px;
@@ -854,7 +855,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 }
 .user-profilearea .badge{
 	margin: 1rem 0;
-	padding: 0.25rem 0.75rem;
+	padding: 0.3rem 0.75rem 0.25rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: var(--letterspacing-large);
