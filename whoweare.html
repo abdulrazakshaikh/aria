@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>Dashboard</title>
+    <title>About</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,7 +14,6 @@
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
- 
 </head>
 
 <body>
@@ -22,7 +21,6 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-header navbar-expand-xl fixed-top" id="navbarHeader">
     <div class="container-fluid">
-       
         <a class="navbar-brand" href="#">
             <img src="img/ARIA-logo_new.png" class="img-fluid" alt="">
         </a>
@@ -40,12 +38,12 @@
                       </a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#!" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="bi bi-file-earmark-person-fill"></i>
                       <span>About us</span>
                     </a>
                     <ul class="dropdown-menu dropdown">
-                      <li><a class="dropdown-item" href="whoweare.html">Who we are</a></li>
+                      <li><a class="dropdown-item active" href="whoweare.html">Who we are</a></li>
                       <li><a class="dropdown-item" href="#!">Intent</a></li>
                       <li><a class="dropdown-item" href="#!">ARIA Board</a></li>
                       <li><a class="dropdown-item" href="#!">Committee/Sub-Committees</a></li>
@@ -237,10 +235,6 @@
         </div>
         <div class="navbar-right">
           <div class="nav-link-account">
-            <!-- <button class="btn btn-primary btn-search rounded-circle">
-              <i class="bi bi-search fs-5"></i>
-            </button> -->
-
             <div class="dropdown">
               <button class="btn btn-primary btn-search rounded-circle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
                 <i class="bi bi-search fs-5"></i>
@@ -254,431 +248,350 @@
                 </div>
               </div>
             </div>
-
-            <div class="dropdown">
-              <button class="btn btn-link text-dark btn-search rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-bell fs-4"></i>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-            <!-- <button class="btn btn-primary">Login</button> -->
-            <a href="javascript:void(0)" class="account-user-avatar rounded-circle d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
-              <img src="img/amit.jpg" class="img-fluid" alt="">
-            </a>
+            <a href="dashboard.html" class="btn btn-outline-primary rounded-pill px-4">Sign In</a>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
-            <i class="bi bi-text-left"></i>
+              <i class="bi bi-text-left"></i>
           </button>
         </div>
     </div>
 </nav>
 
 <main class="mainwrapper">
-  
-
-<div class="container-fluid p-0">
-  <div class="row g-0 justify-content-end">
-    <div class="sidebar col">
-      <div class="aside offcanvas-xl offcanvas-end" tabindex="-1" id="offcanvasRight">
-        <div class="offcanvas-header">
-          <div class="user-profilearea">
-            <div class="user-profilepic">
-              <img src="img/amit.jpg" class="img-fluid" alt="">
-            </div>
-            <h5 class="user-fullname">Amit Kukreja</h5>
-            <h6 class="user-designation">Past & Current Treasurer</h6>
-            <span class="badge text-bg-primary rounded-pill">Individual</span>
-            <ul class="social-list">
-              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-              <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
-              <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="offcanvas-body px-0 scroll-list">
-          <div class="list-group list-group-flush navlink-listgroup">
-            <a href="#" class="list-group-item list-group-item-action active">
-              <i class="bi bi-grid-1x2 icon"></i>
-              Dashboard
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <i class="bi bi-person-circle icon"></i>
-              My Profile
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <i class="bi bi-person-gear icon"></i>
-              My Account
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <i class="bi bi-file-earmark-text icon"></i>
-              My Articles
-              </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <i class="bi bi-calendar4-week icon"></i>
-              Events Attended
-              </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <i class="bi bi-suitcase-lg icon"></i>
-              My Job Lists
-              </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <i class="bi bi-box-arrow-right icon"></i>
-              Logout
-              </a>
-          </div>
-          
-          <div class="membership-item">
-            <div class="membership-item-icon">
-              <i class="bi bi-hourglass icon"></i>
-              
-            </div>
-            <div class="membership-item-content">
-              <p class="membership-item-title">3 years of Membership</p>
+  <section class="mainheadwrapper" style="--pageheaderimage: url(../img/inner-banner.jpg)">
+    <div class="mainheader-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="page-heading mb-0">
+            <div class="page-content">
+              <h2 class="page-title mb-0">Who We Are</h2>
+              <!-- <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+              </nav> -->
             </div>
           </div>
-          <div class="membership-item">
-            <div class="membership-item-icon orange">
-              <i class="bi bi-hourglass icon"></i>
-            </div>
-            <div class="membership-item-content">
-              <p class="membership-item-title">Membership Subscription</p>
-              <p class="membership-item-subtitle">20days left</p>
-            </div>
-          </div>
-          
         </div>
       </div>
     </div>
-    <div class="col-12 col-xl-9 col-xxl-10">
-      <section class="mainheadwrapper" style="--pageheaderimage: url(../img/inner-banner.jpg)">
-        <div class="mainheader-overlay">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="page-heading mb-0">
-                <div class="page-content">
-                  <h2 class="page-title mb-0">Dashboard</h2>
-                  <!-- <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                    </ol>
-                  </nav> -->
+    </div>
+  </section>
+  <div class="mainbodywrapper bg-light">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-12">
+          <div class="row g-4 d-flex align-item-center">
+            <div class="col-12 col-lg-5">
+              <div class="about-image">
+                <img src="img/dummy2.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-lg-7">
+              <p class="itemdesc">The Association of Registered Investment Advisers ( ARIA ) was born out of the need to support the development of the investment adviser community post the introduction of the investment advisor regulations by SEBI in 2013. ARIA was set up as a part of the inaugural RIA summit in 2017 from where a RIA Task force emerged, to enable the development of the RIA profession, and bring it to the standards of other established professions that have been in existence since multiple decades. The RIA Taskforce, over a period of meeting for two years, interacted with various stakeholders has morphed into a formal body under section 8 of the Companies Act 2013 a company limited by guarantee, in January 2019. ARIA members come from different parts of the country and are a mix of individuals, corporates and institutions and are focussed on doing what is right for the investor without conflict of interest, and high levels of disclosure.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card ariacard">
+            <div class="card-header pb-0">
+              <h6 class="card-title"><span class="text-primary">Member </span> Benefits</h6>
+            </div>
+            <div class="card-body">
+              <div class="row g-3">
+                <div class="col-12 col-lg-4">
+                  <div class="card ">
+                    <div class="card-body">
+                      <div class="memberbene-icon mt-3 mb-1"><i class="bi bi-journal-text"></i></div>
+                      <h6 class="itemtitle">Accredited Education</h6>
+                      <p class="itemdesc mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card ">
+                    <div class="card-body">
+                      <div class="memberbene-icon mt-3 mb-1"><i class="bi bi-journal-text"></i></div>
+                      <h6 class="itemtitle">HelpSafe the Profession</h6>
+                      <p class="itemdesc mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card ">
+                    <div class="card-body">
+                      <div class="memberbene-icon mt-3 mb-1"><i class="bi bi-journal-text"></i></div>
+                      <h6 class="itemtitle">Annual Conference</h6>
+                      <p class="itemdesc mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card ">
+                    <div class="card-body">
+                      <div class="memberbene-icon"><i class="bi bi-journal-text"></i></div>
+                      <h6 class="itemtitle mt-3 mb-1">Professional Development</h6>
+                      <p class="itemdesc mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card ">
+                    <div class="card-body">
+                      <div class="memberbene-icon"><i class="bi bi-journal-text"></i></div>
+                      <h6 class="itemtitle mt-3 mb-1">CPD Store</h6>
+                      <p class="itemdesc mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card ">
+                    <div class="card-body">
+                      <div class="memberbene-icon"><i class="bi bi-journal-text"></i></div>
+                      <h6 class="itemtitle mt-3 mb-1">Membership</h6>
+                      <p class="itemdesc mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
-      </section>
-      <div class="mainbodywrapper bg-light">
-        <div class="container-fluid">
-          <div class="row g-5">
-            <div class="col-12">
-              <div class="card ariacard">
-                <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">Upcoming</span> Events</h6>
-                  <div class="card-action">
-                    
-                  </div>
+        <section class="section section-testimonials">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="section-heading">
+                  <h3 class="section-title">Testimonials</h3>
                 </div>
-                <div class="card-body">
-                  <div class="swiper" id="EventsSwiper">
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div class="about-image">
+                  <img src="img/testimonials.jpg" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-12 col-lg-7">
+                
+                <div class="swiper" id="TestimonialSwiper">
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="card testimonial-card">
+                        <div class="card-body">
+                          <div class="testi-item">
+                            <div class="testi-quote">
+                              <i class="bi bi-quote"></i>
                             </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy2.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
+                            <div class="testi-content">
+                              <h6 class="testi-text">
+                                The best of practitioners are behind ARIA events, which is why ARIA events are insightful, thought-provoking, and filled with practical ideas. ARIA provides the right ecosystem to foster mutual growth for all RIAs and further the cause for the end clients!
+                              </h6>
+                              <div class="testi-profile">
+                                <div class="testi-pic">
+                                  <img src="img/UdayDoot-120x120.jpg" class="rounded-circle" alt="">
+                                </div>  
+                                <div class="test-profile-content">
+                                 
+                                  <h6 class="testi-user">Uday Ghoot</h6>
+                                  <h6 class="testi-designation">Partners in Google </h6>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy2.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="swiper-button-prev text-secondary"></div>
-                    <div class="swiper-button-next"></div> -->
+                    <div class="swiper-slide">
+                      <div class="card testimonial-card">
+                        <div class="card-body">
+                          <div class="testi-item">
+                            <div class="testi-quote">
+                              <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="testi-content">
+                              <h6 class="testi-text">What I like about ARIA is the effort taking by the managing committee in hosting regular interactions among RIAs on various topics related to our practice and the high-quality interactions that it facilitates. I would recommend every RIA to be part of this wonderful family to help grow our fraternity and create visibility of RIAs among the masses.</h6>
+                              <div class="testi-profile">
+                                <div class="testi-pic">
+                                  <img src="img/Steven_Fernandes-120x120.jpg" class="rounded-circle" alt="">
+                                </div>  
+                                <div class="test-profile-content">
+                                  
+                                  <h6 class="testi-user">Steven Fernandes</h6>
+                                  <h6 class="testi-designation">Founder & Chief Planner, Proficient Financial Planners</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card testimonial-card">
+                        <div class="card-body">
+                          <div class="testi-item">
+                            <div class="testi-quote">
+                              <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="testi-content">
+                              <h6 class="testi-text">Mid-November 2021, I attended a wonderful virtual event organized by ARIA. While one has been part of many events, the ARIA event had something special. The content was well-curated and the event organizers could bring novel and interesting perspectives from the esteemed speakers. I personally enjoyed the sessions and there were quite a few takeaways, too.</h6>
+                              <div class="testi-profile">
+                                <div class="testi-pic">
+                                  <img src="img/Amite-Trivedi-120x120.jpg" class="rounded-circle" alt="">
+                                </div>  
+                                <div class="test-profile-content">
+                                  
+                                  <h6 class="testi-user">Amit Trivedi</h6>
+                                  <h6 class="testi-designation">Author, Speaker and Trainer</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev text-secondary"></div>
+                  <div class="swiper-button-next"></div>
+      
+                </div>
+      
+              </div>
+              
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="footer-top-inner">
+            <div class="row">
+              <div class="col-lg-4 col-12">
+                <div class="footer-about-widget">
+                  <div class="footer-logo">
+                    <a class="logo" href="index.html"><img src="img/ARIA-logo_new.png" class="img-fluid"></a>
+                  </div>
+                  <p class="footer-about-widget_desc">The Association of Registered Investment Advisers (ARIA) was born out of the need to support the development of the investment adviser community post the introduction of the investment advisor regulations of SEBI in 2013.</p>
+                  <ul class="social-list">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i></i></a></li>
+                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div class="col-12">
-              <div class="card ariacard">
-                <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">My </span> Forum</h6>
-                  <div class="card-action">
-                    <button class="btn btn-primary">Create Forum</button>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-forum">
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Investors</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
+              <div class="col-lg-2 col-6">
+                <div class="widget-nav_menu">
+                  <h3 class="widget-title">About</h3>
+                  <ul class="widget-nav_menu-links">
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Intent</a>
                     </li>
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Partnership Firm</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">ARIA Board</a>
                     </li>
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Long Long Text Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Finance Tips</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Committees</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Chapters</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Our Partners</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Testimonials</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Careers</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Stakeholders</a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
+              <div class="col-lg-2 col-6">
+                <div class="widget-nav_menu">
+                  <h3 class="widget-title">News/Events</h3>
+                  <ul class="widget-nav_menu-links">
+                    <li class="menu-item">
+                      <a href="" class="menu-link">ARIA Summit</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Summit Recordings</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">ARIA News</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Events Upcoming & Posts</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">News & Interest</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Newsletter</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">SEBI Communications</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Workshops</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="footer-about-widget">
+                  <p class="footer-about-widget_desc mt-0 mb-3 text-secondary">Subscribe to our Newsletter to Receive news, updates, free stuff and new releases by email</p>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control form-control-lg" placeholder="enter email address">
+                      <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="row g-3">
-            <div class="col-12">
-              <div class="footer-top-inner">
-                <div class="row">
-                  <div class="col-lg-4 col-12">
-                    <div class="footer-about-widget">
-                      <div class="footer-logo">
-                        <a class="logo" href="index.html"><img src="img/ARIA-logo_new.png" class="img-fluid"></a>
-                      </div>
-                      <p class="footer-about-widget_desc">The Association of Registered Investment Advisers (ARIA) was born out of the need to support the development of the investment adviser community post the introduction of the investment advisor regulations of SEBI in 2013.</p>
-                      <ul class="social-list">
-                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                        <li><a href="#"><i class="bi bi-twitter-x"></i></i></a></li>
-                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 col-6">
-                    <div class="widget-nav_menu">
-                      <h3 class="widget-title">About</h3>
-                      <ul class="widget-nav_menu-links">
-                        <li class="menu-item">
-                          <a href="#" class="menu-link">Intent</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#" class="menu-link">ARIA Board</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#" class="menu-link">Committees</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#" class="menu-link">Chapters</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#" class="menu-link">Our Partners</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#" class="menu-link">Testimonials</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#" class="menu-link">Careers</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#" class="menu-link">Stakeholders</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 col-6">
-                    <div class="widget-nav_menu">
-                      <h3 class="widget-title">News/Events</h3>
-                      <ul class="widget-nav_menu-links">
-                        <li class="menu-item">
-                          <a href="" class="menu-link">ARIA Summit</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="" class="menu-link">Summit Recordings</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="" class="menu-link">ARIA News</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="" class="menu-link">Events Upcoming & Posts</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="" class="menu-link">News & Interest</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="" class="menu-link">Newsletter</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="" class="menu-link">SEBI Communications</a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="" class="menu-link">Workshops</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-12">
-                    <div class="footer-about-widget">
-                      <p class="footer-about-widget_desc mt-0 mb-3 text-secondary">Subscribe to our Newsletter to Receive news, updates, free stuff and new releases by email</p>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input type="text" class="form-control form-control-lg" placeholder="enter email address">
-                          <button class="btn btn-primary">Subscribe</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>  
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright__inner">
+                <p class="copyright-text">Copyright @202 All rights reserved</p>
+                <ul class="foot-links">
+                  <li><a href="#">Legal Disclaimer</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Cancellation Policy</a></li>
+                  <li>Credits : GeoCircle</li>
+                </ul>
               </div>
             </div>
-          </div>
         </div>
-        <div class="copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="copyright__inner">
-                    <p class="copyright-text">Copyright @202 All rights reserved</p>
-                    <ul class="foot-links">
-                      <li><a href="#">Legal Disclaimer</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">Terms of Use</a></li>
-                      <li><a href="#">Cancellation Policy</a></li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-          </div>  
-        </div>
-      </footer>
+      </div>  
     </div>
-  </div>
-</div>
+  </footer>
 </main>
 
 <!-- LOGGED IN MENU -->
-<!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
   <div class="offcanvas-header">
     <div class="user-profilearea">
       <div class="user-profilepic">
-        <img src="img/amit.jpg" class="img-fluid" alt="">
+        <img src="img/blank-profile-picture.png" class="img-fluid" alt="">
       </div>
       <h5 class="user-fullname">Amit Kukreja</h5>
       <h6 class="user-designation">Past & Current Treasurer</h6>
@@ -743,7 +656,7 @@
     </div>
     
   </div>
-</div> -->
+</div>
 <!-- Jquery -->
 <script src="js/jquery-3.7.1.min.js"></script>
 
@@ -757,32 +670,15 @@
 <script src="js/script.js"></script>
 
 <script>
-const aboutswiper = new Swiper('#EventsSwiper', {
+const testimonialswiper = new Swiper('#TestimonialSwiper', {
   direction: 'horizontal',
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1280: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-});  
+});
+
 </script>
 
 </body>
