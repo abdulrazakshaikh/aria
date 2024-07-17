@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>Dashboard</title>
+    <title>My Articles</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -302,11 +302,11 @@
         </div>
         <div class="offcanvas-body px-0 scroll-list">
           <div class="list-group list-group-flush navlink-listgroup">
-            <a href="dashboard.html" class="list-group-item list-group-item-action active">
+            <a href="dashboard.html" class="list-group-item list-group-item-action">
               <i class="bi bi-grid-1x2 icon"></i>
               Dashboard
             </a>
-            <a href="myprofile.html" class="list-group-item list-group-item-action">
+            <a href="myprofile.html" class="list-group-item list-group-item-action ">
               <i class="bi bi-person-circle icon"></i>
               My Profile
             </a>
@@ -314,7 +314,7 @@
               <i class="bi bi-person-gear icon"></i>
               My Account
             </a>
-            <a href="myarticles.html" class="list-group-item list-group-item-action">
+            <a href="myarticles.html" class="list-group-item list-group-item-action active">
               <i class="bi bi-file-earmark-text icon"></i>
               My Articles
               </a>
@@ -362,13 +362,13 @@
             <div class="col-12">
               <div class="page-heading mb-0">
                 <div class="page-content">
-                  <h2 class="page-title mb-0">Dashboard</h2>
-                  <!-- <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
+                  <h2 class="page-title mb-0">My Articles</h2>
+                  <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                      <li class="breadcrumb-item"><a href="#">My Articles</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Post Articles</li>
                     </ol>
-                  </nav> -->
+                  </nav>
                 </div>
               </div>
             </div>
@@ -379,173 +379,95 @@
       <div class="mainbodywrapper bg-light">
         <div class="container-fluid">
           <div class="row g-5">
+            
             <div class="col-12">
               <div class="card ariacard">
                 <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">Upcoming</span> Events</h6>
+                  <h6 class="card-title"><span class="text-primary">My </span> Articles</h6>
                   <div class="card-action">
-                    
+                    <a href="myarticles.html" class="btn btn-outline-primary btn-icon"><i class="bi bi-chevron-left fs-6"></i> <span class="btn-text">Back</span></a>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="swiper" id="EventsSwiper">
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
+                  <div class="row">
+                    <div class="col-12 col-lg-12">                    
+                      <form action="">
+
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Post Title :</label>
                           </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
+                          <div class="col-12 col-lg-10">
+                              <input type="text" class="form-control" placeholder="placeholder">
                           </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy2.jpg" class="img-fluid" alt="">
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Published on :</label>
                           </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
+                          <div class="col-12 col-lg-10">
+                              <input type="text" class="form-control" placeholder="placeholder">
                           </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Description :</label>
                           </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
+                          <div class="col-12 col-lg-10">
+                              <textarea name="" id="" rows="4" class="form-control"  placeholder="placeholder"></textarea>
                           </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy2.jpg" class="img-fluid" alt="">
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Category :</label>
                           </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
+                          <div class="col-12 col-lg-10">
+                              <select name="" id="" class="form-control form-select">
+                                <option value="">one</option>
+                                <option value="">two</option>
+                                <option value="">three</option>
+                                <option value="">four</option>
+                              </select>
                           </div>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Thumbnail :</label>
                           </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
+                          <div class="col-12 col-lg-10">
+                              <div class="input-group">
+                                <input type="file" class="form-control" placeholder="Upload Images">
+                                <button class="btn btn-outline-primary">Upload</button>
+                              </div>
                           </div>
                         </div>
-                      </div>
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Article URL :</label>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                              <input type="text" class="form-control" placeholder="https://">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Upload Article :</label>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                              <input type="file" class="form-control" placeholder="placeholder">
+
+                          </div>
+                        </div>
+                        <div class="form-group row g-3 ">
+                          <div class="col-12 text-end">
+                            <button class="btn btn-primary">Submit</button>
+                            <button class="btn btn-outline-secondary">Cancel</button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                    <!-- <div class="swiper-button-prev text-secondary"></div>
-                    <div class="swiper-button-next"></div> -->
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card ariacard">
-                <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">My </span> Forum</h6>
-                  <div class="card-action">
-                    <button class="btn btn-primary">Create Forum</button>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-forum">
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Investors</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Partnership Firm</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Long Long Text Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Finance Tips</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
-                    </li>
-                  </ul>
+
                 </div>
               </div>
             </div>

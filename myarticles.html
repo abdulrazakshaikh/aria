@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>Dashboard</title>
+    <title>My Articles</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -302,11 +302,11 @@
         </div>
         <div class="offcanvas-body px-0 scroll-list">
           <div class="list-group list-group-flush navlink-listgroup">
-            <a href="dashboard.html" class="list-group-item list-group-item-action active">
+            <a href="dashboard.html" class="list-group-item list-group-item-action">
               <i class="bi bi-grid-1x2 icon"></i>
               Dashboard
             </a>
-            <a href="myprofile.html" class="list-group-item list-group-item-action">
+            <a href="myprofile.html" class="list-group-item list-group-item-action ">
               <i class="bi bi-person-circle icon"></i>
               My Profile
             </a>
@@ -314,7 +314,7 @@
               <i class="bi bi-person-gear icon"></i>
               My Account
             </a>
-            <a href="myarticles.html" class="list-group-item list-group-item-action">
+            <a href="myarticles.html" class="list-group-item list-group-item-action active">
               <i class="bi bi-file-earmark-text icon"></i>
               My Articles
               </a>
@@ -362,7 +362,7 @@
             <div class="col-12">
               <div class="page-heading mb-0">
                 <div class="page-content">
-                  <h2 class="page-title mb-0">Dashboard</h2>
+                  <h2 class="page-title mb-0">My Articles</h2>
                   <!-- <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
                       <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -379,173 +379,139 @@
       <div class="mainbodywrapper bg-light">
         <div class="container-fluid">
           <div class="row g-5">
+            
             <div class="col-12">
               <div class="card ariacard">
                 <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">Upcoming</span> Events</h6>
+                  <h6 class="card-title"><span class="text-primary">My </span> Articles</h6>
                   <div class="card-action">
-                    
+                    <a href="postarticles.html" class="btn btn-primary">Post Articles</a>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="swiper" id="EventsSwiper">
-                    <div class="swiper-wrapper">
-                      <!-- Slides -->
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
+                  <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card articles-card">
+                        <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body position-relative">
+                          <a href="#!" class="btn btn-primary rounded-pill btn-share"><i class="bi bi-share-fill"></i></a>
+                          <div class="article-pub">Published on : <span class="pub-value">Business Standard</span></div>
+                          <h6 class="article-title text-truncate-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur laboriosam minus, expedita dolorum mollitia obcaecati id dolor, blanditiis, nemo libero illo? Enim asperiores iusto ullam iure maxime amet dolore?</h6>
                         </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy2.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy2.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="card event-card">
-                          <div class="event-image">
-                            <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                          </div>
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
-                            </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
+                        <div class="card-footer border-0">
+                          <button class="btn btn-primary btn-sm">View</button>
+                          <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                          <button class="btn btn-outline-danger btn-sm">Delete</button>
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="swiper-button-prev text-secondary"></div>
-                    <div class="swiper-button-next"></div> -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card articles-card">
+                        <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body position-relative">
+                          <a href="#!" class="btn btn-primary rounded-pill btn-share"><i class="bi bi-share-fill"></i></a>
+                          <div class="article-pub">Published on : <span class="pub-value">Business Standard</span></div>
+                          <h6 class="article-title text-truncate-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur laboriosam minus, expedita dolorum mollitia obcaecati id dolor, blanditiis, nemo libero illo? Enim asperiores iusto ullam iure maxime amet dolore?</h6>
+                        </div>
+                        <div class="card-footer border-0">
+                          <button class="btn btn-primary btn-sm">View</button>
+                          <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                          <button class="btn btn-outline-danger btn-sm">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card articles-card">
+                        <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body position-relative">
+                          <a href="#!" class="btn btn-primary rounded-pill btn-share"><i class="bi bi-share-fill"></i></a>
+                          <div class="article-pub">Published on : <span class="pub-value">Business Standard</span></div>
+                          <h6 class="article-title text-truncate-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur laboriosam minus, expedita dolorum mollitia obcaecati id dolor, blanditiis, nemo libero illo? Enim asperiores iusto ullam iure maxime amet dolore?</h6>
+                        </div>
+                        <div class="card-footer border-0">
+                          <button class="btn btn-primary btn-sm">View</button>
+                          <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                          <button class="btn btn-outline-danger btn-sm">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card articles-card">
+                        <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body position-relative">
+                          <a href="#!" class="btn btn-primary rounded-pill btn-share"><i class="bi bi-share-fill"></i></a>
+                          <div class="article-pub">Published on : <span class="pub-value">Business Standard</span></div>
+                          <h6 class="article-title text-truncate-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur laboriosam minus, expedita dolorum mollitia obcaecati id dolor, blanditiis, nemo libero illo? Enim asperiores iusto ullam iure maxime amet dolore?</h6>
+                        </div>
+                        <div class="card-footer border-0">
+                          <button class="btn btn-primary btn-sm">View</button>
+                          <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                          <button class="btn btn-outline-danger btn-sm">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card articles-card">
+                        <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body position-relative">
+                          <a href="#!" class="btn btn-primary rounded-pill btn-share"><i class="bi bi-share-fill"></i></a>
+                          <div class="article-pub">Published on : <span class="pub-value">Business Standard</span></div>
+                          <h6 class="article-title text-truncate-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tenetur laboriosam minus, expedita dolorum mollitia obcaecati id dolor, blanditiis, nemo libero illo? Enim asperiores iusto ullam iure maxime amet dolore?</h6>
+                        </div>
+                        <div class="card-footer border-0">
+                          <button class="btn btn-primary btn-sm">View</button>
+                          <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                          <button class="btn btn-outline-danger btn-sm">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card articles-card">
+                        <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body position-relative">
+                          <a href="#!" class="btn btn-primary rounded-pill btn-share"><i class="bi bi-share-fill"></i></a>
+                          <div class="article-pub">Published on : <span class="pub-value">Business Standard</span></div>
+                          <h6 class="article-title text-truncate-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, doloribus. Tenetur alias rerum qui ullam? Quia dolor fugiat enim provident, molestiae doloribus sed laborum dolorem fugit expedita corrupti cumque, est.</h6>
+                        </div>
+                        <div class="card-footer border-0">
+                          <button class="btn btn-primary btn-sm">View</button>
+                          <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                          <button class="btn btn-outline-danger btn-sm">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card articles-card">
+                        <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body position-relative">
+                          <a href="#!" class="btn btn-primary rounded-pill btn-share"><i class="bi bi-share-fill"></i></a>
+                          <div class="article-pub">Published on : <span class="pub-value">Business Standard</span></div>
+                          <h6 class="article-title text-truncate-line2">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Iure reiciendis officia fuga dolore, voluptatum dicta distinctio sequi itaque consequatur reprehenderit expedita aliquam sint vel illo magnam, perspiciatis qui nihil minima.</h6>
+                        </div>
+                        <div class="card-footer border-0">
+                          <button class="btn btn-primary btn-sm">View</button>
+                          <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                          <button class="btn btn-outline-danger btn-sm">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                      <div class="card articles-card">
+                        <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                        <div class="card-body position-relative">
+                          <a href="#!" class="btn btn-primary rounded-pill btn-share"><i class="bi bi-share-fill"></i></a>
+                          <div class="article-pub">Published on : <span class="pub-value">Business Standard</span></div>
+                          <h6 class="article-title text-truncate-line2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum omnis earum aliquam repellendus exercitationem esse ab alias, sapiente consectetur eos tempore nisi libero maxime repudiandae necessitatibus amet vero eligendi praesentium?</h6>
+                        </div>
+                        <div class="card-footer border-0">
+                          <button class="btn btn-primary btn-sm">View</button>
+                          <button class="btn btn-outline-secondary btn-sm">Edit</button>
+                          <button class="btn btn-outline-danger btn-sm">Delete</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="card ariacard">
-                <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">My </span> Forum</h6>
-                  <div class="card-action">
-                    <button class="btn btn-primary">Create Forum</button>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <ul class="list-group list-group-forum">
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Investors</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Partnership Firm</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="forum-date">
-                        <div class="date">15 June</div>
-                        <div class="year">2024</div>
-                      </div>
-                      <div class="forum-content">
-                        <h6 class="forum-title">Long Long Text Forum Title goes here</h6>
-                        <h6 class="forum-subtitle">Reply to your post</h6>
-                      </div>
-                      <div class="forum-action">
-                        <span class="badge rounded-pill text-bg-light py-2 px-3">Finance Tips</span>
-                        <button class="btn btn-primary">View</button>
-                      </div>
-                    </li>
-                  </ul>
+
                 </div>
               </div>
             </div>
