@@ -38,6 +38,7 @@
 	--letterspacing-small : 0.05rem;
 	--letterspacing-medium : 0.10rem;
 	--letterspacing-large : 0.15rem;
+	
 
 	--bodytextsmall-size : 0.85rem;
 	--bodytext-size : 1rem;
@@ -689,16 +690,16 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 /*------------------------------- SWIPER END --------------------------------*/
 
 /*----------------------------- HOMEPAGE START ------------------------------*/
-.hero-section{}
+
 .hero-section .carousel.hero-carousel{}
 .carousel.hero-carousel .carousel-inner{}
-.carousel.hero-carousel .carousel-inner .carousel-item{height: 90vh;}
+.carousel.hero-carousel .carousel-inner .carousel-item{height: var(--herobanner-height); max-height: 100vh}
 .carousel.hero-carousel .carousel-inner .carousel-item .carousel-image{width: 100%;	height: 100%; object-fit: cover;}
-.hero-carousel .carousel-caption{bottom: 15rem; z-index: 10; top: 0; left: 10%; right: 10%; margin: auto; 
+.hero-carousel .carousel-caption{bottom: 12rem; z-index: 10; top: 0; left: 10%; right: 10%; margin: auto; 
 	display: flex; align-items: flex-end; justify-content: flex-start; text-align: left;
 }
 .hero-carousel .carousel-caption .caption-title{font-size: 3.25rem; font-weight: 900; letter-spacing: var(--letterspacing-medium); 
-	margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.2; text-shadow: 1px 1px 20px rgb(0 0 0 / 50%)}
+	margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.1; text-shadow: 1px 1px 20px rgb(0 0 0 / 50%)}
 .hero-carousel .carousel-caption .caption-title:before{content: ''; height: calc(100% - 1.375rem); width: 3px; 
 	position: absolute;	left: 0; top: 0; bottom: 0;	margin: auto; background-color: var(--primarylight); border-radius: 50px;}
 .hero-carousel .carousel-caption .btn-carousel{
@@ -806,9 +807,18 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .border-radius-lg {
 	border-radius: 10px !important;
 }
-
+@media (min-width: 1400px) {
+	.hero-section{--herobanner-height : 90vh;}
+}
+@media (min-width: 1200px) and (max-width : 1399.98px){
+	.hero-section{--herobanner-height : 800px;}
+}
+@media (max-width: 1199.98px){
+	.hero-section{--herobanner-height : 90vh;}
+}
 @media (max-width: 990.98px){
-	.hero-carousel .carousel-caption{left: 0; right: 0;}
+	
+	.hero-carousel .carousel-caption{bottom: 10rem; left: 0; right: 0;}
 	.count-icon{width: 64px; height: 64px}
 	.count-num{font-size: 2rem}
 	.count-title{font-size: 1rem}
@@ -819,7 +829,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	.section-about{top: 0px}
 	.testimonial-card .testi-item{flex-direction: column;}
 	.hero-carousel .carousel-caption .caption-title{font-size: 2.25rem}
-	.carousel.hero-carousel .carousel-inner .carousel-item{height: 90vh}
+/*	.carousel.hero-carousel .carousel-inner .carousel-item{height: 90vh}*/
 	.hero-carousel .carousel-caption .btn:not(.btn-play);{padding: 0.5rem 0.85rem; font-size: .75rem}
 	.hero-carousel .carousel-control-next, .hero-carousel .carousel-control-prev{top: auto; bottom: 3rem;}
 
