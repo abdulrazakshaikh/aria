@@ -318,9 +318,9 @@
               <i class="bi bi-file-earmark-text icon"></i>
               My Articles
               </a>
-            <a href="events_attended.html" class="list-group-item list-group-item-action active">
+            <a href="myevents.html" class="list-group-item list-group-item-action active">
               <i class="bi bi-calendar4-week icon"></i>
-              Events Attended
+              My Events
               </a>
             <a href="myjobs_list.html" class="list-group-item list-group-item-action">
               <i class="bi bi-suitcase-lg icon"></i>
@@ -382,121 +382,205 @@
             <div class="col-12">
               <div class="card ariacard">
                 <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">My Events</span> Attended</h6>
+                  <h6 class="card-title"><span class="text-primary">My</span> Events</h6>
                   <div class="card-action">
-                    
+                    <div class="btn-group" id="events-tab" role="tablist">
+                        <button class="btn btn-outline-primary active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#tab-one" type="button" 
+                        role="tab" aria-selected="true">Yet to Attend</button>
+                      
+                        <button class="btn btn-outline-primary" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#tab-two" type="button" 
+                        role="tab" aria-selected="false">Attended</button>
+                    </div>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="row g-4">
-                    <div class="col-12 col-lg-4">
-                      <div class="card event-card">
-                          <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                          <div class="card-body position-relative">
-                            <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                            <h6 class="event-title">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
+                  <div class="tab-content" id="events-tabContent">
+                    <div class="tab-pane fade show active" id="tab-one" role="tabpanel"  tabindex="0">
+                      <div class="row g-4">
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy1.jpg" class="img-fluid" alt="">
+                              <div class="card-body position-relative">
+                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
+                                <h6 class="event-title">Navigating investment style the Wisdom Art and Science of Investing</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer">
+                                <button class="btn btn-primary ">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
                         </div>
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
+                              <div class="card-body position-relative">
+                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
+                                <h6 class="event-title">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer">
+                                <button class="btn btn-primary ">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
+                              <div class="card-body position-relative">
+                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
+                                <h6 class="event-title">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer">
+                                <button class="btn btn-primary ">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-12 col-lg-4">
-                      <div class="card event-card">
-                          <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                          <div class="card-body position-relative">
-                            <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                            <h6 class="event-title">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
+                    <div class="tab-pane fade" id="tab-two" role="tabpanel" tabindex="0">
+                      <div class="row g-4">
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy1.jpg" class="img-fluid" alt="">
+                              <div class="card-body position-relative">
+                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
+                                <h6 class="event-title">Navigating investment style the Wisdom Art and Science of Investing</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer gap-2 justify-content-between">
+                                <button class="btn btn-outline-primary">
+                                  <i class="bi bi-play-fill icon fs-5"></i>
+                                </button>
+                                <button class="btn btn-primary">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                      <div class="card event-card">
-                          <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                          <div class="card-body position-relative">
-                            <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
+                              <div class="card-body position-relative">
+                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
+                                <h6 class="event-title">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer gap-2 justify-content-between">
+                                <button class="btn btn-outline-primary">
+                                  <i class="bi bi-play-fill icon fs-5"></i>
+                                </button>
+                                <button class="btn btn-primary">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                      <div class="card event-card">
-                          <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
+                              <div class="card-body position-relative">
+                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
+                                <h6 class="event-title">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer gap-2 justify-content-between">
+                                <button class="btn btn-outline-primary">
+                                  <i class="bi bi-play-fill icon fs-5"></i>
+                                </button>
+                                <button class="btn btn-primary">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                      <div class="card event-card">
-                          <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
+                              <div class="card-body">
+                                <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer gap-2 justify-content-between">
+                                <button class="btn btn-outline-primary">
+                                  <i class="bi bi-play-fill icon fs-5"></i>
+                                </button>
+                                <button class="btn btn-primary">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                      <div class="card event-card">
-                          <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                          <div class="card-body">
-                            <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                            <div class="event-timestamp">
-                              <span>17th Aug, 2023</span>
-                              <span>5pm to 6pm</span>
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
+                              <div class="card-body">
+                                <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer gap-2 justify-content-between">
+                                <button class="btn btn-outline-primary">
+                                  <i class="bi bi-play-fill icon fs-5"></i>
+                                </button>
+                                <button class="btn btn-primary">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="card-footer">
-                            <button class="btn btn-primary ">
-                              <span class="btn-text">Read more</span>
-                            </button>
-                          </div>
                         </div>
+                        <div class="col-12 col-lg-4">
+                          <div class="card event-card">
+                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
+                              <div class="card-body">
+                                <h6 class="event-title">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
+                                <div class="event-timestamp">
+                                  <span>17th Aug, 2023</span>
+                                  <span>5pm to 6pm</span>
+                                </div>
+                              </div>
+                              <div class="card-footer gap-2 justify-content-between">
+                                <button class="btn btn-outline-primary">
+                                  <i class="bi bi-play-fill icon fs-5"></i>
+                                </button>
+                                <button class="btn btn-primary">
+                                  <span class="btn-text">Read more</span>
+                                </button>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-
-
                 </div>
               </div>
             </div>

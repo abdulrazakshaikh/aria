@@ -334,6 +334,7 @@ hr {border-top-color: var(--border-color) !important; opacity: 1 !important;}
     --bs-card-spacer-x: 1.25rem;
     --bs-card-cap-bg : transparent;
 	box-shadow: var(--boxshadow);
+	--swiper-navigation-size: 2.5rem;
 }
 .card.ariacard .card-header{
 	display: flex;
@@ -484,15 +485,47 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	box-shadow: var(--boxshadow);
 	
     display: flex; flex-wrap: wrap; 
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-    -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    transition-delay: 0s;
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
 }
 .navbar-header.fixed-header{position: fixed; top: 0; padding: 0; min-height: calc(var(--navbarheader-height) - 10px);
-	background: var(--navbar-bgcolor);box-shadow: var(--boxshadow);}
+	background: var(--navbar-bgcolor);box-shadow: var(--boxshadow);
+	    visibility: visible;
+    -ms-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -op-animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -ms-animation-duration: 300ms;
+    -moz-animation-duration: 300ms;
+    -op-animation-duration: 300ms;
+    -webkit-animation-duration: 300ms;
+    animation-duration: 300ms;
+    -ms-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -op-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -ms-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -op-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {opacity: 0; -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0)}
+    to {opacity: 1; -webkit-transform: translateZ(0); transform: translateZ(0)}
+}
+
+@keyframes fadeInDown {
+    0% {opacity: 0; -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0)}
+    to {opacity: 1; -webkit-transform: translateZ(0); transform: translateZ(0)}
+}
+
 .navbar-header .navbar-toggler{
 /*	background-color: rgba(var(--primary-rgb), 0.1);*/
 	width: var(--iconbutton-width); height: var(--iconbutton-height); outline: 0; padding: 0; 
@@ -697,8 +730,8 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .carousel.hero-carousel .carousel-inner{}
 .carousel.hero-carousel .carousel-inner .carousel-item{height: var(--herobanner-height); max-height: 100vh}
 .carousel.hero-carousel .carousel-inner .carousel-item .carousel-image{width: 100%;	height: 100%; object-fit: cover;}
-.hero-carousel .carousel-caption{bottom: 8rem; z-index: 10; top: 0; left: 10%; right: 10%; margin: auto; 
-	display: flex; align-items: center; justify-content: flex-start; text-align: left;
+.hero-carousel .carousel-caption{bottom: 15rem; z-index: 10; top: 0; left: 10%; right: 10%; margin: auto; 
+	display: flex; align-items: flex-end; justify-content: flex-start; text-align: left;
 }
 .hero-carousel .carousel-caption .caption-title{font-size: 3.25rem; font-weight: 900; letter-spacing: var(--letterspacing-medium); 
 	margin-bottom: 1rem; padding-left: 1.5rem; position: relative; line-height: 1.1; text-shadow: 1px 1px 20px rgb(0 0 0 / 50%)}
