@@ -264,9 +264,9 @@
 <main class="mainwrapper">
 
   <section class="hero-section">
-    <div id="carouselHero" class="carousel hero-carousel slide" >
+    <div id="carouselHero" class="carousel hero-carousel slide"  data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="5000">
           <div class="carousel-caption">
           <div class="container-fluid">
             <div class="row align-items-center g-3">
@@ -279,7 +279,7 @@
           </div>
           <img src="img/banner1.jpg" class="carousel-image img-fluid" loading="lazy" alt="...">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="carousel-caption">
           <div class="container-fluid">
             <div class="row align-items-center g-3">
@@ -292,14 +292,13 @@
           </div>
           <img src="img/banner2.jpg" class="carousel-image img-fluid" loading="lazy" alt="...">
         </div>
-        <div class="carousel-item">
-        <!-- <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#videoModal"> -->
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="carousel-caption">
           <div class="container-fluid">
             <div class="row align-items-center g-3">
               <div class="col-12 col-lg-7 order-1 order-lg-0">
                 <h1 class="caption-title">Watch Genesis: </br> The Formation and Journey of ARIA</h1>
-                <button class="btn btn-fadedprimary">Watch Video</button>
+                <button class="btn btn-fadedprimary" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Video</button>
               </div>
               <div class="col-12 col-lg-5 order-0 order-lg-1">
                 <div class="card videocard" data-bs-toggle="modal" data-bs-target="#videoModal">
