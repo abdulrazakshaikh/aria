@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>Post a Job</title>
+    <title>My Profile</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -305,7 +305,7 @@
               <i class="bi bi-grid-1x2 icon"></i>
               Dashboard
             </a>
-            <a href="myprofile.html" class="list-group-item list-group-item-action ">
+            <a href="myprofile.html" class="list-group-item list-group-item-action active">
               <i class="bi bi-person-circle icon"></i>
               My Profile
             </a>
@@ -313,7 +313,7 @@
               <i class="bi bi-person-gear icon"></i>
               My Account
             </a>
-            <a href="myarticles.html" class="list-group-item list-group-item-action ">
+            <a href="myarticles.html" class="list-group-item list-group-item-action">
               <i class="bi bi-file-earmark-text icon"></i>
               My Articles
               </a>
@@ -321,7 +321,7 @@
               <i class="bi bi-calendar4-week icon"></i>
               My Events
               </a>
-            <a href="myjobs_list.html" class="list-group-item list-group-item-action active">
+            <a href="myjobs_list.html" class="list-group-item list-group-item-action">
               <i class="bi bi-suitcase-lg icon"></i>
               My Job Lists
               </a>
@@ -361,13 +361,7 @@
             <div class="col-12">
               <div class="page-heading mb-0">
                 <div class="page-content">
-                  <h2 class="page-title mb-0">Post a Job</h2>
-                  <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-                      <li class="breadcrumb-item"><a href="myjobs_list.html">My Jobs</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Post Job</li>
-                    </ol>
-                  </nav>
+                  <h2 class="page-title mb-0">My Profile</h2>
                 </div>
               </div>
             </div>
@@ -382,49 +376,13 @@
             <div class="col-12">
               <div class="card ariacard">
                 <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">Post </span>a Job</h6>
+                  <h6 class="card-title"><span class="text-primary">My </span> Profile</h6>
                   <div class="card-action">
-                    <a href="myjobs_list.html" class="btn btn-outline-primary btn-icon"><i class="bi bi-chevron-left fs-6"></i> <span class="btn-text">Back</span></a>
+                    <!-- <a href="postarticles.html" class="btn btn-primary">Post Articles</a> -->
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-12 col-lg-12">                    
-                      <form action="">
-
-                        <div class="form-group row">
-                          <div class="col-12 col-lg-2">
-                              <label for="" class="form-label mt-2">Job Title :</label>
-                          </div>
-                          <div class="col-12 col-lg-10">
-                              <input type="text" class="form-control" placeholder="Job Title">
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-12 col-lg-2">
-                              <label for="" class="form-label mt-2">Job Description :</label>
-                          </div>
-                          <div class="col-12 col-lg-10">
-                              <textarea name="" id="" rows="4" class="form-control"  placeholder="Description"></textarea>
-                          </div>
-                        </div>
-                        <div class="form-group row">
-                          <div class="col-12 col-lg-2">
-                              <label for="" class="form-label mt-2">Job Expiry Date :</label>
-                          </div>
-                          <div class="col-12 col-lg-3">
-                              <input type="date" class="form-control" placeholder="Published on">
-                          </div>
-                        </div>
-                        <div class="form-group row g-3 ">
-                          <div class="col-12 offset-lg-2">
-                            <button class="btn btn-primary">Submit</button>
-                            <button class="btn btn-outline-secondary">Cancel</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
+                  <h3 class="display-4">Profile View</h3>
 
                 </div>
               </div>
@@ -553,6 +511,77 @@
 </div>
 </main>
 
+<!-- LOGGED IN MENU -->
+<!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+  <div class="offcanvas-header">
+    <div class="user-profilearea">
+      <div class="user-profilepic">
+        <img src="img/amit.jpg" class="img-fluid" alt="">
+      </div>
+      <h5 class="user-fullname">Amit Kukreja</h5>
+      <h6 class="user-designation">Past & Current Treasurer</h6>
+      <span class="badge text-bg-primary">Individual</span>
+      <ul class="social-list">
+        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+        <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="offcanvas-body px-0 scroll-list">
+    <div class="list-group list-group-flush navlink-listgroup">
+      <a href="#" class="list-group-item list-group-item-action active">
+        <i class="bi bi-grid-1x2 icon"></i>
+        Dashboard
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-person-circle icon"></i>
+        My Profile
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-person-gear icon"></i>
+        My Account
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-file-earmark-text icon"></i>
+        My Articles
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-calendar4-week icon"></i>
+        Events Attended
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-suitcase-lg icon"></i>
+        My Job Lists
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-box-arrow-right icon"></i>
+        Logout
+        </a>
+    </div>
+    
+    <div class="membership-item">
+      <div class="membership-item-icon">
+        <i class="bi bi-hourglass icon"></i>
+        
+      </div>
+      <div class="membership-item-content">
+        <p class="membership-item-title">3 years of Membership</p>
+      </div>
+    </div>
+    <div class="membership-item">
+      <div class="membership-item-icon orange">
+        <i class="bi bi-hourglass icon"></i>
+      </div>
+      <div class="membership-item-content">
+        <p class="membership-item-title">Membership Subscription</p>
+        <p class="membership-item-subtitle">20days left</p>
+      </div>
+    </div>
+    
+  </div>
+</div> -->
 <!-- Jquery -->
 <script src="js/jquery-3.7.1.min.js"></script>
 
