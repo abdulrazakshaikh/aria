@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>My Events</title>
+    <title>My Jobs List</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -302,11 +302,11 @@
         </div>
         <div class="offcanvas-body px-0 scroll-list">
           <div class="list-group list-group-flush navlink-listgroup">
-            <a href="dashboard.html" class="list-group-item list-group-item-action ">
+            <a href="dashboard.html" class="list-group-item list-group-item-action">
               <i class="bi bi-grid-1x2 icon"></i>
               Dashboard
             </a>
-            <a href="myprofile.html" class="list-group-item list-group-item-action">
+            <a href="myprofile.html" class="list-group-item list-group-item-action ">
               <i class="bi bi-person-circle icon"></i>
               My Profile
             </a>
@@ -318,11 +318,11 @@
               <i class="bi bi-file-earmark-text icon"></i>
               My Articles
               </a>
-            <a href="myevents.html" class="list-group-item list-group-item-action active">
+            <a href="myevents.html" class="list-group-item list-group-item-action">
               <i class="bi bi-calendar4-week icon"></i>
               My Events
               </a>
-            <a href="myjobs_list.html" class="list-group-item list-group-item-action">
+            <a href="myjobs_list.html" class="list-group-item list-group-item-action active">
               <i class="bi bi-suitcase-lg icon"></i>
               My Job Lists
               </a>
@@ -362,13 +362,7 @@
             <div class="col-12">
               <div class="page-heading mb-0">
                 <div class="page-content">
-                  <h2 class="page-title mb-0">Dashboard</h2>
-                  <!-- <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                    </ol>
-                  </nav> -->
+                  <h2 class="page-title mb-0">My Jobs List</h2>
                 </div>
               </div>
             </div>
@@ -379,213 +373,181 @@
       <div class="mainbodywrapper bg-light">
         <div class="container-fluid">
           <div class="row g-5">
+            
             <div class="col-12">
               <div class="card ariacard">
                 <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">My</span> Events</h6>
+                  <h6 class="card-title"><span class="text-primary">My Posted</span> Jobs</h6>
                   <div class="card-action">
-                    <div class="btn-group" id="events-tab" role="tablist">
-                        <button class="btn btn-outline-primary active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#tab-one" type="button" 
-                        role="tab" aria-selected="true">Yet to Attend</button>
-                        <button class="btn btn-outline-primary" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#tab-two" type="button" 
-                        role="tab" aria-selected="false">Attended</button>
+                    <a href="postjob.html" class="btn btn-primary">Post a Job</a>
+                    <div class="jobs-count">
+                      <i class="bi bi-suitcase-lg fs-4 text-primary"></i>
+                      <div class="jobscount-label"><span class="fw-bold text-primary">6</span> Jobs Posted</div>
                     </div>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="tab-content" id="events-tabContent">
-                    <div class="tab-pane fade show active" id="tab-one" role="tabpanel"  tabindex="0">
-                      <div class="row g-4">
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Job Title</th>
+                            <th>Job Description</th>
+                            <th>Posted Date</th>
+                            <th>Expired Date</th>
+                            <th>Job Status</th>
+                            <th class="action-th">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>A017</td>
+                            <td>Auditors</td>
+                            <td style="width: 450px;">
+                              <div class="text-truncate-line2 overflow-hidden">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reprehenderit facere veniam magnam cumque est voluptate ex at distinctio, aliquam ea nisi mollitia voluptates neque molestiae natus rerum minima voluptatum.
                               </div>
-                              <div class="card-footer">
-                                <button class="btn btn-primary ">
-                                  <span class="btn-text">Read more</span>
-                                </button>
+                            </td>
+                            <td>12/07/2024</td>
+                            <td>12/08/2024</td>
+                            <td>
+                              <div class="form-check form-switch jobactive">
+                                <input class="form-check-input" type="checkbox" role="switch" id="activejob1">
+                                <label class="form-check-label" for="activejob1"></label>
                               </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
+                            </td>
+                            <td class="action-td">
+                              <a href="postjob.html" class="btn link-secondary" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Edit/View"><i class="bi bi-pencil"></i></a>
+                              <a href="" class="btn link-danger" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="bi bi-trash"></i></a>
+                              
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>A018</td>
+                            <td>Auditors</td>
+                            <td style="width: 450px;">
+                              <div class="text-truncate-line2 overflow-hidden">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reprehenderit facere veniam magnam cumque est voluptate ex at distinctio, aliquam ea nisi mollitia voluptates neque molestiae natus rerum minima voluptatum.
                               </div>
-                              <div class="card-footer">
-                                <button class="btn btn-primary ">
-                                  <span class="btn-text">Read more</span>
-                                </button>
+                            </td>
+                            <td>12/07/2024</td>
+                            <td>12/08/2024</td>
+                            <td>
+                              <div class="form-check form-switch jobactive">
+                                <input class="form-check-input" type="checkbox" role="switch" id="activejob2">
+                                <label class="form-check-label" for="activejob2"></label>
                               </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
+                            </td>
+                            <td class="action-td">
+                              <a href="postjob.html" class="btn link-secondary" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Edit/View"><i class="bi bi-pencil"></i></a>
+                              <a href="" class="btn link-danger" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="bi bi-trash"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>A017</td>
+                            <td>Auditors</td>
+                            <td style="width: 450px;">
+                              <div class="text-truncate-line2 overflow-hidden">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reprehenderit facere veniam magnam cumque est voluptate ex at distinctio, aliquam ea nisi mollitia voluptates neque molestiae natus rerum minima voluptatum.
                               </div>
-                              <div class="card-footer">
-                                <button class="btn btn-primary ">
-                                  <span class="btn-text">Read more</span>
-                                </button>
+                            </td>
+                            <td>12/07/2024</td>
+                            <td>12/08/2024</td>
+                            <td>
+                              <div class="form-check form-switch jobactive">
+                                <input class="form-check-input" type="checkbox" role="switch" id="activejob3">
+                                <label class="form-check-label" for="activejob3"></label>
                               </div>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-two" role="tabpanel" tabindex="0">
-                      <div class="row g-4">
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
+                            </td>
+                            <td class="action-td">
+                              <a href="postjob.html" class="btn link-secondary" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Edit/View"><i class="bi bi-pencil"></i></a>
+                              <a href="" class="btn link-danger" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="bi bi-trash"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>A018</td>
+                            <td>Auditors</td>
+                            <td style="width: 450px;">
+                              <div class="text-truncate-line2 overflow-hidden">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reprehenderit facere veniam magnam cumque est voluptate ex at distinctio, aliquam ea nisi mollitia voluptates neque molestiae natus rerum minima voluptatum.
                               </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
+                            </td>
+                            <td>12/07/2024</td>
+                            <td>12/08/2024</td>
+                            <td>
+                              <div class="form-check form-switch jobactive">
+                                <input class="form-check-input" type="checkbox" role="switch" id="activejob4">
+                                <label class="form-check-label" for="activejob4"></label>
                               </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
+                            </td>
+                            <td class="action-td">
+                              <a href="postjob.html" class="btn link-secondary" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Edit/View"><i class="bi bi-pencil"></i></a>
+                              <a href="" class="btn link-danger" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="bi bi-trash"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>A017</td>
+                            <td>Auditors</td>
+                            <td style="width: 450px;">
+                              <div class="text-truncate-line2 overflow-hidden">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reprehenderit facere veniam magnam cumque est voluptate ex at distinctio, aliquam ea nisi mollitia voluptates neque molestiae natus rerum minima voluptatum.
                               </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
+                            </td>
+                            <td>12/07/2024</td>
+                            <td>12/08/2024</td>
+                            <td>
+                              <div class="form-check form-switch jobactive">
+                                <input class="form-check-input" type="checkbox" role="switch" id="activejob5">
+                                <label class="form-check-label" for="activejob5"></label>
                               </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
+                            </td>
+                            <td class="action-td">
+                              <a href="postjob.html" class="btn link-secondary" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Edit/View"><i class="bi bi-pencil"></i></a>
+                              <a href="" class="btn link-danger" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="bi bi-trash"></i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>A018</td>
+                            <td>Auditors</td>
+                            <td style="width: 450px;">
+                              <div class="text-truncate-line2 overflow-hidden">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reprehenderit facere veniam magnam cumque est voluptate ex at distinctio, aliquam ea nisi mollitia voluptates neque molestiae natus rerum minima voluptatum.
                               </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
+                            </td>
+                            <td>12/07/2024</td>
+                            <td>12/08/2024</td>
+                            <td>
+                              <div class="form-check form-switch jobactive">
+                                <input class="form-check-input" type="checkbox" role="switch" id="activejob6">
+                                <label class="form-check-label" for="activejob6"></label>
                               </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body">
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body">
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body">
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
-                        </div>
+                            </td>
+                            <td class="action-td">
+                              <a href="postjob.html" class="btn link-secondary" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Edit/View"><i class="bi bi-pencil"></i></a>
+                              <a href="" class="btn link-danger" 
+                              data-bs-tooltip="tooltip" data-bs-placement="top" data-bs-title="Delete"><i class="bi bi-trash"></i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>My Events</title>
+    <title>Post a Job</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -302,11 +302,11 @@
         </div>
         <div class="offcanvas-body px-0 scroll-list">
           <div class="list-group list-group-flush navlink-listgroup">
-            <a href="dashboard.html" class="list-group-item list-group-item-action ">
+            <a href="dashboard.html" class="list-group-item list-group-item-action">
               <i class="bi bi-grid-1x2 icon"></i>
               Dashboard
             </a>
-            <a href="myprofile.html" class="list-group-item list-group-item-action">
+            <a href="myprofile.html" class="list-group-item list-group-item-action ">
               <i class="bi bi-person-circle icon"></i>
               My Profile
             </a>
@@ -314,15 +314,15 @@
               <i class="bi bi-person-gear icon"></i>
               My Account
             </a>
-            <a href="myarticles.html" class="list-group-item list-group-item-action">
+            <a href="myarticles.html" class="list-group-item list-group-item-action ">
               <i class="bi bi-file-earmark-text icon"></i>
               My Articles
               </a>
-            <a href="myevents.html" class="list-group-item list-group-item-action active">
+            <a href="myevents.html" class="list-group-item list-group-item-action">
               <i class="bi bi-calendar4-week icon"></i>
               My Events
               </a>
-            <a href="myjobs_list.html" class="list-group-item list-group-item-action">
+            <a href="myjobs_list.html" class="list-group-item list-group-item-action active">
               <i class="bi bi-suitcase-lg icon"></i>
               My Job Lists
               </a>
@@ -362,13 +362,13 @@
             <div class="col-12">
               <div class="page-heading mb-0">
                 <div class="page-content">
-                  <h2 class="page-title mb-0">Dashboard</h2>
-                  <!-- <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
+                  <h2 class="page-title mb-0">Post a Job</h2>
+                  <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                      <li class="breadcrumb-item"><a href="myjobs_list.html">My Jobs</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Post Job</li>
                     </ol>
-                  </nav> -->
+                  </nav>
                 </div>
               </div>
             </div>
@@ -379,213 +379,54 @@
       <div class="mainbodywrapper bg-light">
         <div class="container-fluid">
           <div class="row g-5">
+            
             <div class="col-12">
               <div class="card ariacard">
                 <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">My</span> Events</h6>
+                  <h6 class="card-title"><span class="text-primary">Post </span>a Job</h6>
                   <div class="card-action">
-                    <div class="btn-group" id="events-tab" role="tablist">
-                        <button class="btn btn-outline-primary active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#tab-one" type="button" 
-                        role="tab" aria-selected="true">Yet to Attend</button>
-                        <button class="btn btn-outline-primary" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#tab-two" type="button" 
-                        role="tab" aria-selected="false">Attended</button>
-                    </div>
+                    <a href="myjobs_list.html" class="btn btn-outline-primary btn-icon"><i class="bi bi-chevron-left fs-6"></i> <span class="btn-text">Back</span></a>
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="tab-content" id="events-tabContent">
-                    <div class="tab-pane fade show active" id="tab-one" role="tabpanel"  tabindex="0">
-                      <div class="row g-4">
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer">
-                                <button class="btn btn-primary ">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-12">                    
+                      <form action="">
+
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Job Title :</label>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                              <input type="text" class="form-control" placeholder="Job Title">
+                          </div>
                         </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer">
-                                <button class="btn btn-primary ">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Job Description :</label>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                              <textarea name="" id="" rows="4" class="form-control"  placeholder="Description"></textarea>
+                          </div>
                         </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer">
-                                <button class="btn btn-primary ">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
+                        <div class="form-group row">
+                          <div class="col-12 col-lg-2">
+                              <label for="" class="form-label mt-2">Job Expiry Date :</label>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                              <input type="date" class="form-control" placeholder="Published on">
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-two" role="tabpanel" tabindex="0">
-                      <div class="row g-4">
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
+                        <div class="form-group row g-3 ">
+                          <div class="col-12 text-end">
+                            <button class="btn btn-primary">Submit</button>
+                            <button class="btn btn-outline-secondary">Cancel</button>
+                          </div>
                         </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body position-relative">
-                                <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body">
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body">
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="card event-card">
-                              <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                              <div class="card-body">
-                                <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Trends, Challenges & Opportunities</h6>
-                                <div class="event-timestamp">
-                                  <span>17th Aug, 2023</span>
-                                  <span>5pm to 6pm</span>
-                                </div>
-                              </div>
-                              <div class="card-footer gap-2 justify-content-between">
-                                <button class="btn btn-outline-primary">
-                                  <i class="bi bi-play-fill icon fs-5"></i>
-                                  <span class="btn-text">Play</span>
-                                </button>
-                                <button class="btn btn-primary">
-                                  <span class="btn-text">Read more</span>
-                                </button>
-                              </div>
-                            </div>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
