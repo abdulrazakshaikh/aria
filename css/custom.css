@@ -145,7 +145,7 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 .mainheadwrapper .section-heading{padding: 3.5rem 0;}
 .section{padding: 6rem 1rem;}
 .page-heading, .section-heading{display: flex;	justify-content: space-between;	flex-direction: column;	margin-bottom: 2rem;}
-.section-title{font-family: var(--secondaryfont); font-weight: 500; color: var(--sectiontitle-color); font-size: 3rem; line-height: normal;}
+.section-title{font-family: var(--secondaryfont); font-weight: 500; color: var(--sectiontitle-color); font-size: 2.5rem; line-height: normal;}
 .section-subtitle{line-height: normal;font-weight: 400;color: var(--textlight-color); font-size: 1rem;margin: 0;}
 
 .page-title{font-family: var(--secondaryfont); font-weight: 300; color: var(--pagetitle-color); font-size: 2.75rem; line-height: normal;
@@ -361,7 +361,7 @@ hr {border-top-color: var(--border-color) !important; opacity: 1 !important;}
     --bs-card-cap-bg : transparent;
 	box-shadow: var(--boxshadow);
 }
-.card.ariacard .card-header{display: flex;align-items: center;justify-content: space-between;}
+.card.ariacard .card-header{display: flex;align-items: center;justify-content: space-between; flex-wrap: wrap}
 .card.ariacard .card-header .card-title{font-family: var(--secondaryfont); font-weight: 600;color: var(--sectiontitle-color);
     letter-spacing: var(--letterspacing-medium); font-size: var(--bodytextlarge-size);line-height: normal;}
 .card.ariacard .card-header .card-title .text-primary{color: var(--primary) !important;}
