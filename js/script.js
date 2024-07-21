@@ -20,3 +20,14 @@ winDow.addEventListener("scroll", function () {
     isSticky.classList.add("fixed-header");
   }
 });
+
+
+
+// ------------------------------ISOTOPE MASONRY-------------------------------
+$('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'masonry',
+});  
+$('.grid').imagesLoaded().progress( function() {
+  $('.grid').isotope('layout');
+});
