@@ -113,6 +113,7 @@
 
     /*	BOOTSTRAP OVERWRITE VARIABLE*/
 	--bs-border-color : var(--border-color);
+	--bs-card-border-color : var(--border-color);
 	--bs-primary : var(--primary);
 	--bs-secondary : var(--secondary);
 	--bs-primary-rgb : var(--primary-rgb);
@@ -166,19 +167,49 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
     box-shadow: var(--boxshadow);
     overflow: hidden;
 }
-.headover-section .card .nav{
+.headover-section .card .nav.nav-pills{
+    /*--bs-nav-underline-gap: 0rem;
+    --bs-nav-underline-border-width: 0.215rem;
+    --bs-nav-underline-link-active-color : var(--primarylight);*/
+    --bs-nav-pills-link-active-color: var(--onprimary);
+    --bs-nav-pills-link-active-bg: var(--primarylight);
+    --bs-nav-link-color : var(--text-color);
+}
+.headover-section .card .nav.nav-underline{
     --bs-nav-underline-gap: 0rem;
     --bs-nav-underline-border-width: 0.215rem;
     --bs-nav-underline-link-active-color : var(--primarylight);
     --bs-nav-link-color : var(--text-color);
 }
+.headover-section .card .nav.nav-pills .nav-link.active:before{
+	content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 7px 0 7px;
+    border-color: var(--primarylight) transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 .headover-section .card .nav .nav-link{
-	padding: 1rem;
+	padding: 0.75rem 1rem;
 	text-transform: uppercase;
 	letter-spacing: var(--letterspacing-medium);
 	font-size: var(--bodytext-size);
+	position: relative;
 }
-.headover-section .card .nav .nav-link:hover{
+.headover-section .card .nav.nav-pills .nav-link.active:hover{
+	color: var(--bs-nav-pills-link-active-color);
+}
+.headover-section .card .nav.nav-pills .nav-link:hover{
+    color: var(--primary);
+}
+.headover-section .card .nav.nav-underline .nav-link:hover{
 	font-weight: 700;
     color: var(--bs-nav-underline-link-active-color);
     border-bottom-color: currentcolor;
@@ -1301,3 +1332,115 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	color: var(--primary);
 }
 /*-------------------------- MEMBER DIRECTORY END ---------------------------*/
+/*------------------------------ PROFILE START ------------------------------*/
+.profile-card{
+	--bs-card-cap-padding-y : 1rem;
+	--bs-card-cap-padding-x : 1rem;
+}
+.profile-card .card-header{
+	border-bottom: 0px;
+}
+.profilecard-title{
+	margin: 0;
+	font-weight: bold;
+	color: var(--sectiontitle-color);
+	font-size: var(--bodytextmedium-size);
+	letter-spacing: var(--letterspacing-small);
+}
+.myprofilearea{
+	display: flex;
+	align-items: flex-start; 
+	justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 1rem 0;
+	border-bottom: 1px solid var(--border-color);
+}
+.myprofilearea-content{
+	display: flex;flex-direction: column;justify-content: center;align-items: flex-start;
+	gap: 0.5rem; width: 100%;
+}
+
+.profilepic{width: 160px; min-width: 160px; height: 160px; overflow: hidden;border-radius: 0.5rem; box-shadow: var(--boxshadow);}
+.profilepic img{	width: 100%; height: 100%; object-fit: cover; }
+
+.myprofilearea .fullname{
+	font-size: 1.375rem;
+	letter-spacing: var(--letterspacing-small);
+	font-weight: 900;
+	color: var(--text-color);
+	margin-bottom: 0;
+}
+.myprofilearea .designation{
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: var(--bodytext-size);
+	letter-spacing: var(--letterspacing-small);
+	font-weight: bold;
+	color: var(--text-color);
+/*	color: rgba(var(--primary-rgb), 0.8) ;*/
+}
+.myprofilearea .badge {
+
+    padding: 0.3rem 0.75rem 0.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: var(--letterspacing-large);
+    font-size: 0.75rem;
+}
+
+.myprofile-item{
+	display: flex;
+	flex-direction: column;
+	gap: 0.175rem;
+}
+.myprofile-item .myprofile-itemlabel{
+	font-size: calc(var(--bodytextsmall-size) - 0.1rem);
+	letter-spacing: var(--letterspacing-small);
+	color: var(--textlight-color);
+	text-transform: uppercase;
+}
+.myprofile-item .myprofile-itemvalue{
+	font-size: var(--bodytext-size);
+	letter-spacing: var(--letterspacing-small);
+	font-weight: 500;
+	color: var(--text-color);
+}
+.myprofile-item .myprofile-itemvalue p{
+	font-size: calc(var(--bodytext-size) - 0.1rem);
+	color: var(--text-color);
+}
+.myprofile-social-list{
+	--bs-list-group-item-padding-y : 0.5rem;
+	--bs-list-group-item-padding-x : 0.5rem;
+	--bs-list-group-border-width : 0px;
+}
+.myprofile-social-list .list-group-item{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.myprofile-social-list .list-group-item .list-icon{
+	background-color: transparent;
+	font-size: 1.25rem;
+	color: var(--primarylight);
+}
+.myprofile-social-list .list-group-item .list-title{
+	margin-bottom: 0px;
+    font-size: var(--bodytext-size);
+    letter-spacing: var(--letterspacing-small);
+    font-weight: bold;
+    color: var(--text-color);
+    line-height: normal;
+}
+.myprofile-social-list .list-group-item .list-username{
+	margin-bottom: 0px;
+    font-weight: 400;
+    font-size: var(--bodytextsmall-size);
+    letter-spacing: var(--letterspacing-small);
+    color: var(--textlight-color);
+}
+@media (max-width: 567.98px){
+	.myprofilearea{flex-direction: column}
+	.profilepic{}
+}
+/*------------------------------- PROFILE END -------------------------------*/

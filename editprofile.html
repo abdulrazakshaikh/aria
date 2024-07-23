@@ -361,7 +361,13 @@
             <div class="col-12">
               <div class="page-heading mb-0">
                 <div class="page-content">
-                  <h2 class="page-title mb-0">My Profile</h2>
+                  <h2 class="page-title mb-0">Edit Profile</h2>
+                  <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                      <li class="breadcrumb-item"><a href="myprofile.html">My Profile</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Edit Profile</li>
+                    </ol>
+                  </nav>
                 </div>
               </div>
             </div>
@@ -376,9 +382,8 @@
             <div class="col-12">
               <div class="card ariacard">
                 <div class="card-header pb-0">
-                  <h6 class="card-title"><span class="text-primary">My </span> Profile</h6>
+                  <h6 class="card-title"><span class="text-primary">Edit </span> Profile</h6>
                   <div class="card-action">
-                    <a href="editprofile.html" class="btn btn-primary">Edit Profile</a>
                   </div>
                 </div>
                 <div class="card-body">
@@ -389,70 +394,66 @@
                           <h6 class="profilecard-title"><span class="text-primary">User</span> Information</h6>
                         </div>
                         <div class="card-body pt-0">
-                          <div class="row g-4">
+                          <div class="row g-3">
                             <div class="col-12">
                               <div class="myprofilearea">
                                 <div class="profilepic">
                                   <img src="img/amit.jpg" class="img-fluid" alt="">
                                 </div>
                                 <div class="myprofilearea-content">
-                                  <div class="row w-100">
-                                    <div class="col-12 col-lg-auto">
-                                      <h5 class="fullname mb-3">Amit Kukreja</h5>
-                                      <ul class="member-listgroup gap-2">
-                                        <li class="member-listgroup-item">
-                                          <i class="bi bi-suitcase-lg icon"></i>
-                                          <h6 class="title fw-bold">Past & Current Treasurer</h6>
-                                        </li>
-                                        <li class="member-listgroup-item">
-                                          <i class="bi bi-people icon"></i>
-                                          <h6 class="title fw-bold">Individual</h6>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div class="col-12 col-lg-6">
-                                      <ul class="member-listgroup gap-2">
-                                        <li class="member-listgroup-item">
-                                          <i class="bi bi-phone icon"></i>
-                                          <h6 class="title fw-bold">+91 9324291687</h6>
-                                        </li>
-                                        <li class="member-listgroup-item">
-                                          <i class="bi bi-telephone icon"></i>
-                                          <h6 class="title fw-bold">022 65023115</h6>
-                                        </li>
-                                        <li class="member-listgroup-item">
-                                          <i class="bi bi-envelope icon"></i>
-                                          <a href="mailto:abhijit.talukdar@attainix.com" class="title-link fw-bold" target="_blank">abhijit.talukdar@attainix.com</a>
-                                        </li>
-                                        <li class="member-listgroup-item">
-                                          <i class="bi bi-globe2 icon"></i>
-                                          <a href="https://www.attainix.com" class="title-link fw-bold" target="_blank">https://www.attainix.com</a>
-                                        </li>
-                                      </ul>
-                                      
-                                    </div>
-                                  </div>
-                                  
+                                    <div class="form-floating form-group w-100">
+                                      <input type="text" class="form-control" id="floatingInput" value="Amit Kurkreja">
+                                      <label for="floatingInput">Full Name<span class="text-danger">*</span></label>
+                                    </div> 
+                                    <div class="form-floating form-group w-100">
+                                      <input type="text" class="form-control" id="floatingInput" value="Past & Current Treasurer">
+                                      <label for="floatingInput">Designation<span class="text-danger">*</span></label>
+                                    </div> 
                                 </div>
                               </div>
                             </div>
                             <div class="col-12">
-                              <div class="row g-4">
-                                <div class="col-12">
-                                  <div class="myprofile-item">
-                                    <label for="" class="myprofile-itemlabel">Description</label>
-                                    <div class="myprofile-itemvalue">
-                                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, laborum quis dicta sed. Quam adipisci consequuntur consectetur dolor officiis, ipsum natus, optio ratione architecto ab velit, eaque a maxime nulla. ipsum dolor sit amet, consectetur adipisicing elit. Omnis maxime voluptas anizmi illum repudiandae dicta modi cumque ipsa voluptatem repellat, quos pariatur quasi quisquam minima earum assumenda cum fugiat sapiente.</p>
-                                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, laborum quis dicta sed. Quam adipisci consequuntur consectetur dolor officiis, ipsum natus, optio ratione architecto ab velit, eaque a maxime nulla. ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                              <div class="row g-3">
+                                <div class="col-12 col-lg-5">
+                                  <div class="row g-3">
+                                    <div class="col-12">
+                                      <div class="form-floating">
+                                        <input type="number" class="form-control" id="floatingNumber"  placeholder=" ">
+                                        <label for="floatingNumber">Phone Number</label>
+                                      </div> 
                                     </div>
+                                    <div class="col-12">
+                                      <div class="form-floating">
+                                        <input type="number" class="form-control" id="floatingNumber"  placeholder=" ">
+                                        <label for="floatingNumber">Mobile Number</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingNumber"  placeholder=" ">
+                                        <label for="floatingNumber">Email Address</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="form-floating">
+                                        <input type="url" class="form-control" id="floatingNumber"  placeholder=" ">
+                                        <label for="floatingNumber">Website</label>
+                                      </div> 
+                                    </div>
+                                    
                                   </div>
+                                </div>
+                                <div class="col-12 col-lg-7">
+                                  <div class="form-floating">
+                                      <textarea class="form-control" placeholder=" " id="floatingTextarea" style="height: 280px"></textarea>
+                                      <label for="floatingTextarea">Description</label>
+                                  </div> 
                                  
                                 </div>
                               </div>
                               
                             </div>
                           </div>
-                          
 
                         </div>
                       </div>
@@ -465,38 +466,33 @@
                         <div class="card-body p-2">
                           <ul class="list-group myprofile-social-list list-group-flush">
                             <li class="list-group-item ">
-                              <i class="bi bi-facebook list-icon"></i>
-                              <div class="list-content">
-                                <div class="list-title">Facebook</div>
-                                <p class="text-truncate list-username">@amitkukreja</p>
+                              <div class="input-group">
+                                <span class="input-group-text bi bi-facebook list-icon"></span>
+                                <input type="text" class="form-control" placeholder="Facebook username">
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="input-group">
+                                <span class="input-group-text bi bi-twitter-x list-icon"></span>
+                                <input type="text" class="form-control" placeholder="Twitter-x username">
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="input-group">
+                                <span class="input-group-text bi bi-instagram list-icon"></span>
+                                <input type="text" class="form-control" placeholder="Instagram username">
                               </div>
                             </li>
                             <li class="list-group-item ">
-                              <i class="bi bi-twitter-x list-icon"></i>
-                              <div class="list-content">
-                                <div class="list-title">Twitter X</div>
-                                <p class="text-truncate list-username">@amitkukreja</p>
+                              <div class="input-group">
+                                <span class="input-group-text bi bi-linkedin list-icon"></span>
+                                <input type="text" class="form-control" placeholder="Linkedin username">
                               </div>
                             </li>
                             <li class="list-group-item ">
-                              <i class="bi bi-instagram list-icon"></i>
-                              <div class="list-content">
-                                <div class="list-title">Instagram</div>
-                                <p class="text-truncate list-username">@amitkukreja</p>
-                              </div>
-                            </li>
-                            <li class="list-group-item ">
-                              <i class="bi bi-linkedin list-icon"></i>
-                              <div class="list-contento">
-                                <div class="list-title">LinkedIn</div>
-                                <p class="text-truncate list-username">@amitkukreja</p>
-                              </div>
-                            </li>
-                            <li class="list-group-item ">
-                              <i class="bi bi-youtube list-icon"></i>
-                              <div class="list-contentto">
-                                <div class="list-title">You Tube</div>
-                                <p class="text-truncate list-username">@amitkukreja</p>
+                              <div class="input-group">
+                                <span class="input-group-text bi bi-youtube list-icon"></span>
+                                <input type="text" class="form-control" placeholder="Youtube channel">
                               </div>
                             </li>
                           </ul>
@@ -505,6 +501,10 @@
                     </div>
                   </div>
 
+                </div>
+                <div class="card-footer pt-0 text-end">
+                  <button class="btn btn-primary">Submit</button>
+                  <a href="myprofile.html" class="btn btn-outline-secondary">Cancel</a>
                 </div>
               </div>
             </div>
