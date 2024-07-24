@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>Press Release</title>
+    <title>Login</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -44,12 +44,12 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="#!" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-file-earmark-person-fill"></i>
                     <span>About us</span>
                   </a>
                   <ul class="dropdown-menu dropdown">
-                    <li><a class="dropdown-item" href="whoweare.html">Who we are</a></li>
+                    <li><a class="dropdown-item active" href="whoweare.html">Who we are</a></li>
                     <li><a class="dropdown-item" href="#!">Intent</a></li>
                     <li><a class="dropdown-item" href="#!">ARIA Board</a></li>
                     <li><a class="dropdown-item" href="#!">Committee/Sub-Committees</a></li>
@@ -113,7 +113,7 @@
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#!" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-lightbulb-fill"></i>
                     <span>Initiatives</span>
                   </a>
@@ -122,7 +122,7 @@
                       <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">#ARIA Truly Cares</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Whitepaper</a></li>
-                        <li><a class="dropdown-item active" href="press-releases.html">Press Releases</a></li>
+                        <li><a class="dropdown-item" href="press-releases.html">Press Releases</a></li>
                       
                       </ul>
                     </li>
@@ -238,216 +238,55 @@
   </div>
 </nav>
 
-
 <main class="mainwrapper">
-  <section class="mainheadwrapper" style="--pageheaderimage: url(../img/inner-banner.jpg)">
-    <div class="mainheader-overlay">
+  <div class="mainbodywrapper bg-light loginwrapper position-relative" style="--loginbg : url(../img/login-bg.png) ">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="page-heading mb-0">
-            <div class="page-content">
-              <h2 class="page-title mb-0">Press Releases</h2>
-              <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Initiatives</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Press Release</li>
-                </ol>
-              </nav>
+      <div class="row justify-content-center">
+      
+        <div class="col-12 col-md-8 col-lg-5">
+          <div class="card logincard">
+            <div class="card-header">
+              <h6 class="card-title"><span class="text-primary fw-normal">Member</span> Login</h6>
+              <p class="card-subtitle">Enter the details to login</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
+            <div class="card-body">
+              <div class="login-formwrap">
+                <div class="login-form-group">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="floatingEmail"  placeholder=" ">
+                      <label for="floatingEmail">Email Address</label>
+                    </div> 
+                </div>
 
-  <div class="mainbodywrapper bg-light">
-    <div class=" headover-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-8 col-xl-6">
-            <div class="card">
-              <div class="card-body p-2">
-              <ul class="nav nav-pills nav-fill">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#online-media" data-bs-toggle="tab" aria-selected="true">Online Media</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  href="#press-media" data-bs-toggle="tab" aria-selected="false">Press Media</a>
-                  </li>
-                </ul>
+                <div class="login-form-group">
+                  <div class="input-group">
+                    <div class="form-floating">
+                      <input type="password" class="form-control border-right-0" id="floatingpassword"  placeholder=" ">
+                      <label for="floatingpassword">Password</label>
+                    </div> 
+                    <button class="btn btn-eye border-start-0">
+                      <i class="bi bi-eye-slash-fill"></i>
+                      <!-- <i class="bi bi-eye-fill"></i> -->
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="login-form-group py-3 gap-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Remember me
+                    </label>
+                  </div>
+                  <a href="#!" class="btn link-primary link-forgot">Forget Password?</a>
+              </div>
+
+              <div class="d-grid gap-3 mt-4">
+                <button class="btn btn-primary py-2 text-uppercase">Login</button>
+                <p class="login-text text-center">Not Registered yet <a href="" class="btn link-primary border-0 px-1">Register Now</a></p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="online-media" tabindex="0">
-          <div class="row g-4">
-            <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <div class="card-body">
-                    <div class="itemicon"><i class="bi bi-journal-text"></i></div>
-                    <h6 class="itemtitle text-truncate-line2">K V Kamath releases new spotlight papers on nominations and succession</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <div class="card-body">
-                    <div class="itemicon"><i class="bi bi-journal-text"></i></div>
-                    <h6 class="itemtitle text-truncate-line2">Nomination for financial assets needs upgrade: ARIA</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <div class="card-body">
-                    <div class="itemicon"><i class="bi bi-journal-text"></i></div>
-                    <h6 class="itemtitle text-truncate-line2">ARIA Launches Online Investor Support Helpdesk on Business Standard</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <div class="card-body">
-                    <div class="itemicon"><i class="bi bi-journal-text"></i></div>
-                    <h6 class="itemtitle text-truncate-line2">ARIA Launches Online Investor Support Helpdesk on Devdiscourse</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <div class="card-body">
-                    <div class="itemicon"><i class="bi bi-journal-text"></i></div>
-                    <h6 class="itemtitle text-truncate-line2">ARIA Launches Online Investor Support Helpdesk on Live Mint</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <div class="card-body">
-                    <div class="itemicon"><i class="bi bi-journal-text"></i></div>
-                    <h6 class="itemtitle text-truncate-line2">ARIA Launches Online Investor Support Helpdesk on Zee Business</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="press-media" role="tabpanel" tabindex="0">
-          <div class="row g-4">
-            <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <img src="https://aria.org.in/wp-content/uploads/2021/12/divya.png" class="img-fluid card-img-top itemimage" alt="">
-                  <div class="card-body">
-                    <h6 class="itemtitle text-truncate-line2">K V Kamath releases new spotlight papers on nominations and succession</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <img src="https://aria.org.in/wp-content/uploads/2021/12/mint-600x406.png" class="img-fluid card-img-top itemimage" alt="">
-                  <div class="card-body">
-                    <h6 class="itemtitle text-truncate-line2">Nomination for financial assets needs upgrade: ARIA</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <img src="https://aria.org.in/wp-content/uploads/2021/12/Financial-Express-600x321.png" class="img-fluid card-img-top itemimage" alt="">
-                  <div class="card-body">
-                    <h6 class="itemtitle text-truncate-line2">ARIA Launches Online Investor Support Helpdesk on Business Standard</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <img src="https://aria.org.in/wp-content/uploads/2021/12/hindustan-600x406.png" class="img-fluid card-img-top itemimage" alt="">
-                  <div class="card-body">
-                    <h6 class="itemtitle text-truncate-line2">ARIA Launches Online Investor Support Helpdesk on Devdiscourse</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <img src="https://aria.org.in/wp-content/uploads/2021/12/samachar-437x406.png" class="img-fluid card-img-top itemimage" alt="">
-                  <div class="card-body">
-                    <h6 class="itemtitle text-truncate-line2">ARIA Launches Online Investor Support Helpdesk on Live Mint</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card shadow border-0">
-                  <img src="https://aria.org.in/wp-content/uploads/2021/12/asia-555x406.png" class="img-fluid card-img-top itemimage" alt="">
-                  <div class="card-body">
-                    <h6 class="itemtitle text-truncate-line2">ARIA Launches Online Investor Support Helpdesk on Zee Business</h6>
-                    <p class="itemdesc mb-0 text-truncate-line3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab excepturi, modi cupiditate similique odit, debitis officiis, aperiam rem neque cumque ea adipisci nihil nulla. Distinctio numquam dignissimos, aliquam! Rem.</p>
-                    <div class="itemactions">
-                      <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
           </div>
         </div>
       </div>
@@ -572,77 +411,9 @@
   </footer>
 </main>
 
-<!-- LOGGED IN MENU -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
-  <div class="offcanvas-header">
-    <div class="user-profilearea">
-      <div class="user-profilepic">
-        <img src="img/blank-profile-picture.png" class="img-fluid" alt="">
-      </div>
-      <h5 class="user-fullname">Amit Kukreja</h5>
-      <h6 class="user-designation">Past & Current Treasurer</h6>
-      <span class="badge text-bg-primary">Individual</span>
-      <ul class="social-list">
-        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-        <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
-        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="offcanvas-body px-0 scroll-list">
-    <div class="list-group list-group-flush navlink-listgroup">
-      <a href="#" class="list-group-item list-group-item-action active">
-        <i class="bi bi-grid-1x2 icon"></i>
-        Dashboard
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">
-        <i class="bi bi-person-circle icon"></i>
-        My Profile
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">
-        <i class="bi bi-person-gear icon"></i>
-        My Account
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">
-        <i class="bi bi-file-earmark-text icon"></i>
-        My Articles
-        </a>
-      <a href="#" class="list-group-item list-group-item-action">
-        <i class="bi bi-calendar4-week icon"></i>
-        Events Attended
-        </a>
-      <a href="#" class="list-group-item list-group-item-action">
-        <i class="bi bi-suitcase-lg icon"></i>
-        My Job Lists
-        </a>
-      <a href="#" class="list-group-item list-group-item-action">
-        <i class="bi bi-box-arrow-right icon"></i>
-        Logout
-        </a>
-    </div>
-    
-    <div class="membership-item">
-      <div class="membership-item-icon">
-        <i class="bi bi-hourglass icon"></i>
-        
-      </div>
-      <div class="membership-item-content">
-        <p class="membership-item-title">3 years of Membership</p>
-      </div>
-    </div>
-    <div class="membership-item">
-      <div class="membership-item-icon orange">
-        <i class="bi bi-hourglass icon"></i>
-      </div>
-      <div class="membership-item-content">
-        <p class="membership-item-title">Membership Subscription</p>
-        <p class="membership-item-subtitle">20days left</p>
-      </div>
-    </div>
-    
-  </div>
-</div>
+
+
+
 <!-- Jquery -->
 <script src="js/jquery-3.7.1.min.js"></script>
 

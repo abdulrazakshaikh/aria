@@ -1359,10 +1359,41 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	display: flex;flex-direction: column;justify-content: center;align-items: flex-start;
 	gap: 0.5rem; width: 100%;
 }
-
-.profilepic{width: 160px; min-width: 160px; height: 160px; overflow: hidden;border-radius: 0.5rem; box-shadow: var(--boxshadow);}
+.profilepic{width: 160px; min-width: 160px; height: 160px; position: relative; overflow: hidden;border-radius: 0.5rem; box-shadow: var(--boxshadow);}
 .profilepic img{	width: 100%; height: 100%; object-fit: cover; }
-
+.profilepic.editable{}
+.picedit{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+.picedit:hover{
+	background-color: rgba(var(--primary-rgb), 0.4);
+}
+.picedit .picedit-label{
+	font-size: 0.85rem;
+	letter-spacing: var(--letterspacing-large);
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.picedit input[type="file"]{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.picedit .icon{
+	font-size: 1.75rem;
+}
 .myprofilearea .fullname{
 	font-size: 1.375rem;
 	letter-spacing: var(--letterspacing-small);
@@ -1444,3 +1475,75 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	.profilepic{}
 }
 /*------------------------------- PROFILE END -------------------------------*/
+/*-------------------------- LOGIN/REGISTER START ---------------------------*/
+.login-formwrap{display: flex; flex-direction: column; gap: 1rem}
+.login-bg:before{
+	content: '';
+	background-image: var(--loginbg);
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-position: center bottom;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	
+	bottom: 0;
+	left: 0;right: 0;
+}
+.login-form-group{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: var(--bodytext-size);
+}
+.login-form-group label{color: var(--formlabel);}
+.login-form-group .link-forgot{
+	font-size: var(--bodytext-size);
+}
+.login-form-group .link-forgot:hover{text-decoration: underline}
+.login-form-group .form-floating{flex: 1}
+.login-form-group .input-group .btn-eye{
+	background-color: var(--formcontrol-bgcolor);
+	border: var(--bs-border-width) solid var(--bs-border-color);
+	width: 54px;
+	font-size: 1.375rem;
+}
+.login-form-group .input-group:focus-within .form-control[type="password"]{border-right: 0;}
+.login-form-group .input-group .form-floating:focus-within~.btn-eye{border-color: var(--primary);}
+.logincard{
+	--bs-card-border-width : 0px;
+	--bs-card-cap-padding-y : 1.15rem;
+	--bs-card-cap-padding-x : 1rem;
+	box-shadow: var(--boxshadow);
+	z-index: 99;
+}
+.logincard .card-title{
+	margin: 0;
+	font-weight: 900;
+	letter-spacing: var(--letterspacing-medium);
+	font-size: var(--bodytextlarge-size);
+	color: var(--sectiontitle-color);
+	text-align: center;
+	text-transform: uppercase;
+}
+.logincard .card-subtitle{
+	margin: 0;
+	font-weight: 400;
+	color: rgba(var(--text-color-rgb), 0.7);
+	letter-spacing: var(--letterspacing-medium);
+	font-size: var(--bodytextsmall-size);
+	text-align: center;
+}
+.login-text{font-size : var(--bodytext-size); color: var(--secondary);}
+.login-text > a{text-transform: capitalize; }
+.login-text > a:hover{ text-decoration: underline}
+@media (min-width: 768px){
+	
+	.loginwrapper{padding: 10rem 0;}
+}
+@media (max-width: 767.98px){
+	.login-form-group{justify-content: center}
+
+}
+/*--------------------------- LOGIN/REGISTER END ----------------------------*/
