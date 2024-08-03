@@ -249,119 +249,136 @@
                 <img src="img/loginbg3.png" class="img-fluid" alt="">
               </div>
               <div class="col-12 col-lg-7">
-                <div class="card-header">
-                  <h6 class="card-title"><span class="text-primary fw-normal">Member</span> Registration</h6>
-                  <p class="card-subtitle">Enter the details to Register</p>
-                </div>
-                <div class="card-body">
+                <article id="ViewRegister">
+                  <div class="card-header">
+                    <h6 class="card-title"><span class="text-primary fw-normal">Member</span> Registration</h6>
+                    <p class="card-subtitle">Enter the details to Register</p>
+                  </div>
 
-                  <div class="row g-3">
-                    <div class="col-12 col-lg-6">
-                      <div class="login-form-group">
-                        <div class="input-group">
-                          <span class="input-group-text bi bi-person bg-transparent fs-5"></span>
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingName"  placeholder=" ">
-                            <label for="floatingName">Full Name</label>
-                          </div> 
+                  <div class="card-body" >
+                    <div class="row g-3">
+                      <div class="col-12 col-lg-6">
+                        <div class="login-form-group">
+                          <div class="input-group">
+                            <span class="input-group-text bi bi-person fs-5"></span>
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="floatingName"  placeholder=" ">
+                              <label for="floatingName">First Name</label>
+                            </div> 
+                          </div>
+                          <div class="invalid-feedback">Enter first name</div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="login-form-group">
-                        <div class="input-group">
-                          <span class="input-group-text bi bi-envelope-at bg-transparent fs-5"></span>
-                          <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingEmail"  placeholder=" ">
-                            <label for="floatingEmail">Email Address</label>
-                          </div> 
+                      <div class="col-12 col-lg-6">
+                        <div class="login-form-group">
+                          <div class="input-group">
+                            <span class="input-group-text bi bi-person fs-5"></span>
+                            <div class="form-floating">
+                              <input type="text" class="form-control" id="floatingName"  placeholder=" ">
+                              <label for="floatingName">Last Name</label>
+                            </div> 
+                          </div>
+                          <div class="invalid-feedback">Enter last name</div>
                         </div>
                       </div>
-                    </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="login-form-group">
+                          <div class="input-group">
+                            <span class="input-group-text bi bi-envelope-at fs-5"></span>
+                            <div class="form-floating">
+                              <input type="email" class="form-control is-valid" id="floatingEmail"  placeholder=" " value="abc@domain.com">
+                              <label for="floatingEmail">Email Address</label>
+                            </div> 
+                          </div>
+                          <div class="valid-feedback">Email address is correct</div>
+                        </div>
+                      </div>
 
-                    <div class="col-12 col-lg-6">
-                      <div class="login-form-group">
-                        <div class="input-group">
-                          <span class="input-group-text bi bi-telephone bg-transparent fs-5"></span>
-                          <div class="form-floating">
-                            <input type="number" class="form-control" id="floatingPhone"  placeholder=" ">
-                            <label for="floatingPhone">Phone Number</label>
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="login-form-group">
-                        <div class="input-group">
-                          <span class="input-group-text bi bi-phone bg-transparent fs-5"></span>
-                          <div class="form-floating">
-                            <input type="number" class="form-control" id="floatingMobile"  placeholder=" ">
-                            <label for="floatingMobile">Mobile Number</label>
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6">
-                      <div class="login-form-group">
-                        <div class="input-group">
-                          <span class="input-group-text bi bi-suitcase-lg bg-transparent fs-5"></span>
-                          <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingdesignation"  placeholder=" ">
-                            <label for="floatingdesignation">Designation</label>
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="login-form-group">
-                        <div class="input-group">
-                          <span class="input-group-text bi bi-globe2 bg-transparent fs-5"></span>
-                          <div class="form-floating">
-                            <input type="url" class="form-control" id="floatingwebsite"  placeholder=" ">
-                            <label for="floatingwebsite">Website</label>
-                          </div> 
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div class="col-12 col-lg-6">
-                      <div class="login-form-group">
-                        <div class="input-group">
-                          <span class="input-group-text bi bi-lock bg-transparent fs-5"></span>
-                          <div class="form-floating">
-                            <input type="password" class="form-control border-right-0" id="floatingpassword"  placeholder=" ">
-                            <label for="floatingpassword">Password</label>
-                          </div> 
-                          <button class="btn btn-eye border-start-0">
-                            <i class="bi bi-eye-slash-fill"></i>
-                          </button>
-                        </div>
-                      </div>
                       
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="login-form-group">
-                        <div class="input-group">
-                          <span class="input-group-text bi bi-lock bg-transparent fs-5"></span>
-                          <div class="form-floating">
-                            <input type="password" class="form-control border-right-0" id="floatingconfirmpassword"  placeholder=" ">
-                            <label for="floatingconfirmpassword">Confirm Password</label>
-                          </div> 
-                          <button class="btn btn-eye border-start-0">
-                            <i class="bi bi-eye-slash-fill"></i>
-                          </button>
+                      <div class="col-12 col-lg-6">
+                        <div class="login-form-group">
+                          <div class="input-group">
+                            <span class="input-group-text bi bi-phone fs-5"></span>
+                            <div class="form-floating">
+                              <input type="number" class="form-control is-invalid" id="floatingMobile"  placeholder=" " value="122">
+                              <label for="floatingMobile">Mobile Number</label>
+                            </div> 
+                          </div>
+                          <div class="invalid-feedback">Enter correct mobile number</div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-12">
+                        <div class="login-form-group">
+                          <div class="input-group">
+                            <span class="input-group-text bi bi-people fs-5"></span>
+                            <div class="form-floating">
+                              <select name="" id="" class="form-control form-select is-valid">
+                                <option value="">Individual</option>
+                                <option value="">Associate</option>
+                                <option value="">Corporate</option>
+                              </select>
+                              <label for="floatingPhone">Member Category</label>
+                            </div> 
+                          </div>
+                          <div class="valid-feedback">Member category selected</div>
+                        </div>
+                      </div>
+
+
+                      <div class="col-12 col-lg-6">
+                        <div class="login-form-group">
+                          <div class="input-group">
+                            <span class="input-group-text bi bi-lock fs-5"></span>
+                            <div class="form-floating">
+                              <input type="password" class="form-control border-right-0" id="floatingpassword"  placeholder=" ">
+                              <label for="floatingpassword">Password</label>
+                            </div> 
+                            <button class="btn btn-eye border-start-0">
+                              <i class="bi bi-eye-slash-fill"></i>
+                            </button>
+                          </div>
+                          <div class="invalid-feedback">Enter unique password</div>
+                        </div>
+                        
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="login-form-group">
+                          <div class="input-group">
+                            <span class="input-group-text bi bi-lock fs-5"></span>
+                            <div class="form-floating">
+                              <input type="password" class="form-control border-right-0" id="floatingconfirmpassword"  placeholder=" ">
+                              <label for="floatingconfirmpassword">Confirm Password</label>
+                            </div> 
+                            <button class="btn btn-eye border-start-0">
+                              <i class="bi bi-eye-slash-fill"></i>
+                            </button>
+                          </div>
+                          <div class="invalid-feedback">Enter unique password</div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="d-grid gap-3 mt-4">
-                    <a href="login.html" class="btn btn-primary py-2 text-uppercase">Register</a>
-                    <p class="login-text text-center">Already Registered <a href="login.html" class="btn link-primary border-0 px-1">SignIn Now</a></p>
+                    <div class="d-grid gap-3 mt-4">
+                      <button class="btn btn-primary py-2 text-uppercase" id="btnRegister">Register</button>
+                      <p class="login-text text-center">Already Registered <a href="login.html" class="btn link-primary border-0 px-1">SignIn Now</a></p>
+                    </div>
                   </div>
-                </div>
+                </article>
+                <article class="d-none" id="ViewSuccess">
+                  <div class="card-body">
+                    <div class="d-grid justify-content-center">
+                      <img src="img/success.gif" style="width: 300px;" alt="">
+                    </div>
+                    <h6 class="card-title">You have <span class="text-primary fw-normal">Registered</span> Successfully</h6>
+                    <p class="card-subtitle">Thank you for registering with us</p>
+                    <p class="card-subtitle">you will receive an confirmation email once approved </br>you will receive a payments link in your mail id</p>
+                    <div class="d-flex justify-content-center mt-4">
+                      <a href="login.html" class="btn btn-outline-primary py-2 text-uppercase">Login Now</a>
+                    </div>
+                  </div>
+                </article>
+
                 
               </div>
             </div>

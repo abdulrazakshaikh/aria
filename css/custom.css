@@ -1441,12 +1441,16 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	font-size: var(--bodytext-size);
 }
 .login-form-group label{color: var(--formlabel);}
-.login-form-group .link-forgot{
-	font-size: var(--bodytext-size);
+.login-form-group .form-control:is(:focus){box-shadow: none}
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, 
+.form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+	font-size: calc(var(--bodytext-size) - 0.15rem);
+	text-transform: uppercase;
 }
+.login-form-group .link-forgot{font-size: var(--bodytext-size);}
 .login-form-group .link-forgot:hover{text-decoration: underline}
 .login-form-group .form-floating{flex: 1}
-.login-form-group .input-group .input-group-text{color: var(--textlight-color);}
+.login-form-group .input-group .input-group-text{color: var(--textlight-color); background-color: var(--formcontrol-bgcolor)}
 .login-form-group .input-group .btn-eye{
 	background-color: var(--formcontrol-bgcolor);
 	border: var(--bs-border-width) solid var(--bs-border-color);
@@ -1458,6 +1462,27 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 
 .login-form-group .input-group:has(.input-group-text) .form-control{border-left: 0} 
 .login-form-group .input-group:focus-within .input-group-text{border-color: var(--primary); color: var(--primarylight)}
+/*.login-form-group .input-group:focus-within{border-color: blue}*/
+.login-form-group .input-group:has(.is-invalid) .input-group-text{
+	border-color: var(--bs-form-invalid-border-color);
+	color: var(--bs-form-invalid-border-color);
+	background-color: rgba(var(--bs-danger-rgb), 0.05);
+}
+.login-form-group .input-group:has(.is-valid) .input-group-text{
+	border-color: var(--bs-form-valid-border-color);
+	color: var(--bs-form-valid-border-color);
+	background-color: rgba(var(--bs-success-rgb), 0.05);
+}
+.login-form-group .input-group:has(.is-invalid)~.invalid-feedback{display: block}
+.login-form-group .input-group:has(.is-valid)~.valid-feedback{display: block}
+
+.login-form-group .input-group:has(.is-invalid) .btn-eye{
+	border-color: var(--bs-form-invalid-border-color);
+}
+.login-form-group .input-group:has(.is-valid) .btn-eye{
+	border-color: var(--bs-form-valid-border-color);
+}
+
 .logincard{
 	--bs-card-border-width : 0px;
 	--bs-card-cap-padding-y : 2rem;

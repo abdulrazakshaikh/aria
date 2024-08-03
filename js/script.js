@@ -24,10 +24,19 @@ winDow.addEventListener("scroll", function () {
 
 
 // ------------------------------ISOTOPE MASONRY-------------------------------
-$('.grid').isotope({
-  itemSelector: '.grid-item',
-  layoutMode: 'masonry',
-});  
-$('.grid').imagesLoaded().progress( function() {
-  $('.grid').isotope('layout');
+// $('.grid').isotope({
+//   itemSelector: '.grid-item',
+//   layoutMode: 'masonry',
+// });  
+// $('.grid').imagesLoaded().progress( function() {
+//   $('.grid').isotope('layout');
+// });
+
+
+// ---------------------------REGISTER SHOW/HIDE DIV---------------------------
+
+$("#btnRegister").click(function() {
+  $("#ViewSuccess").removeClass('d-none');
+  $("#ViewRegister").addClass('d-none');
 });
+
