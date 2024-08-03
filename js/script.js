@@ -23,20 +23,40 @@ winDow.addEventListener("scroll", function () {
 
 
 
-// ------------------------------ISOTOPE MASONRY-------------------------------
-// $('.grid').isotope({
-//   itemSelector: '.grid-item',
-//   layoutMode: 'masonry',
-// });  
-// $('.grid').imagesLoaded().progress( function() {
-//   $('.grid').isotope('layout');
-// });
-
-
 // ---------------------------REGISTER SHOW/HIDE DIV---------------------------
 
 $("#btnRegister").click(function() {
   $("#ViewSuccess").removeClass('d-none');
   $("#ViewRegister").addClass('d-none');
 });
+
+
+// ---------------------------TOGGLE PASSWORD---------------------------
+
+function togglePassword() {
+  var passwordField = document.getElementById("floatingpassword");
+  var toggleIcon = document.getElementById("toggleIcon");
+  
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+    toggleIcon.classList.remove("bi-eye-slash-fill");
+    toggleIcon.classList.add("bi-eye-fill");
+  } else {
+    passwordField.type = "password";
+    toggleIcon.classList.remove("bi-eye-fill");
+    toggleIcon.classList.add("bi-eye-slash-fill");
+  }
+}
+
+// ------------------------------ISOTOPE MASONRY-------------------------------
+$('.grid').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'masonry',
+});  
+$('.grid').imagesLoaded().progress( function() {
+  $('.grid').isotope('layout');
+});
+
+
+
 
