@@ -305,7 +305,7 @@
                 <div class="col-12 col-lg-7">
                   
                   <p class="about-text right-green-border pe-5">The Association of Registered Investment Advisers ( ARIA ) was born out of the need to support the development of the investment adviser community post the introduction of the investment advisor regulations by SEBI in 2013. ARIA was set up as a part of the inaugural RIA summit in 2017 from where a RIA Task force emerged, to enable the development of the RIA profession, and bring it to the standards of other established professions that have been in existence since multiple decades. The RIA Taskforce, over a period of meeting for two years, interacted with various stakeholders has 
-                  <a href="about.html" class="btn text-primary fw-bold p-0">Read more</a>
+                  <a href="aboutus.html" class="btn text-primary fw-bold p-0">Read more</a>
                   </p>
                 </div>
                 <div class="col-12 col-lg-5 d-flex flex-column justify-content-center">
@@ -323,7 +323,7 @@
               <!-- Slides -->
               <div class="col-lg-4">
                 <div class="card about-card">
-                  <img src="img/Group 34.jpg" class="card-img-top img-fluid" alt="">
+                  <img src="img/Group 34.jpg" class="card-img-top img-fluid shadow rounded" alt="">
                   <div class="card-body px-0">
                     <a href="#!" class="itemtitle stretched-link">Member Criterion</a>
                   </div>
@@ -331,7 +331,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="card about-card">
-                  <img src="img/Group 38.jpg" class="card-img-top img-fluid" alt="">
+                  <img src="img/Group 38.jpg" class="card-img-top img-fluid shadow rounded" alt="">
                   <div class="card-body px-0">
                     <a href="#!" class="itemtitle stretched-link">Membership Categories</a>
                   </div>
@@ -339,7 +339,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="card about-card">
-                  <img src="img/Group 42.jpg" class="card-img-top img-fluid" alt="">
+                  <img src="img/Group 42.jpg" class="card-img-top img-fluid shadow rounded" alt="">
                   <div class="card-body px-0">
                     <a href="#!" class="itemtitle stretched-link">The Future Of Wealth</a>
                   </div>
@@ -443,7 +443,7 @@
   <section class="section section-news" style="--sectionimage: url(../img/image1.jpg)">
     <div class="container">
       <div class="row justify-content-end">
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-lg-12">
           <div class="card news-card border-radius-lg">
             <div class="card-header">
               <h3 class="section-title mb-0">ARIA in the News</h3>
@@ -467,6 +467,42 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
+                    <div class="card newsitem">
+                      <div class="card-body">
+                        <div class="card newsitem">
+                          <div class="card-body">
+                            <div class="newsitem-meta">
+                              <p class="newsitem-timestamp">May 9, 2024</p>
+                              <p class="newsitem-author">Harsh Roongta</p>
+                            </div>
+                            <h6 class="newsitem-title">Retirement: Embrace holistic planning</h6>
+                            <p class="newsitem-subtitle">I recently spoke with Anand, a prospective client in his late fifties from Delhi, who manages a division at a Fortune 500 company. He approached me to discuss his upcoming retirement next year and to ascertain if his finances would allow him to purchase a luxury home in a hillside retirement community...</p>
+                            
+                            <button class="btn btn-fadedprimary">Read More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card newsitem">
+                      <div class="card-body">
+                        <div class="card newsitem">
+                          <div class="card-body">
+                            <div class="newsitem-meta">
+                              <p class="newsitem-timestamp">May 9, 2024</p>
+                              <p class="newsitem-author">Suresh Sadagopan</p>
+                            </div>
+                            <h6 class="newsitem-title">Pressure in equity markets: what should be investors’ strategy?</h6>
+                            <p class="newsitem-subtitle">Given that there has been pressure in the equity markets of late, what strategy should investors adopt?
+                              Baroda BNP Paribas AMC's Suresh Soni, MoneyWorks' Nisreen Mamaji, and Ladder7 Wealth Planners' Suresh Sadagopan share views.</p>
+                            
+                            <button class="btn btn-fadedprimary">Read More</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="swiper-slide">
                     <div class="card newsitem">
                       <div class="card-body">
                         <div class="card newsitem">
@@ -946,6 +982,24 @@ const newsswiper = new Swiper('#NewsSwiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
   },
 });
 

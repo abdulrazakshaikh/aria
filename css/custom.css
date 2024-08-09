@@ -32,6 +32,7 @@
 
 	--primaryfont : 'Roboto', sans-serif;
 	--secondaryfont : 'Roboto Condensed', sans-serif;
+	--bs-font-sans-serif : 'Roboto', sans-serif;
 
 	/*	COMPONENT SIZE*/
 	--navbarheader-height : 100px;
