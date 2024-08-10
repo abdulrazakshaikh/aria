@@ -783,6 +783,21 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .section-about:before{content: ''; position: absolute; left: 0; background-color: #ffffff; width: 50%; height: 8rem;}
 .card.about-card{--bs-card-border-width: 0px;--bs-card-border-radius: 0px;padding: 3rem 0 0 0; width: 100%}
 .card.about-card .card-img-top{height: 250px; width: 100%; object-fit: cover}
+
+.card.about-card .about-card-image{
+	background-color: #ecfdf5;
+	border: 1px dashed var(--primarylight);
+	border-radius: 0.75rem;
+	padding: 1rem;
+	height: 280px;
+}
+.card.about-card .about-card-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+
 .about-text{font-size: var(--bodytext-size); font-weight: 400; letter-spacing: var(--letterspacing-small);}
 .about-ltext.lighttext{color: var(--primarylight);}
 .about-ltext{font-size: 1.75rem; color: var(--primary); font-weight: 300; letter-spacing: var(--letterspacing-medium); margin: 0}
