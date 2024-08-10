@@ -931,9 +931,16 @@
 <!-- Swiper JS -->
 <script src="js/swiper-bundle.min.js"></script>
 
+<!-- Image Loaded JS -->
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
 <!-- Custom JS -->
 <script src="js/script.js"></script>
-
+<script>
+$('.carousel-caption').imagesLoaded( function() {
+  // images have loaded
+});  
+</script>
 <script>
 const aboutswiper = new Swiper('#AboutSwiper', {
   direction: 'horizontal',
