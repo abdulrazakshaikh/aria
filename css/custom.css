@@ -112,6 +112,13 @@
 	--color3: #C83EDE;
 	--color4: #23dfcd;
 
+	--facebook-color : #325598;
+	--linkedin-color : #2864aa;
+	--twitterx-color : #000000;
+	--youtube-color : #f60002;
+	--instagram-color : radial-gradient(circle farthest-corner at 28% 100%, #fcdf8f 0%, #fbd377 10%,  #fa8e37 22%, #f73344 35%, transparent 65%), linear-gradient(145deg, #3051f1 10%, #c92bb7 70%);
+
+
 	
 	--boxshadow: 0px 0px 20px rgba(83, 88, 93, 0.15);
 
@@ -615,7 +622,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 }
 
 .navbar-header .navbar-nav>.nav-item.dropdown:hover > .dropdown-menu, 
-.navbar-header .navbar-nav>.nav-item .dropend:hover > .dropdown-menu { display: block;}
+.navbar-header .navbar-nav>.nav-item .dropend:hover > .dropdown-menu {display: flex; flex-direction: column; gap: 0.375rem 0;}
 
 
 .navbar-header .navbar-nav>.nav-item .dropdown .dropdown-item{letter-spacing: var(--letterspacing-small); white-space: pre-wrap;}
@@ -798,8 +805,8 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	--bs-card-cap-bg: transparent;
 	--bs-card-cap-padding-y: 1.5rem;
     --bs-card-cap-padding-x: 1.5rem;
-    --bs-card-spacer-y: 1.5rem;
-    --bs-card-spacer-x: 1.5rem;
+    --bs-card-spacer-y: 0.5rem;
+    --bs-card-spacer-x: 0.5rem;
 }
 .card.news-card .card-header{
 	border-bottom: 1px solid var(--primarylight);
@@ -1558,3 +1565,53 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 
 }
 /*--------------------------- LOGIN/REGISTER END ----------------------------*/
+
+/*------------------------------ DETAILS START ------------------------------*/
+
+/*.card-img-top{
+	height: 250px; width: 100%; object-fit: cover;
+}*/
+.details-image{height: 350px; width: 100%; overflow: hidden; border-radius: 0.75rem; box-shadow: var(--boxshadow);}
+.details-image img{width: 100%; height: 100%; object-fit: cover;}
+.details-title{
+	font-size: var(--bodytextmedium-size); letter-spacing: var(--letterspacing-small);
+    font-weight: 600;color: var(--text-color); overflow: hidden;
+}
+.details-desc{
+	font-size: var(--bodytext-size);letter-spacing: var(--letterspacing-small);
+    font-weight: 400; line-height: 1.4;color: var(--text-color);
+}
+.details-pub{display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem}
+.details-pub .pub-label{
+	font-size: calc(var(--bodytextsmall-size) - 0.1rem);letter-spacing: var(--letterspacing-medium);
+    color: var(--textlight-color);text-transform: uppercase;
+}
+.details-pub .pub-value{
+	font-size: var(--bodytextsmall-size); letter-spacing: var(--letterspacing-medium); font-weight: bold;
+	color: var(--primarylight);
+}
+
+.detailsitem{margin: 0.5rem 0rem;display: flex;align-items: center;flex-wrap: wrap;gap: 0.5rem; line-height: 1.2;}
+.detailsitem .detailsitem-label{
+	font-size: calc(var(--bodytextsmall-size) - 0.1rem);letter-spacing: var(--letterspacing-medium);
+    color: var(--textlight-color);text-transform: uppercase;
+}
+.detailsitem .detailsitem-value{
+	font-size: var(--bodytext-size); letter-spacing: var(--letterspacing-small);font-weight: 600;color: var(--text-color);
+}
+/*.detailsitem .detailsitem-value a{text-decoration: underline;}*/
+
+.detailsitem-value.social-list{}
+.detailsitem-value.social-list li{}
+.detailsitem-value.social-list li a{color: #ffffff; background-color: var(--primary); line-height: 0; transition: all 0.25s ease-in-out}
+.detailsitem-value.social-list li a:hover{transform: scale(1.1); box-shadow: var(--boxshadow);}
+.detailsitem-value.social-list li a.facebook-link{background: var(--facebook-color);}
+.detailsitem-value.social-list li a.linkedin-link{background: var(--linkedin-color);}
+.detailsitem-value.social-list li a.twitterx-link{background: var(--twitterx-color);}
+.detailsitem-value.social-list li a.youtube-link{background: var(--youtube-color);}
+.detailsitem-value.social-list li a.instagram-link{background: var(--instagram-color);}
+@media (max-width: 767.98px){
+	.detailsitem{flex-direction: column; gap: 0.275rem; margin-bottom: 1rem; align-items: flex-start;}
+}
+
+/*------------------------------- DETAILS END -------------------------------*/

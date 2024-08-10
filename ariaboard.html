@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>Events</title>
+    <title>Aria Board</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,7 +32,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1">
                   <li class="nav-item">
-                      <a href="index.html" class="nav-link">
+                      <a href="index.html" class="nav-link ">
                         <i class="bi bi-house-door-fill"></i>
                         <span>Home</span>
                       </a>
@@ -44,14 +44,14 @@
                       </a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#!" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="bi bi-file-earmark-person-fill"></i>
                       <span>About us</span>
                     </a>
                     <ul class="dropdown-menu dropdown">
                       <li><a class="dropdown-item" href="aboutus.html">Who we are</a></li>
                       <li><a class="dropdown-item" href="#!">Intent</a></li>
-                      <li><a class="dropdown-item" href="ariaboard.html">ARIA Board</a></li>
+                      <li><a class="dropdown-item active" href="ariaboard.html">ARIA Board</a></li>
                       <li><a class="dropdown-item" href="#!">Committee/Sub-Committees</a></li>
                       <li><a class="dropdown-item" href="#!">Chapters</a></li>
                       <li><a class="dropdown-item" href="#!">Our Partners</a></li>
@@ -128,7 +128,7 @@
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
-                    <a href="#!" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="bi bi-megaphone-fill"></i>
                       <span>News/Events</span>
                     </a>
@@ -163,7 +163,7 @@
                         </ul>
                       </li>
                       <li><a class="dropdown-item" href="#!">ARIA News</a></li>
-                      <li><a class="dropdown-item active" href="events.html">Events - Upcoming & Past</a></li>
+                      <li><a class="dropdown-item" href="events.html">Events - Upcoming & Past</a></li>
                       <li><a class="dropdown-item" href="#!">News of Interest</a></li>
                       <li class="dropdown dropend">
                         <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Newsletters</a>
@@ -223,8 +223,6 @@
         </div>
     </div>
 </nav>
-
-
 <main class="mainwrapper">
   <section class="mainheadwrapper" style="--pageheaderimage: url(../img/inner-banner.jpg)">
     <div class="mainheader-overlay">
@@ -233,7 +231,14 @@
         <div class="col-12">
           <div class="page-heading mb-0">
             <div class="page-content">
-              <h2 class="page-title mb-0">News & Events</h2>
+              <h2 class="page-title mb-0">Aria Board</h2>
+              <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item" aria-current="page"><a href="aboutus.html">About us</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Aria Board</li>
+                </ol>
+              </nav>
             </div>
           </div>
         </div>
@@ -241,295 +246,16 @@
     </div>
     </div>
   </section>
-
   <div class="mainbodywrapper bg-light">
-    <div class=" headover-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-8 col-xl-6">
-            <div class="card">
-              <div class="card-body p-2">
-              <ul class="nav nav-pills nav-fill">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#upcoming-events" data-bs-toggle="tab" aria-selected="true">Upcoming Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  href="#past-events" data-bs-toggle="tab" aria-selected="false">Past Events</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container">
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="upcoming-events" tabindex="0">
-          <div class="row g-4">
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center mt-5">
-            <div class="col-auto">
-              <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                  <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="past-events" role="tabpanel" tabindex="0">
-          <div class="row g-4">
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Navigating investment style the Wisdom Art and Science of Investing</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy2.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Contra – An all-weather investment style - Wisdom on Contrarian Investing</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="card event-card">
-                  <img src="img/dummy1.jpg" class="img-fluid card-img-top" alt="">
-                  <div class="card-body position-relative">
-                    <a href="#!" class="btn btn-primary rounded-pill btn-share" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Share"><i class="bi bi-share-fill"></i></a>
-                    <h6 class="event-title text-truncate-line2">Spotlight on Markets: Small Cap – Wisdom, Challenges & Opportunities</h6>
-                    <div class="event-timestamp">
-                      <span>17th Aug, 2023</span>
-                      <span>5pm to 6pm</span>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <a href="" class="btn link-primary">Read more <span class="material-symbols-outlined icon">east</span></a>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center mt-5">
-            <div class="col-auto">
-              <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                  <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
+      <div class="row g-5">
+        <div class="col-12">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum culpa doloremque cupiditate excepturi eum molestias inventore aliquid mollitia voluptas, quos consequatur officia iure velit maxime eos laborum reprehenderit? Provident. ipsum dolor sit amet consectetur adipisicing elit. Odio at minima iusto nam dolorem ab velit dicta excepturi quisquam nemo quasi ex labore dignissimos fugit, aperiam quos delectus nulla dolore.1</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum culpa doloremque cupiditate excepturi eum molestias inventore aliquid mollitia voluptas, quos consequatur officia iure velit maxime eos laborum reprehenderit? Provident. ipsum dolor sit amet consectetur adipisicing elit. Odio at minima iusto nam dolorem ab velit dicta excepturi quisquam nemo quasi ex labore dignissimos fugit, aperiam quos delectus nulla dolore.1</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum culpa doloremque cupiditate excepturi eum molestias inventore aliquid mollitia voluptas, quos consequatur officia iure velit maxime eos laborum reprehenderit? Provident. ipsum dolor sit amet consectetur adipisicing elit. Odio at minima iusto nam dolorem ab velit dicta excepturi quisquam nemo quasi ex labore dignissimos fugit, aperiam quos delectus nulla dolore.1</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum culpa doloremque cupiditate excepturi eum molestias inventore aliquid mollitia voluptas, quos consequatur officia iure velit maxime eos laborum reprehenderit? Provident. ipsum dolor sit amet consectetur adipisicing elit. Odio at minima iusto nam dolorem ab velit dicta excepturi quisquam nemo quasi ex labore dignissimos fugit, aperiam quos delectus nulla dolore.1</p>
         </div>
       </div>
-
-
     </div>
   </div>
   <footer class="footer">
@@ -635,13 +361,12 @@
         <div class="row">
           <div class="col-12">
             <div class="copyright__inner">
-                <p class="copyright-text">Copyright @202 All rights reserved</p>
+                <p class="copyright-text">Copyright @2023 All rights reserved</p>
                 <ul class="foot-links">
                   <li><a href="#">Legal Disclaimer</a></li>
                   <li><a href="#">Privacy Policy</a></li>
                   <li><a href="#">Terms of Use</a></li>
                   <li><a href="#">Cancellation Policy</a></li>
-                  <li>Credits : GeoCircle</li>
                 </ul>
               </div>
             </div>
