@@ -410,6 +410,9 @@ body::-webkit-scrollbar, .scroll-list::-webkit-scrollbar{width: 10px; height: 5p
 .scroll-list::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb{
 	border-radius: 3px; background-color: var(--primary);
 }
+@media (max-width: 767.98px){
+	body::-webkit-scrollbar{width: 3px; height: 5px;}
+}
 /*------------------------------SCROLLBAR END------------------------------*/
 
 /*------------------------------- FORM START --------------------------------*/
@@ -830,6 +833,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	--bs-card-border-radius: 0px;
 	--bs-card-border-width: 0px;
 	--bs-card-cap-bg: transparent;
+	--bs-card-spacer-x: 0.5rem 2.5rem;
 }
 .newsitem .newsitem-meta{display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;}
 .newsitem .newsitem-timestamp{color: rgba(var(--text-color-rgb), 0.8); font-size: var(--bodytext-size);font-weight: 500;}
@@ -907,6 +911,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	.count-num{font-size: 2rem}
 	.count-title{font-size: 1rem}
 	.videocard{width: 450px; max-width: 100%}
+	.right-green-border{border-right: 0px; border-bottom: 1px solid var(--primaryhover);}
 }
 
 @media (max-width: 767.98px){
@@ -1606,13 +1611,13 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	color: var(--primarylight);
 }
 
-.detailsitem{margin: 0.5rem 0rem;display: flex;align-items: center;flex-wrap: wrap;gap: 0.5rem; line-height: 1.2;}
+.detailsitem{margin: 1rem 0rem;display: flex;align-items: flex-start;flex-wrap: wrap;gap: 0.175rem 0.5rem; line-height: 1.2;}
 .detailsitem .detailsitem-label{
 	font-size: calc(var(--bodytextsmall-size) - 0.1rem);letter-spacing: var(--letterspacing-medium);
     color: var(--textlight-color);text-transform: uppercase;
 }
 .detailsitem .detailsitem-value{
-	font-size: var(--bodytext-size); letter-spacing: var(--letterspacing-small);font-weight: 600;color: var(--text-color);
+	flex: 1; font-size: var(--bodytext-size); letter-spacing: var(--letterspacing-small);font-weight: 600;color: var(--text-color);
 }
 /*.detailsitem .detailsitem-value a{text-decoration: underline;}*/
 
