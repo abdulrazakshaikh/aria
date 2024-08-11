@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>Login</title>
+    <title>Payment</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -229,56 +229,63 @@
   <div class="mainbodywrapper bg-light loginwrapper position-relative login-bg" style="--loginbg : url(../img/login-bg.jpg) ">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
+        <div class="col-12 col-md-7 col-lg-5">
           <div class="card logincard">
-            <div class="row">
-              <div class="col-12 col-lg-6 loginbanner" style="background: #d6f6e7;">
-                <img src="img/loginbg3.png" class="img-fluid" alt="">
-              </div>
-              <div class="col-12 col-lg-6">
+            <div class="row g-0">
                 <div class="card-header">
-                  <h6 class="card-title"><span class="text-primary fw-normal">Member</span> Login</h6>
-                  <p class="card-subtitle">Enter the details to login</p>
+                  <h6 class="card-title"><span class="text-primary fw-normal">Payment for </span> Subscription</h6>
+                  <p class="card-subtitle">Confirm your details & proceed to pay</p>
                 </div>
-                <div class="card-body">
-                  <div class="login-formwrap">
-                    <div class="login-form-group">
-                      <div class="input-group">
-                        <span class="input-group-text bi bi-envelope-at bg-transparent  fs-5"></span>
-                        <div class="form-floating">
-                          <input type="email" class="form-control" id="floatingEmail"  placeholder=" ">
-                          <label for="floatingEmail">Email Address</label>
-                        </div> 
+                <div class="card-body pt-0">
+                  
+                  <div class="row">
+                    <div class="col-6 col-lg-6">
+                      <div class="detailsitem flex-column">
+                        <label for="" class="detailsitem-label">First Name</label>
+                        <div class="detailsitem-value">John</div>
                       </div>
                     </div>
-
-                    <div class="login-form-group">
-                      <div class="input-group">
-                        <span class="input-group-text bi bi-lock bg-transparent  fs-5"></span>
-                        <div class="form-floating">
-                          <input type="password" class="form-control border-right-0" id="floatingpassword"  placeholder=" ">
-                          <label for="floatingpassword">Password</label>
-                        </div> 
-                        <button class="btn btn-eye border-start-0">
-                          <i class="bi bi-eye-slash-fill"></i>
-                        </button>
+                    <div class="col-6 col-lg-6">
+                      <div class="detailsitem flex-column">
+                        <label for="" class="detailsitem-label">Last Name</label>
+                        <div class="detailsitem-value">Doe</div>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="login-form-group py-3 gap-2">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Remember me
-                        </label>
+                    <div class="col-6 col-lg-6">
+                      <div class="detailsitem flex-column">
+                        <label for="" class="detailsitem-label">Email Address</label>
+                        <div class="detailsitem-value">johnoe@domain.com</div>
                       </div>
-                      <a href="#!" class="btn link-primary link-forgot">Forget Password?</a>
+                    </div>
+                    <div class="col-6 col-lg-6">
+                      <div class="detailsitem flex-column">
+                        <label for="" class="detailsitem-label">Mobile Number</label>
+                        <div class="detailsitem-value">9876543210</div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-12">
+                      <div class="detailsitem flex-column">
+                        <label for="" class="detailsitem-label">Address</label>
+                        <div class="detailsitem-value">123, Plot - xx, Lorem street, Near Lorem Road, Mumbai Maharashtra India - 400001</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-6">
+                      <div class="detailsitem flex-column">
+                        <label for="" class="detailsitem-label">Subscription Amount</label>
+                        <div class="detailsitem-value"><i class="bi bi-currency-rupee"></i> 2500.00</div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-lg-6">
+                      <div class="detailsitem flex-column">
+                        <label for="" class="detailsitem-label">Subscription Type</label>
+                        <div class="detailsitem-value">Yearly Plan</div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="d-grid gap-3 mt-4">
-                    <a href="dashboard.html" class="btn btn-primary py-2 text-uppercase">Sign In</a>
-                    <p class="login-text text-center">Not Registered yet <a href="register.html" class="btn link-primary border-0 px-1">Register Now</a></p>
+                    <a href="!#" class="btn btn-primary py-2 text-uppercase">Pay Now!</a>
+                    <small class="text-secondary text-center">NOTE : after clicking on pay now a payment gateway popup will appear for payments</small>
                   </div>
                 </div>
                 
