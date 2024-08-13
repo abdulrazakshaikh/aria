@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <title>Payment</title>
+    <title>Committees</title>
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,7 +32,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1">
                   <li class="nav-item">
-                      <a href="index.html" class="nav-link active">
+                      <a href="index.html" class="nav-link ">
                         <i class="bi bi-house-door-fill"></i>
                         <span>Home</span>
                       </a>
@@ -44,7 +44,7 @@
                       </a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#!" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="bi bi-file-earmark-person-fill"></i>
                       <span>About us</span>
                     </a>
@@ -52,7 +52,7 @@
                       <li><a class="dropdown-item" href="aboutus.html">Who we are</a></li>
                       <li><a class="dropdown-item" href="#!">Intent</a></li>
                       <li><a class="dropdown-item" href="ariaboard.html">ARIA Board</a></li>
-                      <li><a class="dropdown-item" href="committees.html">Committee/Sub-Committees</a></li>
+                      <li><a class="dropdown-item active" href="committees.html">Committee/Sub-Committees</a></li>
                       <li><a class="dropdown-item" href="#!">Chapters</a></li>
                       <li><a class="dropdown-item" href="#!">Our Partners</a></li>
                       <li><a class="dropdown-item" href="#!">Testimonials</a></li>
@@ -216,79 +216,90 @@
         </div>
     </div>
 </nav>
-
-
 <main class="mainwrapper">
-  <div class="mainbodywrapper bg-light loginwrapper position-relative login-bg" style="--loginbg : url(../img/login-bg.jpg) ">
+  <section class="mainheadwrapper" style="--pageheaderimage: url(../img/inner-banner.jpg)">
+    <div class="mainheader-overlay">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-7 col-lg-5">
-          <div class="card logincard">
-            <div class="row g-0">
-                <div class="card-header">
-                  <h6 class="card-title"><span class="text-primary fw-normal">Payment for </span> Subscription</h6>
-                  <p class="card-subtitle">Confirm your details & proceed to pay</p>
-                </div>
-                <div class="card-body pt-0">
-                  
-                  <div class="row">
-                    <div class="col-6 col-lg-6">
-                      <div class="detailsitem flex-column">
-                        <label for="" class="detailsitem-label">First Name</label>
-                        <div class="detailsitem-value">John</div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-lg-6">
-                      <div class="detailsitem flex-column">
-                        <label for="" class="detailsitem-label">Last Name</label>
-                        <div class="detailsitem-value">Doe</div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-lg-6">
-                      <div class="detailsitem flex-column">
-                        <label for="" class="detailsitem-label">Email Address</label>
-                        <div class="detailsitem-value">johnoe@domain.com</div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-lg-6">
-                      <div class="detailsitem flex-column">
-                        <label for="" class="detailsitem-label">Mobile Number</label>
-                        <div class="detailsitem-value">9876543210</div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-12">
-                      <div class="detailsitem flex-column">
-                        <label for="" class="detailsitem-label">Address</label>
-                        <div class="detailsitem-value">123, Plot - xx, Lorem street, Near Lorem Road, Mumbai Maharashtra India - 400001</div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-lg-6">
-                      <div class="detailsitem flex-column">
-                        <label for="" class="detailsitem-label">Subscription Amount</label>
-                        <div class="detailsitem-value"><i class="bi bi-currency-rupee"></i> 2500.00</div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-lg-6">
-                      <div class="detailsitem flex-column">
-                        <label for="" class="detailsitem-label">Subscription Type</label>
-                        <div class="detailsitem-value">Yearly Plan</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-grid gap-3 mt-4">
-                    <a href="!#" class="btn btn-primary py-2 text-uppercase">Pay Now!</a>
-                    <small class="text-secondary text-center">NOTE : after clicking on pay now a payment gateway popup will appear for payments</small>
-                  </div>
-                </div>
-                
-              </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="page-heading mb-0">
+            <div class="page-content">
+              <h2 class="page-title mb-0">Committee/Sub-Committees</h2>
+              <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item" aria-current="page"><a href="aboutus.html">About us</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Committee/Sub-Committees</li>
+                </ol>
+              </nav>
             </div>
-
           </div>
         </div>
       </div>
-
+    </div>
+    </div>
+  </section>
+  <div class="mainbodywrapper bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body table-responsive">
+                <table class="table table-bordered mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-bg-primary">Committee</th>
+                      <th class="text-bg-primary">Board Member</th>
+                      <th class="text-bg-primary">Volunteers</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Accounting and Legal</td>
+                      <td>Amit Kukreja, Harsh Roongta, Vivek Rege</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>Advocacy Committee</td>
+                      <td>Dilshad Billimoria, Harsh Roongta, Kavitha Menon, Renu Maheshwari, Shailendra Kumar</td>
+                      <td>Anup Bansal, Biharilal Deora A, Uday Dhoot, Vishal Dhawan</td>
+                    </tr>
+                    <tr>
+                      <td>Media Committee</td>
+                      <td>Dilshad Billimoria, Lovaii Navlakhi, Tarun Birani</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>Members Engagement Committee</td>
+                      <td>Renu Maheshwari, Suresh Sadagopan, Kavitha Menon</td>
+                      <td>Abhishek Mittal, Jay Thacker, Jigar Patel, Kanika Shah, Nitin Sawant, Rohit Shah, S R Srinivasan, Sridevi Ganesh, Trupti Muralidhar, Upasana Mondal</td>
+                    </tr>
+                    <tr>
+                      <td>New Membership Committee</td>
+                      <td>Harsh Roongta, Lovaii Navlakhi, Tarun Birani</td>
+                      <td>Abubakr Siddique, Kanika Shah, Rohit Shah, Thejus Palathingal</td>
+                    </tr>
+                    <tr>
+                      <td>Partners Engagement Committee</td>
+                      <td>Amit Kukreja, Lovaii Navlakhi, Vivek Rege</td>
+                      <td>Jay Thacker, Trupti Muralidhar, Ravi Natarajan</td>
+                    </tr>
+                    <tr>
+                      <td>Technology Committee</td>
+                      <td>Amit Kukreja, Shailendra Kumar</td>
+                      <td>Abhijit Talukdar, Vinit Iyer, Vipin Khandelwal</td>
+                    </tr>
+                    <tr>
+                      <td>WARIA</td>
+                      <td>Renu Maheshwari, Dilshad Billimoria</td>
+                      <td>Ratnasri Karra</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <footer class="footer">
@@ -394,13 +405,12 @@
         <div class="row">
           <div class="col-12">
             <div class="copyright__inner">
-                <p class="copyright-text">Copyright @202 All rights reserved</p>
+                <p class="copyright-text">Copyright @2023 All rights reserved</p>
                 <ul class="foot-links">
                   <li><a href="#">Legal Disclaimer</a></li>
                   <li><a href="#">Privacy Policy</a></li>
                   <li><a href="#">Terms of Use</a></li>
                   <li><a href="#">Cancellation Policy</a></li>
-                  <li>Credits : GeoCircle</li>
                 </ul>
               </div>
             </div>
@@ -410,7 +420,77 @@
   </footer>
 </main>
 
-
+<!-- LOGGED IN MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+  <div class="offcanvas-header">
+    <div class="user-profilearea">
+      <div class="user-profilepic">
+        <img src="img/blank-profile-picture.png" class="img-fluid" alt="">
+      </div>
+      <h5 class="user-fullname">Amit Kukreja</h5>
+      <h6 class="user-designation">Past & Current Treasurer</h6>
+      <span class="badge text-bg-primary">Individual</span>
+      <ul class="social-list">
+        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+        <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="offcanvas-body px-0 scroll-list">
+    <div class="list-group list-group-flush navlink-listgroup">
+      <a href="#" class="list-group-item list-group-item-action active">
+        <i class="bi bi-grid-1x2 icon"></i>
+        Dashboard
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-person-circle icon"></i>
+        My Profile
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-person-gear icon"></i>
+        My Account
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-file-earmark-text icon"></i>
+        My Articles
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-calendar4-week icon"></i>
+        Events Attended
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-suitcase-lg icon"></i>
+        My Job Lists
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-box-arrow-right icon"></i>
+        Logout
+        </a>
+    </div>
+    
+    <div class="membership-item">
+      <div class="membership-item-icon">
+        <i class="bi bi-hourglass icon"></i>
+        
+      </div>
+      <div class="membership-item-content">
+        <p class="membership-item-title">3 years of Membership</p>
+      </div>
+    </div>
+    <div class="membership-item">
+      <div class="membership-item-icon orange">
+        <i class="bi bi-hourglass icon"></i>
+      </div>
+      <div class="membership-item-content">
+        <p class="membership-item-title">Membership Subscription</p>
+        <p class="membership-item-subtitle">20days left</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
 <!-- Jquery -->
 <script src="js/jquery-3.7.1.min.js"></script>
 
@@ -422,6 +502,18 @@
 
 <!-- Custom JS -->
 <script src="js/script.js"></script>
+
+<script>
+const testimonialswiper = new Swiper('#TestimonialSwiper', {
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+</script>
 
 </body>
 </html>
