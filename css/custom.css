@@ -1617,7 +1617,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .details-image{height: 350px; width: 100%; overflow: hidden; border-radius: 0.75rem; box-shadow: var(--boxshadow);}
 .details-image img{width: 100%; height: 100%; object-fit: cover;}
 .details-title{
-	font-size: var(--bodytextmedium-size); letter-spacing: var(--letterspacing-small);
+	font-size: var(--bodytextlarge-size); letter-spacing: var(--letterspacing-small);
     font-weight: 600;color: var(--text-color); overflow: hidden;
 }
 .details-desc{
