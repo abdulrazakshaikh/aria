@@ -1255,3 +1255,25 @@ display:none;}
 		margin-left: 20px !important;
 	}
 }	
+
+
+@media (max-width: 767px){
+	#wpforo #wpforo-wrap .wpf-activity-data .wpf-activity-top{
+		flex-direction: column;
+	}
+	#wpforo #wpforo-wrap .wpf-activity-data .wpf-activity-top .wpf-activity-title p{
+		margin-bottom: 0.275rem;
+	}
+	#wpforo #wpforo-wrap .wpf-activity-data .wpf-activity-top .wpf-activity-date{
+		text-align: left;
+		margin-bottom: 0.5rem;
+	}
+	#wpforo #wpforo-wrap .wpf-activity{
+		margin-bottom: 25px;
+	}
+
+}
+
+#wpforo #wpforo-wrap .wpf-activity-panel .wpf-activity-panel-right span.wpf-active a{
+	color: #ffffff;
+}
