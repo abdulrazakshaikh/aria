@@ -1607,7 +1607,9 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 
 
 .stepbuttons{
+	background-color: var(--bglight-color) ;
 	display: flex; align-items: center; justify-content: flex-end; margin-top: 1.5rem; padding: 1rem;
+	border-radius: 0px !important;
 }
 .stepbuttons:has(.btn:nth-child(2)){
 	justify-content: space-between;
