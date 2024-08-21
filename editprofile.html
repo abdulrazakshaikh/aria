@@ -345,83 +345,223 @@
                 </div>
                 <div class="card-body">
                   <div class="row g-3">
-                    <div class="col-12 col-lg-9">
-                      <div class="card profile-card">
-                        <div class="card-header">
-                          <h6 class="profilecard-title"><span class="text-primary">User</span> Information</h6>
-                        </div>
-                        <div class="card-body pt-0">
-                          <div class="row g-3">
-                            <div class="col-12">
-                              <div class="myprofilearea">
-                                <div class="profilepic editable">
-                                  <div class="picedit">
-                                      <i class="bi bi-pencil icon"></i>
-                                      <div class="picedit-label">Edit Profile</div>
-                                      <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                  </div>
-                                  <img src="img/amit.jpg" class="img-fluid" alt="">
-                                </div>
-                                <div class="myprofilearea-content">
-                                    <div class="form-floating form-group w-100">
-                                      <input type="text" class="form-control" id="floatingInput" value="Amit Kurkreja">
-                                      <label for="floatingInput">Full Name<span class="text-danger">*</span></label>
-                                    </div> 
-                                    <div class="form-floating form-group w-100">
-                                      <input type="text" class="form-control" id="floatingInput" value="Past & Current Treasurer">
-                                      <label for="floatingInput">Designation<span class="text-danger">*</span></label>
-                                    </div> 
-                                </div>
-                              </div>
+                    <div class="col-12 col-lg-12">
+                      <div class="row g-3">
+                        <div class="col-12">
+                          <div class="card profile-card">
+                            <div class="card-header">
+                              <h6 class="profilecard-title"><span class="text-primary">User</span> Information</h6>
                             </div>
-                            <div class="col-12">
+                            <div class="card-body pt-0">
                               <div class="row g-3">
-                                <div class="col-12 col-lg-5">
-                                  <div class="row g-3">
-                                    <div class="col-12">
-                                      <div class="form-floating">
-                                        <input type="number" class="form-control" id="floatingNumber"  placeholder=" ">
-                                        <label for="floatingNumber">Phone Number</label>
-                                      </div> 
+                                <div class="col-12">
+                                  <div class="myprofilearea">
+                                    <div class="profilepic editable">
+                                      <div class="picedit">
+                                          <i class="bi bi-pencil icon"></i>
+                                          <div class="picedit-label">Edit Profile</div>
+                                          <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                      </div>
+                                      <img src="img/amit.jpg" class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-12">
-                                      <div class="form-floating">
-                                        <input type="number" class="form-control" id="floatingNumber"  placeholder=" ">
-                                        <label for="floatingNumber">Mobile Number</label>
-                                      </div> 
+                                    <div class="myprofilearea-content">
+                                      <div class="row g-3 w-100">
+                                        <div class="col-12 col-md-6">
+                                          <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInput" value="Amit">
+                                            <label for="floatingInput">First Name<span class="text-danger">*</span></label>
+                                          </div> 
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                          <div class="form-floating">
+                                            <input type="text" class="form-control" id="floatingInput" value="Kukreja">
+                                            <label for="floatingInput">Last Name<span class="text-danger">*</span></label>
+                                          </div> 
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                          <div class="input-group">
+                                            <select name="" id="" class="form-control" style="max-width: 58px;">
+                                              <option value="">-</option>
+                                              <option value="" selected>+91</option>
+                                              <option value="">+92</option>
+                                              <option value="">+93</option>
+                                            </select>
+                                            <div class="form-floating">
+                                              <input type="number" class="form-control" id="floatingNumber"  placeholder=" ">
+                                              <label for="floatingNumber">Mobile Number</label>
+                                            </div> 
+                                          </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                          <div class="form-floating">
+                                            <input type="email" class="form-control" id="floatingNumber"  placeholder=" ">
+                                            <label for="floatingNumber">Email Address</label>
+                                          </div> 
+                                        </div>
+                                      </div>
+                                        
                                     </div>
-                                    <div class="col-12">
-                                      <div class="form-floating">
-                                        <input type="email" class="form-control" id="floatingNumber"  placeholder=" ">
-                                        <label for="floatingNumber">Email Address</label>
-                                      </div> 
-                                    </div>
-                                    <div class="col-12">
-                                      <div class="form-floating">
-                                        <input type="url" class="form-control" id="floatingNumber"  placeholder=" ">
-                                        <label for="floatingNumber">Website</label>
-                                      </div> 
-                                    </div>
-                                    
                                   </div>
                                 </div>
                                 <div class="col-12 col-lg-7">
+                                  <div class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <input type="date" class="form-control" id="floatingDOB" placeholder=" ">
+                                        <label for="floatingDOB">Date of Birth</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <select name="" id="" class="form-control form-select" id="floatingGender">
+                                          <option value="">-</option>
+                                          <option value="">Male</option>
+                                          <option value="">Female</option>
+                                          <option value="">Other</option>
+                                        </select>
+                                        <label for="floatingGender">Gender</label>
+                                      </div> 
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating ">
+                                        <input type="text" class="form-control" id="floatingInput" value="Past & Current Treasurer">
+                                        <label for="floatingInput">Designation<span class="text-danger">*</span></label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <select name="" class="form-control form-select" id="floatingexperience">
+                                          <option value="">0-2 years</option>
+                                          <option value="">2-4 years</option>
+                                          <option value="">4-6 years</option>
+                                          <option value="">6-8 years</option>
+                                          <option value="">8-10 years</option>
+                                        </select>
+                                        <label for="floatingexperience">Year of Experience</label>
+                                      </div> 
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-lg-5">
                                   <div class="form-floating">
-                                      <textarea class="form-control" placeholder=" " id="floatingTextarea" style="height: 280px"></textarea>
+                                      <textarea class="form-control" placeholder=" " id="floatingTextarea" style="height: 130px"></textarea>
                                       <label for="floatingTextarea">Description</label>
                                   </div> 
-                                 
                                 </div>
                               </div>
-                              
                             </div>
                           </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card profile-card">
+                            <div class="card-header">
+                              <h6 class="profilecard-title"><span class="text-primary">Company</span> Information</h6>
+                            </div>
+                            <div class="card-body">
+                              <div class="row g-3">
+                                <div class="col-12 col-lg-6">
+                                  <div class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingFirmName"  placeholder=" ">
+                                        <label for="floatingFirmName">Firm Name</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingSebi"  placeholder=" ">
+                                        <label for="floatingSebi">SEBI Regn Number</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <input type="url" class="form-control" id="floatingNumber"  placeholder=" ">
+                                        <label for="floatingNumber">Website url</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <select name="" class="form-control form-select" id="floatingProductServices">
+                                          <option value="">One</option>
+                                          <option value="">Two</option>
+                                          <option value="">Three</option>
+                                          <option value="">Four</option>
+                                          <option value="">Five</option>
+                                        </select>
+                                        <label for="floatingProductServices">Product Services</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingNetAssets"  placeholder=" ">
+                                        <label for="floatingNetAssets">Net Assets</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingGst"  placeholder=" ">
+                                        <label for="floatingGst">GST Number</label>
+                                      </div> 
+                                    </div>
 
+                                  </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                  <div class="row g-3">
+                                    <div class="col-12 col-lg-12">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingAddress"  placeholder=" ">
+                                        <label for="floatingAddress">Address</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingCity"  placeholder=" ">
+                                        <label for="floatingCity">City</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <select name="" class="form-control form-select" id="floatingState">
+                                          <option value="">Maharashtra</option>
+                                          <option value="">Chennai</option>
+                                          <option value="">Delhi</option>
+                                          <option value="">Kolkata</option>
+                                          <option value="">Bangalore</option>
+                                          <option value="">Pune</option>
+                                        </select>
+                                        <label for="floatingState">State</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <select name="" class="form-control form-select" id="floatingCountry">
+                                          <option value="">India</option>
+                                          <option value="">Australia</option>
+                                          <option value="">USA</option>
+                                          <option value="">UK</option>
+                                          <option value="">Canada</option>
+                                        </select>
+                                        <label for="floatingCountry">Country</label>
+                                      </div> 
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <div class="form-floating">
+                                        <input type="text" class="form-control" id="floatingPincode"  placeholder=" ">
+                                        <label for="floatingPincode">Pincode</label>
+                                      </div> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-12 col-lg-3">
-                      <div class="card profile-card h-100">
+                    <div class="col-12 col-lg-12">
+                      <div class="card profile-card">
                         <div class="card-header">
                           <h6 class="profilecard-title"><span class="text-primary">Social</span> Accounts</h6>
                         </div>

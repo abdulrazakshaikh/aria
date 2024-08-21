@@ -1458,7 +1458,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	text-transform: uppercase;
 }
 .myprofile-item .myprofile-itemvalue{
-	font-size: var(--bodytext-size);
+	font-size: var(--bodytextsmall-size);
 	letter-spacing: var(--letterspacing-small);
 	font-weight: 500;
 	color: var(--text-color);
@@ -1471,11 +1471,14 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	--bs-list-group-item-padding-y : 0.5rem;
 	--bs-list-group-item-padding-x : 0.5rem;
 	--bs-list-group-border-width : 0px;
+	flex-direction: row;
+    flex-wrap: wrap;
 }
 .myprofile-social-list .list-group-item{
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	flex: 1 0 50%;
 }
 .myprofile-social-list .list-group-item .list-icon{
 	background-color: transparent;
@@ -1496,6 +1499,10 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
     font-size: var(--bodytextsmall-size);
     letter-spacing: var(--letterspacing-small);
     color: var(--textlight-color);
+}
+@media (max-width: 767.98px){
+	.myprofile-social-list .list-group-item{flex: 1 0 100%;}
+
 }
 @media (max-width: 567.98px){
 	.myprofilearea{flex-direction: column}
