@@ -240,7 +240,7 @@
   </section>
   <div class="mainbodywrapper bg-light">
     <div class="container">
-      <div class="row g-5">
+      <div class="row g-2">
         <div class="col-12">
 
           <div class="row g-4">
@@ -286,48 +286,54 @@
 
         </div>
         <div class="col-12">
-          <p class="text-muted fw-bold">Please complete the form below if you want to connect with us or send us a question or comment.</p>
-          <form target="_blank" action="" method="POST">
-            <div class="row g-3">
-              <div class="col-12 col-lg-6">
-                <div class="row g-3">
-                  <div class="col-12 col-lg-6">
-                    <div class="form-floating form-group mb-0">
-                      <input type="text" name="fname" class="form-control" id="floatingname" placeholder="" required="">
-                      <label for="floatingname" class="form-label">Name</label>
+          <div class="card ariacard">
+              <form target="_blank" action="" method="POST">
+                <div class="card-body">
+                  <p class="text-muted fw-bold">Please complete the form below if you want to connect with us or send us a question or comment.</p>
+                  <div class="row g-3">
+                    <div class="col-12 col-lg-6">
+                      <div class="row g-3">
+                        <div class="col-12 col-lg-6">
+                          <div class="form-floating form-group mb-0">
+                            <input type="text" name="fname" class="form-control" id="floatingname" placeholder="" required="">
+                            <label for="floatingname" class="form-label">Name</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                          <div class="form-floating form-group mb-0">
+                            <input type="number" name="phone" class="form-control" id="floatingPhone" placeholder="" required="">
+                            <label for="floatingPhone" class="form-label">Phone Number</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                          <div class="form-floating form-group mb-0">
+                            <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="" required="">
+                            <label for="floatingEmail" class="form-label">Email</label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                          <div class="form-floating form-group mb-0">
+                            <input type="text" name="address" class="form-control" id="floatingSubject" placeholder="">
+                            <label for="floatingSubject" class="form-label">Subject</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="form-floating form-group">
+                        <textarea name="message" style="height: 150px" class="form-control" id="floatingMessage" placeholder="" required=""></textarea>
+                        <label for="floatingMessage" class="form-label">Message</label>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="form-floating form-group mb-0">
-                      <input type="number" name="phone" class="form-control" id="floatingPhone" placeholder="" required="">
-                      <label for="floatingPhone" class="form-label">Phone Number</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="form-floating form-group mb-0">
-                      <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="" required="">
-                      <label for="floatingEmail" class="form-label">Email</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                    <div class="form-floating form-group mb-0">
-                      <input type="text" name="address" class="form-control" id="floatingSubject" placeholder="">
-                      <label for="floatingSubject" class="form-label">Subject</label>
-                    </div>
-                  </div>
+                  
                 </div>
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="form-floating form-group">
-                  <textarea name="message" style="height: 150px" class="form-control" id="floatingMessage" placeholder="" required=""></textarea>
-                  <label for="floatingMessage" class="form-label">Message</label>
+                <div class="card-footer  bg-light text-end">
+                  <button type="submit" class="btn btn-outline-secondary px-4 py-2 fs-6">Clear</button>
+                  <button type="submit" class="shadow btn btn-primary px-4 py-2 fs-6">Submit</button>
                 </div>
-              </div>
-              <div class="col-12 col-lg-12 text-end">
-                <button type="submit" class="shadow btn btn-primary px-4 py-2 fs-6">Submit</button>
-              </div>
-            </div>
-          </form>
+              </form>
+          </div>
         </div>
       </div>
     </div>

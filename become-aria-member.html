@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+    <title>Become Aria Member</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet"  href="css/swiper-bundle.min.css"/>
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-header navbar-expand-xl fixed-top" id="navbarHeader">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="img/ARIA-logo_new.png" class="img-fluid" alt="">
+      </a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLeft">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Navigation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                      <i class="bi bi-house-door-fill"></i>
+                      <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="members-directory.html" class="nav-link">
+                      <i class="bi bi-person-vcard"></i>
+                      <span>Advisors</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-file-earmark-person-fill"></i>
+                    <span>About us</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown">
+                    <li><a class="dropdown-item " href="whoweare.html">Who we are</a></li>
+                    <li><a class="dropdown-item" href="#!">Intent</a></li>
+                    <li><a class="dropdown-item" href="#!">ARIA Board</a></li>
+                    <li><a class="dropdown-item" href="committees.html">Committee/Sub-Committees</a></li>
+                    <li><a class="dropdown-item" href="#!">Chapters</a></li>
+                    <li><a class="dropdown-item" href="#!">Our Partners</a></li>
+                    <li><a class="dropdown-item" href="#!">Testimonials</a></li>
+                    <li><a class="dropdown-item" href="#!">Careers</a></li>
+
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Stakeholders Relations</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Annual Report</a></li>
+                        <li><a class="dropdown-item" href="#">Election Results</a></li>
+                        <li><a class="dropdown-item" href="#">General Meeting</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="investors.html" class="nav-link">
+                      <i class="bi bi-cash-stack"></i>
+                      <span>Investors</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#!" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-people-fill"></i>
+                    <span>Members</span>
+                  </a>
+                  <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="#!">Advocacy Initiatives</a></li>
+                    <li><a class="dropdown-item active" href="become-aria-member.html">Become a Member</a></li>
+                    <li><a class="dropdown-item" href="#!">Community</a></li>
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Complaince Resources</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Downloads</a></li>
+                        <li><a class="dropdown-item" href="#">Question</a></li>
+                        <li><a class="dropdown-item" href="#">Webinars</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#!">FAQ</a></li>
+                    <li><a class="dropdown-item" href="#!">Job Openings</a></li>
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learning Resources</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Downloads</a></li>
+                        <li><a class="dropdown-item" href="#">Interviews</a></li>
+                        <li><a class="dropdown-item" href="#">Webinars</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="members-in-media.html">Members in Media</a></li>
+                    <li><a class="dropdown-item" href="#!">Members Privileges</a></li>
+                    <li><a class="dropdown-item" href="#!">Setting up on RIA Practices</a></li>
+                    <li><a class="dropdown-item" href="#!">Stakeholders Contact Details</a></li>
+                    <li><a class="dropdown-item" href="#!">Survey</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#!" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-lightbulb-fill"></i>
+                    <span>Initiatives</span>
+                  </a>
+                  <ul class="dropdown-menu ">
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">#ARIA Truly Cares</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Whitepaper</a></li>
+                        <li><a class="dropdown-item" href="press-releases.html">Press Releases</a></li>
+                      
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Complaint Analysis</a></li>
+                    <li><a class="dropdown-item" href="#!">Research Papers</a></li>
+                    <li><a class="dropdown-item" href="#!">WARIA</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-megaphone-fill"></i>
+                    <span>News/Events</span>
+                  </a>
+                  <ul class="dropdown-menu ">
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">ARIA Summits</a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown dropend">
+                          <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">2024</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Aspire - 2024</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                          <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">2023</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Aspire - 2023</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                          <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">2022</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Aspire - January 2022</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown dropend">
+                          <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">2021</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">ReInvent - November 2021</a></li>
+                            <li><a class="dropdown-item" href="#">ReSurge - January 2021</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">ARIA Summits Recording</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Aspire - 2023</a></li>
+                        <li><a class="dropdown-item" href="#">Aspire - 2022</a></li>
+                        <li><a class="dropdown-item" href="#">ReInvent - 2021</a></li>
+                        <li><a class="dropdown-item" href="#">ReSurge - 2021</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#!">ARIA News</a></li>
+                    <li><a class="dropdown-item" href="events.html">Events - Upcoming & Past</a></li>
+                    <li><a class="dropdown-item" href="#!">News of Interest</a></li>
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Newsletters</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Newsletter - 2024</a></li>
+                        <li><a class="dropdown-item" href="#">Newsletter - 2023</a></li>
+                        <li><a class="dropdown-item" href="#">Newsletter - 2022</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#!">Communication from SEBI</a></li>
+                    <li class="dropdown dropend">
+                      <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workshop</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">October 4 - 2023</a></li>
+                        <li><a class="dropdown-item" href="#">August 25</a></li>
+                        <li><a class="dropdown-item" href="#">August 11</a></li>
+                        <li><a class="dropdown-item" href="#">June 16</a></li>
+                        <li><a class="dropdown-item" href="#">May 23</a></li>
+                        <li><a class="dropdown-item" href="#">January 23</a></li>
+                        <li><a class="dropdown-item" href="#">November 22</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="bi bi-telephone-fill"></i>
+                      <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+          </div>
+      </div>
+      <div class="navbar-right">
+        <div class="nav-link-account">
+          <div class="dropdown">
+            <button class="btn btn-primary btn-search rounded-circle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+              <i class="bi bi-search fs-5"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end dropdown-searchbar">
+              <div class="form-group mb-0">
+                <div class="input-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="search here">
+                  <button class="btn btn-primary"><i class="bi bi-search fs-5"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="dashboard.html" class="btn btn-outline-primary rounded-pill px-4">Sign In</a>
+          <!-- <a href="javascript:void(0)" class="account-user-avatar rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+            <img src="img/amit.jpg" class="img-fluid" alt="">
+          </a> -->
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft">
+            <i class="bi bi-text-left"></i>
+        </button>
+      </div>
+  </div>
+</nav>
+
+<main class="mainwrapper">
+  <section class="mainheadwrapper" style="--pageheaderimage: url(../img/inner-banner.jpg)">
+    <div class="mainheader-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="page-heading mb-0">
+            <div class="page-content">
+              <h2 class="page-title mb-0">Become Aria Member</h2>
+              <nav style="--bs-breadcrumb-divider: '\F285';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item" aria-current="page"><a href="">Members</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Become Aria Member</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div class="mainbodywrapper bg-light">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-12">
+          <div class="row g-4 d-flex align-item-center">
+         
+            <div class="col-12 col-lg-6">
+              <h4 class="itemtitle fs-4 fw-bold mb-3">Imagine if you could connect with fellow RIAs, build a robust practice, gain knowledge, access opportunities and achieve success.</h4>
+              <div class="card ariacard">
+                <iframe id="ytplayer" src="https://www.youtube.com/embed/WQ6hoFRpGjA" width="100%" height="450" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">&#xFEFF;</span></iframe>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="card ariacard">
+                <div class="card-header pb-0">
+                  <h6 class="card-title">It’s possible by becoming an ARIA member!</h6>
+                </div>
+                <div class="card-body py-0">
+                  <h6 class="itemtitle"></h6>
+                  <p class="itemdesc">Being a member not only helps you be a part of a community of RIAs, it helps you to grow and strengthen your practice. For its members, ARIA organizes the following activities:</p>
+                  <ul class="itemdesc">
+                    <li>Annual Flagship Conference which we call ‘RIA Summit
+                      <ul>
+                        <li>During Covid-19, we have organized mini-Summits</li>
+                      </ul>
+                    </li>
+                    <li>Mini Conferences</li>
+                    <li>Weekly engagement sessions targeted at professional development of RIAs covering a broad range of subjects (knowledge building, management concepts, technology related, practitioners’ insights, compliance, etc)</li>
+                    <li>In addition, local chapters also organize member activities</li>
+                  </ul>
+                  <p class="itemdesc">Being a member entitles you to access ARIA’s resources on compliance with SEBI regulations which includes webinars with industry experts, compliance calendar, draft letter of engagement, etc. You can also access learning resources on ARIA’s website (archives of our knowledge sessions).</p>
+                  <p class="itemdesc">Being a member gives you an opportunity to network with fellow ARIAs. You can ask/discuss technical and practice related questions/topics to other ARIA members on our Whatsapp group.</p>
+                  <p class="itemdesc">If you’re still not convinced, <a href="" class="link-primary text-decoration-underline">read</a> what happy members of ARIA have to say.</p>
+                </div>
+                <div class="card-footer bg-light ">
+                    <h6 class="itemtitle">Become a member and join the ARIA movement today!</h6>
+                    <a href="become-member.html" class="btn btn btn-fadedprimary">Apply Now</a>
+                </div>
+              </div>
+
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="footer-top-inner">
+            <div class="row">
+              <div class="col-lg-4 col-12">
+                <div class="footer-about-widget">
+                  <div class="footer-logo">
+                    <a class="logo" href="index.html"><img src="img/ARIA-logo_new.png" class="img-fluid"></a>
+                  </div>
+                  <p class="footer-about-widget_desc">The Association of Registered Investment Advisers (ARIA) was born out of the need to support the development of the investment adviser community post the introduction of the investment advisor regulations of SEBI in 2013.</p>
+                  <ul class="social-list">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter-x"></i></i></a></li>
+                    <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-6">
+                <div class="widget-nav_menu">
+                  <h3 class="widget-title">About</h3>
+                  <ul class="widget-nav_menu-links">
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Intent</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">ARIA Board</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Committees</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Chapters</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Our Partners</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Testimonials</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Careers</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-link">Stakeholders</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-6">
+                <div class="widget-nav_menu">
+                  <h3 class="widget-title">News/Events</h3>
+                  <ul class="widget-nav_menu-links">
+                    <li class="menu-item">
+                      <a href="" class="menu-link">ARIA Summit</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Summit Recordings</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">ARIA News</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Events Upcoming & Posts</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">News & Interest</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Newsletter</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">SEBI Communications</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Workshops</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div class="footer-about-widget">
+                  <p class="footer-about-widget_desc mt-0 mb-3 text-secondary">Subscribe to our Newsletter to Receive news, updates, free stuff and new releases by email</p>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control form-control-lg" placeholder="enter email address">
+                      <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright__inner">
+                <p class="copyright-text">Copyright @202 All rights reserved</p>
+                <ul class="foot-links">
+                  <li><a href="#">Legal Disclaimer</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Cancellation Policy</a></li>
+                  <li>Credits : GeoCircle</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>  
+    </div>
+  </footer>
+</main>
+
+<!-- LOGGED IN MENU -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+  <div class="offcanvas-header">
+    <div class="user-profilearea">
+      <div class="user-profilepic">
+        <img src="img/blank-profile-picture.png" class="img-fluid" alt="">
+      </div>
+      <h5 class="user-fullname">Amit Kukreja</h5>
+      <h6 class="user-designation">Past & Current Treasurer</h6>
+      <span class="badge text-bg-primary">Individual</span>
+      <ul class="social-list">
+        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+        <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="offcanvas-body px-0 scroll-list">
+    <div class="list-group list-group-flush navlink-listgroup">
+      <a href="#" class="list-group-item list-group-item-action active">
+        <i class="bi bi-grid-1x2 icon"></i>
+        Dashboard
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-person-circle icon"></i>
+        My Profile
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-person-gear icon"></i>
+        My Account
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-file-earmark-text icon"></i>
+        My Articles
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-calendar4-week icon"></i>
+        Events Attended
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-suitcase-lg icon"></i>
+        My Job Lists
+        </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <i class="bi bi-box-arrow-right icon"></i>
+        Logout
+        </a>
+    </div>
+    
+    <div class="membership-item">
+      <div class="membership-item-icon">
+        <i class="bi bi-hourglass icon"></i>
+        
+      </div>
+      <div class="membership-item-content">
+        <p class="membership-item-title">3 years of Membership</p>
+      </div>
+    </div>
+    <div class="membership-item">
+      <div class="membership-item-icon orange">
+        <i class="bi bi-hourglass icon"></i>
+      </div>
+      <div class="membership-item-content">
+        <p class="membership-item-title">Membership Subscription</p>
+        <p class="membership-item-subtitle">20days left</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- Jquery -->
+<script src="js/jquery-3.7.1.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+<script>
+const testimonialswiper = new Swiper('#TestimonialSwiper', {
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+</script>
+
+</body>
+</html>
