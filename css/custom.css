@@ -430,8 +430,11 @@ hr {border-top-color: var(--border-color) !important; opacity: 1 !important;}
   -webkit-scroll-snap-type: mandatory; scroll-snap-type: mandatory;
   -webkit-scroll-snap-points-y: repeat(100%);scroll-snap-points-y: repeat(100%);scrollbar-width: none;
 }
-body::-webkit-scrollbar, .scroll-list::-webkit-scrollbar{width: 10px; height: 5px;}
-.scroll-list::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar, 
+.scroll-list::-webkit-scrollbar, .dropdown-menu .inner::-webkit-scrollbar{
+	width: 10px; height: 5px;}
+.scroll-list::-webkit-scrollbar-thumb, .dropdown-menu .inner::-webkit-scrollbar-thumb, 
+body::-webkit-scrollbar-thumb{
 	border-radius: 3px; background-color: var(--primary);
 }
 @media (max-width: 767.98px){
@@ -477,6 +480,20 @@ body::-webkit-scrollbar, .scroll-list::-webkit-scrollbar{width: 10px; height: 5p
     border-color: var(--primary);
     background-color: var(--formcontrol-bgcolor);
 }
+.form-multiselect.bootstrap-select{}
+.form-multiselect.bootstrap-select.form-control.is-invalid{border-color: var(--bs-form-invalid-border-color);}
+.form-multiselect.bootstrap-select.form-control{border : var(--bs-border-width) solid var(--bs-border-color);}
+.form-multiselect.bootstrap-select.form-control:focus-within{border-color: var(--primary);}
+.form-multiselect.bootstrap-select .dropdown-toggle{
+	border: 0 !important; outline: 0 !important; font-weight: 500; color: var(--text-color); letter-spacing: var(--letterspacing-small);
+    font-size: 0.85rem; background-color: var(--formcontrol-bgcolor); padding-top: 0; padding-bottom: 0; width: calc(100% - 2rem);
+}
+.form-multiselect.bootstrap-select .dropdown-toggle:focus, .form-multiselect.bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
+	outline: 0 !important;}
+.form-multiselect.bootstrap-select .dropdown-toggle:after{display: none}
+.form-multiselect.bootstrap-select .dropdown-menu{padding: 0;}
+.form-multiselect.bootstrap-select .dropdown-menu ul.inner{padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);}
+.form-multiselect.bootstrap-select .bs-ok-default:after{border-width: 0 0.14em 0.14em 0;}
 input[type=file]::-webkit-file-upload-button{
   	background-color: var(--formcontrol-bgcolor);
   	color: rgba(var(--text-color-rgb), 0.8);
@@ -1793,3 +1810,45 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	.download-list-group .list-group-item{flex: 0 0 auto; width: 100%;}
 }
 /*---------------------------- DOWNLOAD LIST END ----------------------------*/
+
+/*------------------------------ CONTACT START ------------------------------*/
+.contact_feature {
+    /* padding: 0 3.89rem; */
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contact_feature .contact_icon {
+    margin-bottom: 1.12rem;
+}
+
+.contact_feature .contact_icon .bi {
+    color: var(--primary);
+    font-size: 35px;
+    line-height: 35px;
+}
+.primary-color {
+    color: var(--primary);
+}
+
+.contact_feature .contact_content {
+}
+
+.contact_feature .contact_content .contact-heading {
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: var(--letterspacing-medium);
+    margin-bottom: 1rem;
+    font-size: 1.275rem;
+}
+
+.contact_feature .contact_content .contact-value {
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: var(--letterspacing-medium);
+    margin-bottom: 0px;
+    color: #62605c;
+}
+
+/*------------------------------- CONTACT END -------------------------------*/
