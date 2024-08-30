@@ -18,52 +18,54 @@
             background-color: #fff;
             position: relative;
         }
-        .invoice-box table {
+        table.invoice-table {
             width: 100%;
             line-height: 24px;
             text-align: left;
             border-collapse: collapse;
         }
-        .invoice-box table td {
+        table.invoice-table td {
             padding: 8px;
             vertical-align: top;
         }
-        .invoice-box table tr td:nth-child(2) {
+        table.invoice-table tr td:nth-child(2) {
             text-align: right;
         }
-        .invoice-box table tr.top{
+        table.invoice-table tr.top{
             border-bottom: 1px solid #eee;
         }
-        .invoice-box table tr.top table td {
+        table.invoice-table tr.top table td {
 /*            padding-bottom: 20px;*/
         }
-        .invoice-box table tr.information table td {
+        table tr.information table td {
             padding-bottom: 20px;
         }
-        .invoice-box table tr.heading td {
+        table.invoice-table tr.heading th {
             background-color: #eee;
             border-bottom: 1px solid #ddd;
             font-weight: bold;
+            padding: 8px;
+            vertical-align: top;
         }
-        .invoice-box table tr.details td {
+        table.invoice-table tr.details td {
             padding-bottom: 20px;
         }
-        .invoice-box table tr.item {
+        table.invoice-table tr.item {
             border-bottom: 1px solid #eee;
         }
-        .invoice-box table tr.item:nth-child(even) {
+        table.invoice-table tr.item:nth-child(even) {
             background-color: #f9f9f9;
         }
-        .invoice-box table tr.item.last td {
+        table.invoice-table tr.item.last td {
             border-bottom: none;
         }
-        .invoice-box table tr.total td{
+        table.invoice-table tr.total td{
             background-color: #eee;
             border-bottom: 1px solid #c7c7c7;
             border-top: 1px solid #c7c7c7;
             font-weight: bold;
         }
-        .invoice-box table tr.total td:nth-child(2) {
+        table.invoice-table  tr.total td:nth-child(2) {
             font-weight: bold;
         }
         .center-text {
@@ -86,73 +88,61 @@
     </style>
 </head>
 <body>
-    <div class="invoice-box">
-        <table>
-            <tr class="top">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td class="title">
-                                <img src="https://ariaorg.netlify.app/img/ARIA-logo_new.png" alt="Company Logo" class="logo">
-                            </td>
-                            <td>
-                                <p class="m-0">Invoice #: <strong>INV1231231323</strong></p>
-                                <p class="m-0">Invoice Date : <strong>August 27, 2024</strong></p>
-                                <p class="m-0">Due Date : <strong>September 27, 2024</strong></p>
-                                
-                            </td>
-                        </tr>
-                    </table>
+
+        <h1 class="center-text">Invoice</h1>
+        <table cellspacing="0" cellpadding="5" class="invoice-table">
+            <tr>
+                <td>
+                    <strong>' . $company_name . '</strong><br>
+                    ' . $company_address . '<br>
+                    Phone: ' . $company_phone . '<br>
+                    Email: ' . $company_email . '
                 </td>
-            </tr>
-            <tr class="information">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td>
-                                Company Name<br>
-                                12345 Sunny Road<br>
-                                Sunnyville, TX 12345
-                            </td>
-                            <td>
-                                <strong>Bill To :</strong>
-                                <p class="m-0">Customer Name</p>
-                                <p class="m-0">customer@example.com</p>
-                            </td>
-                        </tr>
-                    </table>
+                <td align="right">
+                    <strong>Invoice No:</strong> ' . $subscription->invoice . '<br>
+                    <strong>Date:</strong> ' . date('Y-m-d', strtotime($subscription->payment_date)) . '<br>
+                    <strong>Due Date:</strong> ' . date('Y-m-d', strtotime($subscription->subscription_end_date)) . '
                 </td>
-            </tr>
-            <tr class="heading">
-                <td>Description</td>
-                <td>Amount</td>
-            </tr>
-            <tr class="item">
-                <td>Subscription (Annual)</td>
-                <td>₹4000.00</td>
-            </tr>
-            <tr class="item">
-                <td>Processing Fees </td>
-                <td>₹141.00</td>
-            </tr>
-            <tr class="item last">
-                <td>GST</td>
-                <td>₹720.00</td>
-            </tr>
-            
-            <tr class="total">
-                <td></td>
-                <td>Total Amount: $385.00</td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <p><strong>Payment Method :</strong> Online</p>
-                    <p><strong>Payment Date :</strong> August 28, 2024</p>
+                    <strong>Bill To:</strong><br>
+                    ' . $user_info->display_name . '<br>
+                    Email: ' . $user_info->user_email . '
                 </td>
             </tr>
         </table>
-        <p class="center-text">Thank you for your payment !</p>
-        <p class="footer">This is online generated PDF by ARIA</p>
-    </div>
+
+        <br>
+        <table class="invoice-table">
+            <thead>
+                <tr class="heading">
+                    <th align="center"><strong>Description</strong></th>
+                    <th align="center"><strong>Amount</strong></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="item">
+                    <td>Subscription (Annual)</td>
+                    <td align="right">' . $subscription->sub_amount . ' ' . $subscription->currency . '</td>
+                </tr>
+                <tr class="item">
+                    <td>Processing Fee</td>
+                    <td align="right">' . $subscription->processing_fee . ' ' . $subscription->currency . '</td>
+                </tr>
+                <tr class="item last">
+                    <td>GST</td>
+                    <td align="right">' . $subscription->gst . ' ' . $subscription->currency . '</td>
+                </tr>
+                <tr class="total">
+                    <td><strong>Total Amount</strong></td>
+                    <td align="right"><strong>' . $subscription->total_amount . ' ' . $subscription->currency . '</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <p><strong>Payment Method:</strong> ' . $subscription->payment_mode . '</p>
+        <p><strong>Payment Date:</strong> ' . $subscription->payment_date . '</p>';    
 </body>
 </html>
