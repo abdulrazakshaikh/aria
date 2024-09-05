@@ -1302,7 +1302,12 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
     --bs-card-cap-bg: transparent;
     --bs-card-border-width : 0px;
     box-shadow: var(--boxshadow);
-    cursor: pointer;
+}
+.member-card .itemtitle{
+	cursor: pointer;
+}
+.member-card .itemtitle:hover{
+	text-decoration: underline;
 }
 .member-card .memberphoto{
 	width: 84px;
@@ -1314,6 +1319,10 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
     justify-content: center;
     margin-bottom: 0.75rem;
     background-color: var(--initials-bg);
+    cursor: pointer;
+}
+.member-card .memberphoto:hover{
+	border: 1px solid var(--primarylight);
 }
 .member-card .memberphoto.noimage:before{
 	content: var(--initials);
