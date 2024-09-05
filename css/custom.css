@@ -146,6 +146,7 @@ a{color: var(--primary); text-decoration:  none;}
 a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 	text-decoration: none; box-shadow: none; outline: none;
 }
+.fs-8{font-size: 0.75rem !important}
 .bg-light{background-color: var(--bglight-color) !important;}
 .mainwrapper{}
 .mainbodywrapper{padding:2rem 1rem}
@@ -1301,6 +1302,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
     --bs-card-cap-bg: transparent;
     --bs-card-border-width : 0px;
     box-shadow: var(--boxshadow);
+    cursor: pointer;
 }
 .member-card .memberphoto{
 	width: 84px;
@@ -1397,7 +1399,6 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	flex: 1;
 	font-size: 1.275rem;
 	font-weight: 600;
-	letter-spacing: 10px;
 	text-transform: uppercase;
 	margin-bottom: 0rem;
 }
