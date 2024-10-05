@@ -1,0 +1,89 @@
+.woocommerce table{
+	border-collapse: collapse !important;
+}
+
+.woocommerce table.shop_table{
+	border-collapse: collapse;
+}
+
+.woocommerce table tr th{
+	background-color: var(--tablehead-bgcolor);
+    border-top-width: var(--bs-border-width);
+    border-bottom-width: var(--bs-border-width);
+    border-color: var(--primarylight);
+    font-size: var(--bodytextsmall-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: var(--letterspacing-medium);
+    color: var(--secondary);
+    padding: 0.75rem 0.5rem;
+    white-space: nowrap;
+}
+.woocommerce table tr td{
+	font-size: var(--bodytext-size);
+    vertical-align: middle;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.woocommerce-order-details__title, .woocommerce-column__title{
+	margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--sectiontitle-color);
+    font-size: var(--bodytextmedium-size);
+    letter-spacing: var(--letterspacing-small);
+}
+.woocommerce-customer-details{}
+.woocommerce-customer-details address{
+	font-size: var(--bodytextsmall-size);
+    letter-spacing: var(--letterspacing-small);
+    font-weight: 500;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+.woocommerce-customer-details address p{margin: 0px}
+
+.woocommerce-Address{
+	display: flex;
+    flex-direction: column;
+}
+.woocommerce-Address .woocommerce-Address-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--border-color);
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+.woocommerce-Address .woocommerce-Address-title h3{
+	margin: 0;
+    font-weight: bold;
+    color: var(--sectiontitle-color);
+    font-size: var(--bodytextmedium-size);
+    letter-spacing: var(--letterspacing-small);
+}
+.woocommerce-Address .woocommerce-Address-title .edit{
+	    font-size: var(--bodytextsmall-size);
+    font-weight: 400;
+    letter-spacing: 0.10rem;
+}
+.woocommerce-Address .woocommerce-Address-title .edit:hover{
+	text-decoration: underline;
+}
+
+.woocommerce-Address address{
+	border: 1px solid var(--border-color);
+	border-top: 0px;
+	border-radius: 0 0 0.5rem 0.5rem;
+	padding: 0.5rem 1rem 1rem 1rem;
+	font-size: var(--bodytextsmall-size);
+    letter-spacing: var(--letterspacing-small);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+
+.mep_list_event_details{}
+.mep_list_event_details .mep-list-header{}

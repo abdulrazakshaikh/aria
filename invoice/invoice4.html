@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .header img {
+      width: 150px;
+    }
+    .company-info {
+      text-align: right;
+    }
+    .invoice-details {
+      margin-bottom: 20px;
+    }
+    .invoice-details p {
+      margin-bottom: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    th {
+      text-align: left;
+    }
+    .table-footer {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="https://ariaorg.netlify.app/img/ARIA-logo_new.png" alt="Company Logo">
+    <div class="company-info">
+      <h3>Your Company Name</h3>
+      <p>Your Company Address</p>
+      <p>Your Contact Information</p>
+    </div>
+  </header>
+
+  <section class="invoice-details">
+    <h2>Invoice</h2>
+    <p>Invoice Number: <span id="invoice-number">12345</span></p>
+    <p>Invoice Date: <span id="invoice-date">2024-09-14</span></p>
+    <p>Due Date: <span id="due-date">2024-09-30</span></p>
+  </section>
+
+  <section>
+    <h3>Bill To:</h3>
+    <p><span id="bill-to-name">Customer Name</span></p>
+    <p><span id="bill-to-address">Customer Address</span></p>
+  </section>
+
+  <section>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Item 1</td>
+          <td>1</td>
+          <td>$10.00</td>
+          <td>$10.00</td>
+        </tr>
+        </tbody>
+      <tfoot>
+        <tr class="table-footer">
+          <td colspan="3">Subtotal</td>
+          <td id="subtotal">$10.00</td>
+        </tr>
+        <tr class="table-footer">
+          <td colspan="3">CGST (5%)</td>
+          <td id="cgst">$0.50</td>
+        </tr>
+        <tr class="table-footer">
+          <td colspan="3">SGST (5%)</td>
+          <td id="sgst">$0.50</td>
+        </tr>
+        <tr class="table-footer">
+          <td colspan="3">IGST (Applicable Tax Rate)</td>
+          <td id="igst"></td>
+        </tr>
+        <tr class="table-footer">
+          <td colspan="3">Total</td>
+          <td id="total">$11.00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  </body>
+  </html>
