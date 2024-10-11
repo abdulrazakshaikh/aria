@@ -149,7 +149,7 @@ a:is(:hover, a:focus, a:active), .btn:is(:hover, :focus, :active){
 .fs-8{font-size: 0.75rem !important}
 .bg-light{background-color: var(--bglight-color) !important;}
 .mainwrapper{}
-.mainbodywrapper{padding:2rem 1rem}
+.mainbodywrapper{padding:2rem 1rem; height: 100%}
 .mainheadwrapper{min-height: 250px;	background-color: var(--bs-light);	position: relative;}
 .mainheadwrapper:before {
     content: ''; background: rgba(var(--primary-rgb), 0.87) var(--pageheaderimage) center center / cover;
@@ -397,7 +397,7 @@ hr {border-top-color: var(--border-color) !important; opacity: 1 !important;}
 	--bs-pagination-hover-bg :  var(--primary);	--bs-pagination-focus-color : var(--onprimary);	--bs-pagination-focus-bg :  var(--primary);
 	--bs-pagination-focus-box-shadow : none;--bs-pagination-border-width : 0px;	--bs-pagination-bg : transparent;--bs-pagination-font-size : 1rem;
 	gap: 0.5rem;align-items: center;margin: 0;}
-.pagination .page-item .page-link{border-radius: 0.375rem;height: 42px;width: 42px;display: flex;align-items: center;justify-content: center;}
+.pagination .page-item .page-link{border-radius: 0.375rem;height: 42px;width: 42px;display: flex;align-items: center;justify-content: center; white-space: nowrap;}
 .pagination .page-item:first-child .page-link,
 .pagination .page-item:last-child .page-link{font-size: 1.275rem;text-align: center;}
 
@@ -737,6 +737,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 /*------------------------------ FOOTER START -------------------------------*/
 .footer{
 	background-color: #FFFFFF; position: relative;overflow: hidden;
+	border-top: 1px solid var(--border-color);
     /*background-blend-mode: color-dodge;
     background-image: url(../img/in-footer-bg.svg);
     background-size: cover;
@@ -807,7 +808,8 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .hero-section .carousel.hero-carousel{}
 .carousel.hero-carousel .carousel-inner{}
 .carousel.hero-carousel .carousel-inner .carousel-item{height: var(--herobanner-height); max-height: 100vh}
-.carousel.hero-carousel .carousel-inner .carousel-item .carousel-image{width: 100%;	height: 100%; object-fit: cover;}
+.carousel.hero-carousel .carousel-inner .carousel-item .carousel-image{width: 100%;	height: 100%; object-fit: cover; }
+.carousel.hero-carousel .carousel-inner .carousel-item:nth-child(1) .carousel-image{object-position: bottom}
 .hero-carousel .carousel-caption{bottom: 15rem; z-index: 10; top: 0; left: 10%; right: 10%; margin: auto; 
 	display: flex; align-items: flex-end; justify-content: flex-start; text-align: left;
 }
@@ -880,7 +882,11 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	--bs-card-border-radius: 0px;
 	--bs-card-border-width: 0px;
 	--bs-card-cap-bg: transparent;
-	--bs-card-spacer-x: 0.5rem 2.5rem;
+	--bs-card-cap-padding-y : 0px;
+	--bs-card-cap-padding-x : 0px;
+/*	--bs-card-spacer-x: 0.5rem 2.5rem;*/
+	padding-bottom: 3.5rem;
+    height: 440px;
 }
 .newsitem .newsitem-meta{display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;}
 .newsitem .newsitem-timestamp{color: rgba(var(--text-color-rgb), 0.8); font-size: var(--bodytext-size);font-weight: 500;}
@@ -951,13 +957,13 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	.hero-section{--herobanner-height : 800px;}
 }
 @media (max-width: 1199.98px){
-	.hero-section{--herobanner-height : calc(90vh - var(--navbarheader-height));}
+/*	.hero-section{--herobanner-height : calc(90vh - var(--navbarheader-height));}*/
 	.partnerlogo{height: 84px;}
 }
 @media (max-width: 990.98px){
 	.swiper{--swiper-navigation-size: 2rem;}
 
-	.hero-carousel .carousel-caption{bottom: 6rem; left: 0; right: 0;}
+	.hero-carousel .carousel-caption{bottom: 6rem; left: 0; right: 0; align-items: center}
 	.count-icon{width: 64px; height: 64px}
 	.count-num{font-size: 2rem}
 	.count-title{font-size: 1rem}
@@ -972,16 +978,17 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	.section-about{top: 0px}
 	.testimonial-card .testi-item{flex-direction: column;}
 	.hero-carousel .carousel-caption{bottom: 4rem}
-	.hero-carousel .carousel-caption .caption-title{font-size: 2.25rem}
+	.hero-carousel .carousel-caption .caption-title{font-size: 1.75rem}
+	.hero-carousel .carousel-caption .btn-fadedprimary{padding: 0.375rem 0.75rem; font-size: 0.75rem;}
 /*	.carousel.hero-carousel .carousel-inner .carousel-item{height: 90vh}*/
 	.hero-carousel .carousel-caption .btn:not(.btn-play);{padding: 0.5rem 0.85rem; font-size: .75rem}
 	.hero-carousel .carousel-control-next, .hero-carousel .carousel-control-prev{top: auto; bottom: 1rem;}
-	.partnerlogo{height: 84px}
-	.partnerlogo{height: 64px;}
+	.partnerlogo{height: 64px; margin: auto;}
 }
 @media (max-width: 567.98px){
 	.about-card{padding: 2rem 0;}
-	.hero-carousel .carousel-caption .caption-title{font-size: 1.75rem}
+	.hero-carousel .carousel-caption .caption-title{font-size: 1.375rem}
+	.hero-carousel .carousel-caption .btn-fadedprimary{padding: 0.25rem 0.5rem; font-size: 0.65rem;}
 }
 /*------------------------------ HOMEPAGE END -------------------------------*/
 
@@ -990,8 +997,8 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .aside{--bs-offcanvas-width: 350px;}
 
 @media (min-width: 1200px) {
-	.sidebar{ left: 0; width: calc(100% - 75%); top: var(--navbarheader-height);}
-	.sidebar .aside{--bs-offcanvas-width: 350px; display: flex;	flex-direction: column;}
+	.sidebar{ left: 0; width: calc(100% - 75%); top: var(--navbarheader-height); box-shadow: var(--boxshadow); z-index: 9}
+	.sidebar .aside{--bs-offcanvas-width: 350px; display: flex;	flex-direction: column; }
 	.sidebar .aside .offcanvas-header{display: flex;}
 	.sidebar .aside .offcanvas-body{display: flex;flex-direction: column;}
 }
@@ -1158,7 +1165,7 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 	--bs-list-group-border-radius : 0px;
 	--bs-list-group-item-padding-x: 1rem;
     --bs-list-group-item-padding-y: 1rem;;
-	gap: 1rem;
+	gap: 0.75rem;
 }
 .list-group-forum .list-group-item{
 	border-left: 3px solid var(--primarylight);	background-color: rgba(var(--primary-rgb), 0.15);
@@ -1167,14 +1174,15 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .list-group-forum .list-group-item .forum-date{
 	font-size: var(--bodytext-size);font-weight: 600;text-align: center;border-right: 1px solid rgba(var(--primary-rgb), 0.2);
 	padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x); letter-spacing: var(--letterspacing-medium);
+	display: flex; gap: 0.5rem;
 }
-.list-group-forum .list-group-item .forum-date .date{color: var(--text-color); font-weight: bold}
-.list-group-forum .list-group-item .forum-date .year{color: var(--textlight-color);}
+.list-group-forum .list-group-item .forum-date .date{color: var(--text-color); font-weight: bold;font-size: var(--bodytextsmall-size);}
+.list-group-forum .list-group-item .forum-date .year{color: var(--textlight-color);font-size: var(--bodytextsmall-size);}
 .list-group-forum .list-group-item .forum-content{flex: 1;padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
 	display: flex; flex-direction: column; gap: 0.25rem;
 }
 .list-group-forum .list-group-item .forum-content .forum-title{
-	color: var(--text-color);letter-spacing: var(--letterspacing-medium);margin: 0; font-size: var(--bodytextmedium-size); font-weight: 600;
+	color: var(--text-color);letter-spacing: var(--letterspacing-medium);margin: 0; font-size: var(--bodytextsmall-size); font-weight: 600;
 }
 .list-group-forum .list-group-item .forum-content .forum-subtitle{
 	color: var(--primary);letter-spacing: var(--letterspacing-medium);margin: 0;font-size: var(--bodytext-size); font-weight: 500;
@@ -1440,6 +1448,20 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 .offcanvas-filter .offcanvas-footer{
 	padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
 	border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+	position: sticky;
+	bottom: 0px;
+	z-index: 99;
+}
+.offcanvas-filter .offcanvas-footer{
+
+}
+@media (max-width: 991.98px){
+	.offcanvas-filter .offcanvas-body{
+		height: calc(100vh - 135px);
+	}
+	.offcanvas-filter .offcanvas-footer{
+
+	}
 }
 /*-------------------------- MEMBER DIRECTORY END ---------------------------*/
 /*------------------------------ PROFILE START ------------------------------*/
@@ -1576,19 +1598,30 @@ input[type=file]:is(:hover, :focus, :active):not(:disabled):not([readonly])::fil
 }
 .myprofile-social-list .list-group-item .list-title{
 	margin-bottom: 0px;
-    font-size: var(--bodytext-size);
+    line-height: normal;
+    /*font-size: var(--bodytext-size);
     letter-spacing: var(--letterspacing-small);
     font-weight: bold;
-    color: var(--text-color);
-    line-height: normal;
+    color: var(--text-color);*/
+
+
+    font-size: calc(var(--bodytextsmall-size) - 0.1rem);
+    letter-spacing: var(--letterspacing-small);
+    color: var(--textlight-color);
+    text-transform: uppercase;
 }
 .myprofile-social-list .list-group-item .list-username{
 	margin-bottom: 0px;
-    font-weight: 400;
+    /*font-weight: 400;
     font-size: var(--bodytextsmall-size);
     letter-spacing: var(--letterspacing-small);
-    color: var(--textlight-color);
+    color: var(--textlight-color);*/
+    font-size: var(--bodytextsmall-size);
+    letter-spacing: var(--letterspacing-small);
+    font-weight: 500;
+    color: var(--text-color);
 }
+
 @media (max-width: 767.98px){
 	.myprofile-social-list .list-group-item{flex: 1 0 100%;}
 
